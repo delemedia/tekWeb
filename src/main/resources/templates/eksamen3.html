@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Teknologi - Lærings mål.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <br>
+  <h2><b><i>Samtidigheds-problematikker.</i>&nbsp;&nbsp;&nbsp;<i class="fa fa-calendar-times-o" style="font-size:24px"></i></b></h2>
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> <b>-</b> Vælg et spørgsmål<b> -</b> </i></p>
+  <br>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#eksamen3" class="bg-info" style="font-weight: bold"><i class="fa fa-caret-square-o-left"></i>&nbsp;&nbsp;Home</a></li>
+    <li><a href="#menu3_1" class="bg-primary" style="font-weight: bold">1</a></li>
+    <li><a href="#menu3_2" class="bg-primary" style="font-weight: bold">2</a></li>
+    <li><a href="#menu3_3" class="bg-primary" style="font-weight: bold">3</a></li>
+    <li><a href="#menu3_4" class="bg-primary" style="font-weight: bold">4</a></li>
+
+  </ul>
+
+  <div class="tab-content">
+    <div id="eksamen3" class="tab-pane fade in active">
+
+      <br><br>
+
+      <a th:href="@{/}" href="index.html" class="btn btn-info" style="font-weight: bold"><i class="fa fa-mail-reply"></i>&nbsp;&nbsp;Gå til Home...</a>
+
+
+    </div>
+
+
+    <!-- Spørgsmål 1 -->
+
+    <div id="menu3_1" class="tab-pane fade">
+      <br>
+      <h3><b><i>1.&nbsp; Beskriv:&nbsp; Hvad der gør et problem, til et samtidigheds-problem?<br><br>&nbsp;&nbsp;&nbsp;&nbsp; Gerne ift. jeres projekt?</i></b></h3>
+      <br>
+      <hr>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+      <br>
+      <hr>
+      <br>
+      <p><a th:href="@{https://www.gatevidyalay.com/concurrency-problems-in-transaction/}" href="https://www.gatevidyalay.com/concurrency-problems-in-transaction/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - gatevidyalay.com</a></p>
+      <h4><b>Concurrency Problems | DBMS</b></h4>
+      <h5><i></i></h5>
+      <br>
+      <br>
+      <p><a th:href="@{https://howtodoinjava.com/series/java-concurrency/}" href="https://howtodoinjava.com/series/java-concurrency/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - howtodoinjava.com</a></p>
+      <h4><b>Guide to Java Concurrency</b></h4>
+      <h5>Published:&nbsp; <i>October 11, 2022</i></h5>
+      <br>
+      <hr>
+      <br>
+
+      <h3><i>( Concurrency Problems )</i></h3>
+      <br>
+      <br>
+
+      <h3><i><u>Hvad er Samtidigheds-problemer?</u></i></h3>
+      <br>
+      <p>Samtidighed refererer til deling af ressourcer imellem flere,</p>
+      <p>interaktive brugere, eller applikationsprogrammer på samme tid.</p>
+      <br>
+      <p>Database Managere kontrollerer strukturen, for at undgå uønskede handlinger.</p>
+      <br>
+      <p>Når flere transaktioner udføres samtidigt, på en <i>u-testet / ikke-kontrolleret.</i></p>
+      <p>Eller en <i>ikke-evalueret / manglende overblik måde.</i></p>
+      <br>
+      <p>Der kan det føre til flere <b><i>kaostiske udredninger!</i></b></p>
+      <p>Det er yderst magteløst proces, at <i>"teknisk backtracke"</i></p>
+      <h6><i>I et stramt og hektisk deadline projekt</i></h6>
+      <br>
+      <p><b><i>BESTEMT!</i></b> - I større planlagte projekt udviklinger.</p>
+      <p>Udtænkt og tiltænkt - Som Produkt / Funktion / Værktøj</p>
+      <p><i>Overfør selskaber intentioner / ønsker.</i></p>
+      <br>
+      <p>Såsom - De her <b>4</b> <i><u>Samtidigheds problemer:</u></i></p>
+      <br>
+        <ul>
+      <li><p><b><i>Dirty Read Problem.</i></b></p></li>
+          <br>
+      <li><p><b><i>Unrepeatable Read Problem.</i></b></p></li>
+          <br>
+      <li><p><b><i>Lost Updates Problem</i></b></p></li>
+          <br>
+      <li><p><b><i>Phantom Read Problem</i></b></p></li>
+        </ul>
+
+      <br>
+      <hr>
+      <br>
+      <br>
+
+      <h4><i><u>Java Samtidighed - Forklaring:</u></i></h4>
+      <br>
+      <p>Samtidighed er evnen til at køre flere programmer.</p>
+      <p>Eller flere dele, af et program parallelt</p>
+      <br>
+      <p>Samtidighed gør det muligt, for et program at opnå høj ydeevne, og gennemløb.</p>
+      <p>Ved at udnytte de uanvendte muligheder, i det underliggende operativ-system og maskin-hardware. </p>
+      <br>
+      <p>For eksempel... Har moderne computere, flere CPU'er, eller flere kerner inden for en CPU. </p>
+      <p>Programmet kan bruge alle kerner, til en del af processen.</p>
+      <p>Derved afslutter opgaver en del, før i tid. I forhold til en sekventiel proces.</p>
+      <br>
+      <br>
+      <p><b><i>The Backbone</i></b> i Java Samtidighed - <u>Threading.</u></p>
+      <br>
+      <p>En thread ( tråd ) er en 'lightweight' proces, der har sin egen 'call stack' </p>
+      <p>Der kan få adgang, til shared data - Fra andre threads, i den samme proces. </p>
+      <br>
+      <p>En Java-applikation, er aktiv - Som <i>default</i> i én proces. </p>
+      <p>Man kan arbejde med en del threads - I en Java-applikation.</p>
+      <p>For at opnå en parallel proces, eller Samtidighed.</p>
+
+      <br><br>
+
+      <hr>
+
+      <br><br>
+
+      <a th:href="@{/eksamen3}" href="eksamen3.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+    </div> <!-- End line - Spørgsmål 1 -->
+
+
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+
+
+    <!-- Spørgsmål 2 -->
+
+    <div id="menu3_2" class="tab-pane fade">
+      <br>
+      <h3><b><i>2.&nbsp; Beskriv:&nbsp; En type af samtidighedsproblemer.<br><br>&nbsp;&nbsp;&nbsp;&nbsp; Og gerne praktisk?</i></b></h3>
+      <br>
+      <hr>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+      <br>
+      <hr>
+      <br>
+      <p><a th:href="@{https://www.gatevidyalay.com/concurrency-problems-in-transaction/}" href="https://www.gatevidyalay.com/concurrency-problems-in-transaction/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - gatevidyalay.com</a></p>
+      <h4><b>Concurrency Problems | DBMS</b></h4>
+      <h5><i></i></h5>
+
+      <br>
+      <hr>
+      <br>
+
+      <!-- Concurrency Problems - Introduktion -->
+
+      <p>For at sikre ensartethed i databasen.</p>
+      <p>Er det <i>yderst vigtigt.</i></p>
+      <br>
+      <p>At undgå udvikling / sammenstød. </p>
+      <h6><i>Fra spørgsmål 1 sektionen.</i></h6>
+      <br>
+      <p>Af de 4 angivet - Samtidigheds-problemmer.</p>
+
+      <br>
+      <p><u>Concurrency Control Protocols:</u></p>
+      <p>Hjælper med at undgå udviklingen / sammenstød.</p>
+      <p>Af de nedenstående samtidigheds-problemer.</p>
+      <p>Ved at opretholde databasen's sammenhængskraft.</p>
+      <br>
+      <hr>
+      <br>
+      <p></p>
+      <h3><i><u><b>Samtidigheds-problemer i DBMS:</b></u></i></h3>
+      <br>
+      <p><b>Samtidigheds Problemmer</b></p>
+      <h6><i>I transkaktioner.</i></h6>
+      <br>
+      <ul>
+        <li><p><b><i>Dirty Read - Problem.</i></b></p></li>
+        <br>
+        <li><p><b><i>Un-repeatable Read - Problem.</i></b></p></li>
+        <br>
+        <li><p><b><i>Lost Updates - Problem</i></b></p></li>
+        <br>
+        <li><p><b><i>Phantom Read - Problem</i></b></p></li>
+      </ul>
+
+      <br>
+      <hr>
+      <br>
+
+      <!-- Dirty Read - Problem -->
+
+      <h4><i><u><b>Dirty Read - Problem:</b></u></i></h4>
+      <br>
+
+      <p><i><b>'Problemet opstår:</b></i> </p>
+      <br>
+
+      <i><p>Når man læser data - Der skrevet af en ude-frakommende transaktion"</p></i>
+        <br>
+      <i><p>Er der altid en chance for, at den ude-frakommende transaktion.</p></i>
+        <i><p>Kan <i>'roll back'</i> til et senere stadie-punkt.</p></i>
+        <br>
+          <i><p>Ude-frakommende transaktioner.</p></i>
+      <i><p>Kan således få nuværende / øvrige transaktioner. </p></i>
+      <i><p>Til at se en værdi, der ikke eksisterer.</p></i>
+        <br>
+      <i><p>Bliver usammenhængende i databasen.</p></i>
+
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <h5><i><b>Visuel eksempel:</b></i></h5>
+        <br>
+
+        <img th:src="@{img/eksamen1/SPDirty.PNG}" src="../static/img/eksamen1/SPDirty.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+        <h5><b>Udførelse:</b></h5>
+        <br>
+
+        <ol>
+          <li><p>&nbsp;&nbsp;"Bruger - T1" - Ser(R) værdien af "Produkt - (A)".</p></li>
+          <li><p>&nbsp;&nbsp;"Bruger - T1" - Opdatere(W) værdien af "Produkt - (A)" - På websitet.</p></li>
+          <br>
+          <li><p>&nbsp;&nbsp;"Bruger - T2" - Ser(R) værdien af "Produkt - (A)" - Fra websitet.</p></li>
+          <li><p>&nbsp;&nbsp;"Bruger - T2" - Indtaster(W) den opdaterede værdi fra "Produkt - (A)"</p></li>
+          <br>
+          <li><p>&nbsp;&nbsp;"Bruger - T2" - Udfører processen færdig - (Commit)</p></li>
+          <li><p>&nbsp;&nbsp;"Bruger - T1" - Fejler(Failure) i de senere faser - (Rollback) til en forrige fase.</p></li>
+
+        </ol>
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+        <h5><b>Beskrivelse:</b></h5>
+        <br>
+      <ul>
+        <li><p>"Bruger - T2" - Ser - "Dirty Read" værdi af - "Produkt - (A)"</p></li>
+        <h6><i>Indtastet(W) af den ude-frakommende transaktion. - "Bruger - T2".</i></h6>
+        <br>
+        <li><p>"Bruger - T1" - Fejler i de senere faser og 'roll'er-back' til forrige faser.</p></li>
+        <br>
+        <li><p>Derefter står værdien - Som "Bruger - T2" - Der så - Nu til at være forkert.</p></li>
+        <br>
+        <li><p>Derved bliver databasen usammenhængende.</p></li>
+
+      </ul>
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <h5><u><b>Praktisk - eksempel:</b></u></h5>
+      <br>
+      <p><a th:href="@{https://dotnettutorials.net/lesson/dirty-read-concurrency-problem-sql-server/}" href="https://dotnettutorials.net/lesson/dirty-read-concurrency-problem-sql-server/" target="_blank" class="btn btn-default btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - dotnettutorials.net</a></p>
+      <h4><b>Dirty Read Concurrency Problem</b></h4>
+      <h5><i>In SQL Server</i></h5>
+
+      <br>
+      <hr>
+      <hr>
+      <br>
+
+      <!-- Un-repeatable - Problem -->
+
+      <h4><i><u><b>Un-repeatable Read - Problem:</b></u></i></h4>
+      <br>
+
+      <p><i><b>'Problemet opstår:</b></i> </p>
+      <br>
+
+        <p><i>Når en transaktion - Kommer til at blive set - U-gentaget. ( Un-repeated ) </i> </p>
+        <br>
+      <p><i>Er der altid en chance for, at den ude-frakommende transaktion.</i></p>
+        <br>
+      <p><i>DVS. Forskellige værdier, af den samme variabel.</i></p>
+      <p><i>Er stadig i dens forskellige 'Read-Operations.' </i></p>
+        <h6><i>Selv når den ikke. - Har opdateret sin værdi.</i></h6>
+
+
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <h5><i><b>Visuel eksempel:</b></i></h5>
+      <br>
+
+      <img th:src="@{img/eksamen1/SPUnrepeated.PNG}" src="../static/img/eksamen1/SPUnrepeated.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <h5><b>Udførelse:</b></h5>
+      <br>
+      <ol>
+        <li><p>&nbsp;&nbsp;"Bruger - T1" - Ser(R) værdien af "Produkt - (X)" - ( F.eks: X = 10 ).</p></li>
+        <br>
+        <li><p>&nbsp;&nbsp;"Bruger - T2" - Vurder(R) også værdien af "Produkt - (X)" - ( X = 10 ).</p></li>
+        <br>
+        <li><p>&nbsp;&nbsp;"Bruger - T1" - Opdaterer(W) værdien af "Produkt - (X)" - ( F.eks. fra 10 til 15 ) på websitet.</p></li>
+        <br>
+        <li><p>&nbsp;&nbsp;"Bruger - T2" - Ser(R) igen værdien af "Produkt - (X)" - ( Men = 15 Fremfor original 10 ).</p></li>
+
+
+      </ol>
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <h5><b>Beskrivelse:</b></h5>
+      <br>
+      <ul>
+        <li><p>"Bruger - T2" - Kan se en anden værdi - Af "Produkt - (X)"</p></li>
+        <p>I sin anden fremvisning af værdien (X) - ( 10 --> 15 ).</p>
+        <br>
+        <li><p>"Bruger - T2" - Undrer sig over? - Hvordan værdien af "Produkt - (X)"</p></li>
+        <p>Blev ændret? - Fordi ifølge vilkårene - Kører processen i baggrunden. </p>
+      </ul>
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+      <h5><u><b>Praktisk - eksempel:</b></u></h5>
+      <br>
+      <p><a th:href="@{https://dotnettutorials.net/lesson/non-repeatable-read-concurrency-problem/}" href="https://dotnettutorials.net/lesson/non-repeatable-read-concurrency-problem/" target="_blank" class="btn btn-default btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - dotnettutorials.net</a></p>
+      <h4><b>Non-Repeatable Read Concurrency Problem</b></h4>
+      <h5><i>In SQL Server</i></h5>
+
+      <br>
+      <hr>
+      <hr>
+      <br>
+
+      <!-- Lost Update - Problem -->
+
+      <h4><i><u><b>Lost Updates - Problem:</b></u></i></h4>
+      <br>
+
+      <p><i><b>'Problemet opstår:</b></i> </p>
+      <br>
+
+      <p><i>Når flere transaktioner sker og udføres samtidigt.</i></p>
+      <p><i>Fra 1 - Til flere - Transaktioner går tabt.</i></p>
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <h5><i><b>Visuel eksempel:</b></i></h5>
+      <br>
+
+      <img th:src="@{img/eksamen1/SPLost.PNG}" src="../static/img/eksamen1/SPLost.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <h5><b>Udførelse:</b></h5>
+      <br>
+      <br>
+
+      <ol>
+        <li><p>&nbsp;&nbsp;"Bruger - T1" - Vurder(R) værdien af "Produkt - (A)" - ( F.eks - A = 10 ).</p></li>
+        <br>
+        <li><p>&nbsp;&nbsp;"Bruger - T2" - Opdaterer(W) værdien til "Produkt - (A)" - ( F.eks - A = 15 ) på websitet.</p></li>
+        <br>
+        <li><p>&nbsp;&nbsp;"Bruger - T2" - Ændre blindt(W) - "Produkt - (A)" til = 25 ( <i>Read Before Write</i> ) på websitet.</p></li>
+        <br>
+        <li><p>&nbsp;&nbsp;"Bruger - T2" - Udfører processen færdig - (Commit)</p></li>
+        <br>
+        <li><p>&nbsp;&nbsp;Når "Bruger - T1" - Udfører processen færdig - (Commit) + 'Loader' - "Produkt - (A)" - Værdi = 25 i databasen.</p></li>
+
+      </ol>
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <h5><b>Beskrivelse:</b></h5>
+      <br>
+      <ul>
+        <li><p>"Bruger - T1" - Indtaster den <i>'over-skrevet'</i>&nbsp;  værdi - Af "Produkt - (A)" - I databasen.</p></li>
+        <br>
+        <li><p>Derefter går opdatering fra - "Bruger - T1" - Originale værdi - Tabt</p></li>
+        <br>
+        <li><p>Problemet opstår af en - (Write-Write conflict.)</p></li></p></li>
+        <br>
+        <li><p>I en (Write-Write conflict) - Er der 2 <i>'writes'</i></p></li>
+        <p>1 for hver transaktion - På det samme data-object </p>
+        <p>Uden nogen 'Read' i mellem ( In the middle ) transaktionerne.</p>
+      </ul>
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+      <h5><b>Praktisk - eksempel:</b></h5>
+      <br>
+
+      <p><a th:href="@{https://dotnettutorials.net/lesson/sql-server-lost-update-concurrency-problem/}" href="https://dotnettutorials.net/lesson/sql-server-lost-update-concurrency-problem/" target="_blank" class="btn btn-default btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - dotnettutorials.net</a></p>
+      <h4><b>Lost Update Concurrency Problem</b></h4>
+      <h5><i>In SQL Server</i></h5>
+
+      <br>
+      <hr>
+      <hr>
+      <br>
+
+      <!-- Phantom Ream - Problem -->
+
+      <h4><i><u><b>Phantom Read - Problem:</b></u></i></h4>
+      <br>
+
+      <p><i><b>'Problemet opstår:</b></i> </p>
+      <br>
+
+      <p><i>Når en transaktion 'Reads' - En variabel fra websitet.</i></p>
+      <p><i>Når den 'Reads' - Den samme variabel senere hen.</i></p>
+      <p><i>Og finder ud af - At variablen <b>ikke</b> eksisterer mere.</i></p>
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <h5><i><b>Visuel eksempel:</b></i></h5>
+      <br>
+
+      <img th:src="@{img/eksamen1/SPPhantom.PNG}" src="../static/img/eksamen1/SPPhantom.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <h5><b>Udførelse:</b></h5>
+      <br>
+
+      <ol>
+        <li><p>&nbsp;&nbsp;"Bruger - T1" - Ser(R) - "Produkt - (X)."</p></li>
+        <br>
+        <li><p>&nbsp;&nbsp;"Bruger - T2" - Ser(R) - "Produkt - (X)."</p></li>
+        <br>
+        <li><p>&nbsp;&nbsp;"Bruger - T1" - Sletter(Delete) - "Produkt - (X)."</p></li>
+        <br>
+        <li><p>&nbsp;&nbsp;"Bruger - T2" - Forsøger at se(Read) - "Produkt - (X)" - Men finder det ikke.</p></li>
+
+      </ol>
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <h5><b>Beskrivelse:</b></h5>
+      <br>
+      <ul>
+        <li><p>"Bruger - T2" - Finder, at der ikke eksisterer.</p></li>
+        <p>Nogen variabel X, - Når den forsøger - At 'Read' - "Produkt - X" igen.</p>
+        <br>
+        <li><p>"Bruger - T2" - Undrer sig over, hvem der har slettet variablen X?</p></li>
+        <p>Fordi ifølge vilkårene - Kører processen i baggrunden.</p>
+
+      </ul>
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+      <h5><b>Praktisk - eksempel:</b></h5>
+      <br>
+
+      <p><a th:href="@{https://dotnettutorials.net/lesson/phantom-read-concurrency-problem-sql-server/}" href="https://dotnettutorials.net/lesson/phantom-read-concurrency-problem-sql-server/" target="_blank" class="btn btn-default btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - dotnettutorials.net</a></p>
+      <h4><b>Phantom Read Problem</b></h4>
+      <h5><i>In SQL Server</i></h5>
+
+
+      <br><br>
+
+      <hr>
+
+      <br><br>
+
+      <a th:href="@{/eksamen3}" href="eksamen3.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+
+    </div> <!-- End line - Spørgsmål 2 -->
+
+
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+
+
+    <!-- Spørgsmål 3 -->
+
+    <div id="menu3_3" class="tab-pane fade">
+      <br>
+      <h3><b><i>3.&nbsp; Findes der nogle standard løsninger?<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Til at løse samtidighedsproblemer på?</i></b></h3>
+      <br>
+      <hr>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+      <br>
+      <hr>
+      <br>
+      <p><a th:href="@{https://www.informit.com/articles/article.aspx?p=22681&seqNum=3/}" href="https://www.informit.com/articles/article.aspx?p=22681&seqNum=3/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - informit.com</a></p>
+      <h4><b>Preventing Multi-User Concurrency Problems</b></h4>
+      <h5><i>Published Book:&nbsp;&nbsp; Aug 6, 2001</i></h5>
+      <br>
+      <hr>
+      <br>
+
+      <h5><b><u>Mulige løsninger</u></b></h5>
+      <br>
+      <ol>
+        <b><li><p>&nbsp;&nbsp; Ignore it</p></li></b>
+          <b><li><p>&nbsp;&nbsp; Locking</p></li></b>
+            <b> <li><p>&nbsp;&nbsp; Read Before Write</p></li></b>
+              <b><li><p>&nbsp;&nbsp; Timestamping</p></li></b>
+      </ol>
+      <br>
+      <hr>
+      <br>
+      <h4><b><i>1. Ignore it - ( Ignorer det )</i></b></h4>
+      <br>
+
+      <p>Den simple teknik er bare at ignorere det.</p>
+      <p><i>- I håb om at det aldrig vil ske… </i></p>
+      <p>At der ikke vil forekomme et forfærdeligt resultat?</p>
+      <br>
+      <p><i>Lyder uacceptabelt… </i></p>
+      <p>Men afhængigt af applikationen udforming? </p>
+      <p>Vil det bruges med en vis <u><i>succes rate.</i></u></p>
+      <h6><i>”Fake it – To make it”</i></h6>
+      <br>
+      <br>
+      <p>Tænk på et program - Hvor brugerne er <i>’selv-ansvarlige’</i> for opdatering af egne data.</p>
+      <p>Såsom - Deres oplysninger på en online funktionalitet.</p>
+      <br>
+      <p>Den her form for applikation…</p>
+      <p>Opstår problemet <b><i>”Lost Updates”</i></b> meget sjældent. </p>
+      <p>Fordi en 1 bruger - Ikke bør være to områder - På én gang. </p>
+      <br>
+      <p>Den her teknik, har den fordel, at det kræver ikke mere implementeret kode, efterfølgende.</p>
+      <p>Er hovedsageligt meget... Og normalt uacceptabelt og upassende. </p>
+      <p>I vilkår hvor selskaber og penge er involveret. </p>
+
+      <br>
+      <hr>
+      <br>
+
+      <h4><b><i>2. Locking - ( Låser )</i></b></h4>
+      <br>
+      <p>Populær teknik - For at undgå <b><i>”Lost Updates”</i></b> – Problem </p>
+      <br>
+      <p>Er ved at bruge <b>locking techniques.</b></p>
+      <p>Når en <b>’Record’</b> hentes - Og muligvis, vil blive opdateret.</p>
+      <br>
+      <p>Vil en applikation fortælle ens DBMS - Om at <b><i>’lock the record.’</i></b> </p>
+      <p>Så andre processer - Ikke kan hente og opdatere en record.</p>
+      <br>
+      <p>Processen fortæller grundlæggende til ens DBMS. </p>
+      <p><i>"Jeg bruger den her record - Så lad ikke andre - Få adgang til den her record."</i></p>
+      <br>
+      <p>Den her type <b>locking,</b> er kaldes også: <b><i>”pessimistic locking.”</i></b></p>
+      <p>Bruges til at undgå <b>”Lost Updates Problems”</b> </p>
+      <p>Men har desværre, også sine egne rammer af problemer.</p>
+      <br>
+      <p><i>Ikke alle DBMS'er</i> – Supporter konceptet med <b>Record Locking.</b> </p>
+      <p>Nogle supporter kun <b>”Page Locking.”</b></p>
+      <br>
+      <p><i>Page Locking – Locks</i> ( låser ) en stor del af data’erne.  </p>
+      <p>Så man kan undgå - <i>At mere end 1 record, bliver hentet.</i> </p>
+      <br>
+      <p><b><i>Et værre vilkår…</i></b></p>
+      <p>Er at nogle DBMS'er supporter kun <i>locking</i> på et  <b><i>”Tabel level.”</i></b></p>
+      <p>Nogle DBMS, supporter slet ikke nogen <i>locking.</i></p>
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <h5><u><b>Et andet problem med locking:</b></u></h5>
+      <p>Er hvordan DBMS - Håndterer en anmodning ( request ) om en record. </p>
+      <p><i>- Der allerede er låst i forvejen.</i></p>
+      <br>
+      <p>Når det her sker…&nbsp; Bliver der ikke straks returneret - Med en fejl besked.</p>
+      <p>Der fortæller brugeren – <i>”That the record is being used”.</i> </p>
+      <br>
+      <p>I stedet…&nbsp; Venter processen i en bestemt tids-periode.&nbsp;&nbsp;   ”I håb om”</p>
+      <p>At processen der <i>'lock the record,'</i> vil frigøre den påtaget record. </p>
+      <br>
+      <p>Til sidst…&nbsp; Vil en <b>"time-out"</b> fejl besked blive returneret. </p>
+      <p>Hvis DBMS processen opgiver - At vente på the record vil blive frigjort. </p>
+      <br>
+      <p>Den her timeout-periode - Er typisk en <i>Configuration settings issue.</i> </p>
+      <p>Processen kan forekomme - <i>Fra et par sekunder - Til flere minutter.</i></p>
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <p>Hvis man er en bruger - Af et bestemt program… </p>
+      <p>Som <i>”locks records,”</i> - Og man anmoder ( requester ) - Om en record.</p>
+      <p>Hvor en anden bruger allerede har locked - Den requested record.</p>
+      <br>
+      <p>Skal man vente…&nbsp; Indtil the record - Er frigjort af den anden bruger.</p>
+      <p>Eller…&nbsp; Indtil DBMS returnerer en <i>"time-out"</i>  fejl-besked. </p>
+      <br>
+      <p>I begge tilfælde…&nbsp; Skal man sidde og vente.</p>
+      <p>Mens ens ansøgning ( application ) – Bare ender i en in-aktiv tilstand. </p>
+      <p>Der sker ingenting, og resulterer ofte i nye - <b><i>Blocking problems.</i></b> </p>
+      <br>
+      <p>Processen forholder sig også til den bruger,</p>
+      <p>der anmoder om the record først</p>
+      <br>
+      <p>Det tager lang tid at foretage ændringer i the record</p>
+      <p>I stedet for at processen forholder, sig til den bruger.</p>
+      <p>Der foretager ændringerne hurtigst.</p>
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <p><b><i>Locking techniques</i></b> - Kræver også… </p>
+      <p>At en forbindelse til ens DBMS ( retained )</p>
+      <p>Vedholdes i hele varigheden af the locking process.</p>
+      <br>
+      <p>Hvilket som ikke let kan gøres af <i>web-applikationer.</i></p>
+      <p>Der anvender <i>the stateless HTTP-protocol.</i></p>
+
+      <br>
+      <hr>
+      <br>
+
+      <h4><b><i>3. Read Before Write - ( Læs før du skriver )</i></b></h4>
+      <br>
+      <p>En teknik - Der virker til <i>web-applikationer.</i></p>
+      <br>
+      <p>Når der hentes en record - Der senere kan blive opdateret.</p>
+      <p>Gemmes dens indhold - Af alle værdier i the record. </p>
+      <p>Et bestemt sted - Som <i>”user state information”</i></p>
+      <br>
+      <p>Det her er <b><i>"before image"</i></b>&nbsp; - Af the record</p>
+      <p>Når brugeren foretager ændringer i dataen. </p>
+      <p>Gemmes de i et <b><i>"new image"</i></b> </p>
+      <p>af the record i hukommelsen. ( The Memory )</p>
+      <br>
+      <p>Inden den nye version - Af the record overføres til databasen.</p>
+      <p>Hentes <i>the record</i> igen til et tredje ( third ) <b><i>"actual image"</i></b> af the record. </p>
+      <br>
+      <p>Værdierne for hvert field i <b><i>”before image”</i></b></p>
+      <p>Er sammenlignet med værdierne for the fields i det <b><i>”actual image.”</i></b></p>
+      <br>
+      <p>Hvis der er noget, der er anderledes?  - Så ved applikationen…</p>
+      <p>At en anden bruger ( eller proces ) - Skal have foretaget ændringer - i the record. </p>
+      <br>
+      <p>Applikationen annullerer ( cancel ) update processen.</p>
+      <p>Og viser en besked til brugeren om – <i>”At the record er blevet opdateret.”</i></p>
+      <p>Efter brugeren først hentede den. Og at brugeren skal starte <i>update task</i> forfra.</p>
+      <h6><i>Fra begyndelsen ad.</i></h6>
+      <br>
+      <p>Teknikken kan være brugbare… </p>
+      <p>Den fører ikke til - <b><i>Blocking problems.</i></b></p>
+      <br>
+      <p>Processen forholder sig til den bruger.</p>
+      <p><i>Der foretager ændringerne hurtigst.</i></p>
+      <br>
+      <p>I stedet for at forholde sig til den bruger. </p>
+      <p><i>Der henter the record først.</i></p>
+      <h6><i>Som <u>locking techniques</u> gjorde...</i> </h6>
+      <br>
+      <p><b><i>Read Before Write</i></b> har også fordelen af.</p>
+      <p>At være fuldstændig <i><b>DBMS-indepedent.</b> ( Uafhængig )</i> </p>
+      <br>
+      <p>Det virker også...&nbsp; For ikke-DBMS data stores. </p>
+      <p>Det kræver ikke, at der tilføjes yderligere fields til databasen. </p>
+      <br>
+      <p>Men hvis antallet af fields i the record er stort. </p>
+      <p>Vil det resultere i en masse ekstra kodning.</p>
+      <p>At sammenligne <b><i>”before-image”</i></b>&nbsp; med det <b><i>”actual-image.”</i></b></p>
+
+      <br>
+      <hr>
+      <br>
+
+      <h4><b><i>4. Timestamping - ( Tids-stempel )</i></b></h4>
+      <br>
+      <p>Teknikken der kan være bedst anvendt - Til at undgå samtidigheds-problemer.</i></p>
+      <p>Hvor hver record i databasen indeholder et <b><i>"last modified date/time" field.</i></b>  </p>
+      <br>
+      <p>Den her værdi opdateres efterfølgende.</p>
+      <p>Hver gang en ny record indsættes.</p>
+      <p>Og når en eksisterende record opdateres. </p>
+      <br>
+      <p><b><i>”Timestamping”</i></b> fungerer meget som - <i>Read Before Write</i> teknikken.</p>
+      <p>Bortset fra…&nbsp; At i stedet for, at gemme hele the record, som et <i>”before-image.”</i></p>
+      <p>Er det kun - Det sidst ændrede <i><b>date/time field,</b></i> der skal gemmes som <i>user state information.</i> </p>
+      <br>
+      <p>Ligeledes…&nbsp; Lige før, man ændre en record – Bliver record’en gemt i databasen.</p>
+      <p>Det kun <b><i>”the Timestamping field”</i></b>&nbsp; – Som bliver hentet og sammenlignet med det <b>Timestamping.</b></p>
+      <p>Der blev gemt, da the record, blev hentet første gang. </p>
+      <br>
+      <p>På det her punkt fungerer <i>Timestamping</i> ligesom <i>Read Before Write.</i>  </p>
+      <p>Hvis <i>timestamping</i> værdierne er forskellige - Så ved applikationen. </p>
+      <br>
+      <p>At en anden bruger har foretaget ændringer i the record,</p>
+      <p>Så den annullerer ( Cancel ) update processen, og en fejl besked - Vises til brugeren.</p>
+      <br>
+      <br>
+
+      <h5><b><i>Timestamping  -  Som en generel løsning:</i></b></h5>
+      <br>
+      <ul>
+        <li><p><i>Den er DBMS-independent ( Uafhængig. )</i></p></li>
+        <br>
+        <li><p><i>Det fungerer selv med:   Non-DBMS data. </i></p></li>
+        <h6><i>- Såsom ’Random access’ filer.</i></h6>
+        <br>
+        <li><p><i>Det kræver ikke - At programmet bevarer ( retained ) en forbindelse med databasen</i></p></li>
+        <h6><i>Så det fungerer i ’stateless enviroments’ - Som f.eks. HTTP.</i></h6>
+        <br>
+        <li><p><i>Det er lettere at kode - End at Read Before Write. </i></p></li>
+
+      </ul>
+
+      <br><br>
+
+      <hr>
+
+      <br><br>
+
+      <a th:href="@{/eksamen3}" href="eksamen3.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+
+    </div> <!-- End line - Spørgsmål 3 -->
+
+
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+
+
+    <!-- Spørgsmål 4 -->
+
+    <div id="menu3_4" class="tab-pane fade">
+      <br>
+      <h3><b><i>4.&nbsp; Beskriv:&nbsp; Deadlock?</i></b></h3>
+      <br>
+      <hr>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+      <br>
+      <hr>
+      <br>
+      <p><a th:href="@{https://en.wikipedia.org/wiki/Deadlock}" href="https://en.wikipedia.org/wiki/Deadlock/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - wikipedia.org</a></p>
+      <h4><b>Deadlock</b></h4>
+      <h5><i></i></h5>
+      <br>
+      <br>
+      <p><a th:href="@{https://en.wikipedia.org/wiki/Dining_philosophers_problem}" href="https://en.wikipedia.org/wiki/Dining_philosophers_problem/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - wikipedia.org</a></p>
+      <h4><b>Dining philosophers problem</b></h4>
+      <h5><i></i></h5>
+      <br>
+      <hr>
+      <br>
+
+
+      <h3><b><i><u>DEADLOCK:</u></i></b></h3>
+      <br>
+      <p><i>”En systemtilstand - Hvor ingen fremskridt er mulige.”</i></p>
+      <br>
+      <p><i>”At skabe ”passage” – <u>Bottleneck effekt.</u></i></p>
+      <br>
+      <br>
+      <h5><i><u>I concurrent ( samtidighed ) computing.</u></i></b></h5>
+      <br>
+      <p>Er deadlock enhver situation.</p>
+      <p>Hvor ingen medlemmer af en gruppe.</p>
+      <h6><i>( Såsom enheder / processer.  Eller personer / trafik )</i></h6>
+      <br>
+      <p>Kan fortsætte…&nbsp;&nbsp; Fordi hvert medlem…&nbsp;&nbsp; Venter på at et andet medlem.</p>
+      <p>Inklusive...&nbsp;&nbsp; En selv - Foretager en handling / proces færdig.</p>
+      <br>
+      <p><u>Såsom:</u></p>
+      <p><i>”At sende en besked / packet”</i></p>
+      <p>eller... </p>
+      <p><i>”Frigive en lås / åben en dør – for andre at 'kunne' passere igennem.</i></p>
+      <br>
+      <br>
+      <p>Deadlocks er et almen problem i flere tekniske led.&nbsp;&nbsp;  <u>Såsom:</u><i>” Et samle bånd.”</i></p>
+      <br>
+      <p>Men mere i <i>computing og distributed systems.</i></p>
+      <p>Fordi systemer i de her massive sammenhænge.</p>
+      <br>
+      <p>Ofte bruger software, eller hardware - <i>'Locks'</i> til at administrere, </p>
+      <p>delte ressourcer og implementere proces-synkroniseringer.</p>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/deadlock1.PNG}" src="../static/img/eksamen1/deadlock1.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <h5><i><u>I et operativ system:</u></i></b></h5>
+      <p>Opstår Deadlock - Når en <i><u>proces,</u></i> eller <i><u>tråd</u></i> går ind i en <b><i>”waiting state”</i></b></p>
+      <br>
+      <p>Fordi en anmodet ( requested ) <i>system-ressource</i> tilbageholdes af:</p>
+      <ul>
+        <li><i><p>En anden ventende proces.</p></i></li>
+        <li><i><p>Som igen venter på en anden ressource.</p> </i></li>
+        <li><i><p>Der tilbageholdes af en anden vente proces.</p></i></li>
+      </ul>
+      <br>
+      <p>Hvis en proces forbliver <i>in-aktiv i evighed</i>  - Ude i stand til at ændre sin tilstand.</p>
+      <br>
+      <p>Fordi ressourcer som primære processen anmoder om - Bliver anvendt af en anden proces.</p>
+      <p>Der selv venter forgæves…&nbsp; Så er <i>systemet</i> endt i en <b><i>Deadlock.</i></b> ( <i>Form for stoppeklods</i> ).</p>
+      <br>
+      <h5><i><u>I et kommunikations system:</u></i></b></h5>
+      <p>Opstår <i>Deadlock</i>  - Hovedsageligt på <i>grund af tab.</i></p>
+      <p>Eller <i>korruption / forstyrrelser</i> - Af signaler, i forhold til - En <i>'strid'</i> om ressourcer.</p>
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <p>De fleste <i>moderne operativ-systemer</i> - <i>Kan ikke forhindre deadlock.</i></p>
+      <br>
+      <p><i>Når et deadlock opstår...</i></p>
+      <p>Reagerer forskellige operativ-systemer på dem.</p>
+      <p>På forskellige ikke standard vilkår. </p>
+      <br>
+      <p>De fleste forløb virker ved at undgå. </p>
+      <p>En af de <i>4 almen tilstande</i> - i at opstå. </p>
+      <h6><i>”Bestemt den fjerde.”</i></h6>
+      <br>
+      <br>
+      <p><u>De vigtigste forløb:</u></p>
+      <ul>
+        <li><b><h4>Ignoring deadlock</h4></b></li>
+        <li><b><h4>Detection</h4></b></li>
+        <li><b><h4>Prevention</h4></b></li>
+        <li><b><h4>Deadlock avoidance</h4></b></li>
+      </ul>
+      <br>
+      <br>
+      <p><a th:href="@{https://en.wikipedia.org/wiki/Deadlock}" href="https://en.wikipedia.org/wiki/Deadlock/" target="_blank" class="btn btn-default btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - wikipedia.org</a></p>
+      <h5><b>- Yderligere forklaring af forløb -</b></h5>
+      <h5><i></i></h5>
+      <br>
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <h5><b><u>Ekstra visuel eksempel:</u></b></h5>
+      <br>
+      <p>Cirklen processer har brug for kontakt </p>
+      <p>af ressourcer til at fortsætte udførelsen:</p>
+      <br>
+      <p>P1 søger ressource af R1.</p>
+      <p>og er i kontakt med ressourcer fra R2.</p>
+      <br>
+      <p>P2 søger ressource af R2</p>
+      <p>og er i kontakt med ressourcer fra R1.</p>
+      <br>
+      <p><i>”Ingen af processerne kan fortsætte.”</i></p>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/deadlock2.PNG}" src="../static/img/eksamen1/deadlock2.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <br>
+      <br>
+      <hr>
+      <br>
+
+      <h3><b><u>Dining philosophers problem</u></b></h3>
+      <br>
+      <p><i>Det er et eksempel problem - Indenfor datalogi.</i> </p>
+      <br>
+      <p>Der ofte bruges i samtidigheds <i>algoritme-design.</i></p>
+      <p>For at <i>illustrere synkroniserings-problemer.</i></p>
+      <p>Det er varieret teknikker - Til at løse dem med.</p>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+      <h5><b><u>Originalt - Visuel repræsentation:</u></b></h5>
+      <br>
+      <img th:src="@{img/eksamen1/Dining1.PNG}" src="../static/img/eksamen1/Dining1.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+
+      <h5><b><u>Forklaring på problemfeltet:</u></b></h5>
+      <br>
+      <p>5 filosoffer spiser sammen, ved det samme bord. </p>
+      <p>Hver filosof har deres egen plads ved bordet. </p>
+      <br>
+      <p>Der er <i>1 gaffel</i> imellem hver tallerken. </p>
+      <br>
+      <p>Spaghetti bliver serveret, som skal <i>spises med to gafler.</i> </p>
+      <br>
+      <p>Hver filosof kan kun <i>skiftevis tænke og spise.</i> </p>
+      <br>
+      <p>1 filosof kan kun spise spaghetti... </p>
+      <p>Når personen har både <i>venstre</i> og <i>højre gaffel.</i></p>
+      <br>
+      <p>Der vil således… &nbsp; Kun være <i>to gafler 'tilgængelige.'</i></p>
+      <p>Når de to nærmeste sidemænd – <i>Sidder og tænker, og ikke spiser.</i> </p>
+      <p>Når en individuel filosof er <i>færdig med at spise,</i> lægges begge gafler fra sig. </p>
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <p><u><b>Problemet opstår:</b></u></p>
+      <p>Hvordan man designer et <b><i>regime?</i></b> ( <i>En samtidig algoritme</i> )</p>
+      <p>Således…&nbsp; At ingen filosof vil sulte.</p>
+      <br>
+      <p>DVS. Hver enkelt filosof - <i>'Kan for evigt fortsætte.'</i></p>
+      <p>Veksle mellem at, spise og tænke.</p>
+      <br>
+      <p><i>At det kan antages…&nbsp; At ingen filosof kan vide?</i> </p>
+      <br>
+      <p>Hvornår andre måske vil, spise eller tænke?</p>
+      <p><i>”Det et spørgsmål om en <u>incomplete information.”</u></i></p>
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+      <h5><b><u>Redigeret - Visuel repræsentation:</u></b></h5>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/Dining2.PNG}" src="../static/img/eksamen1/Dining2.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+
+
+      <h5><b><u>Problemfeltet:</u></b></h5>
+      <br>
+      <p><u>Problemet var designet til at illustrere:</u></p>
+      <p><i>Udfordringerne ved at undgå deadlock. </i></p>
+      <br>
+      <p>For at se ad…&nbsp; Om en ordentlig løsning, på det her problemfelt.</p>
+      <p><i>Ikke er indlysende</i> - Skal man overveje et form for forslag.</p>
+      <br>
+      <p><u>Hvor hver filosof – Er de instrueret i at opføre sig som følger:</u></p>
+      <br>
+      <ul>
+        <li><b><p>Tænk indtil - Venstre gaffel er tilgængelig - Når det er – Tag gaflen op.</p></b></li>
+        <li><b><p>Tænk indtil - Den ’rigtige’ gaffel er tilgængelig - Når det er - Tag gaflen op.</p></b></li>
+        <li><b><p>Når begge gafler holdes i hænderne - Spis i et defineret tidsrum.</p></b></li>
+        <li><b><p>Sæt venstre gaffel ned.</p></b></li>
+        <li><b><p>Sæt den højre gaffel ned.</p></b></li>
+        <li><b><p>Gentag fra begyndelsen.</p></b></li>
+      </ul>
+      <br>
+      <br>
+      <p>Men filosofferne vil hver især - Tænke i et <i>udefineret tidsrum.</i> </p>
+      <p>Man kan ende med at holde en venstre gaffel – Og tænke.</p>
+      <p>Stirre på højre side af tallerkenen - Ude i stand til at spise.</p>
+      <p>Fordi der ikke er nogen højre gaffel - <i>Indtil filosofferne sulter.</i></p>
+
+
+      <br><br>
+
+      <hr>
+
+      <br><br>
+
+      <a th:href="@{/eksamen3}" href="eksamen3.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+
+    </div> <!-- End line - Spørgsmål 4 -->
+
+
+  </div>
+  <br>
+  <hr>
+  <!--  <p class="act"><b>Active Tab</b>: <span></span></p>
+   <p class="prev"><b>Previous Tab</b>: <span></span></p> -->
+</div>
+
+<script>
+  $(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+      $(this).tab('show');
+    });
+    $('.nav-tabs a').on('shown.bs.tab', function(event){
+      var x = $(event.target).text();         // active tab
+      var y = $(event.relatedTarget).text();  // previous tab
+      $(".act span").text(x);
+      $(".prev span").text(y);
+    });
+  });
+</script>
+
+</body>
+</html>

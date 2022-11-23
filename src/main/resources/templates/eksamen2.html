@@ -1,0 +1,2154 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+  <title>Teknologi - Lærings mål.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <br>
+  <h2><b><i>Talsystemer - Debug.</i>&nbsp;&nbsp;&nbsp;<i class="fa fa-sort-numeric-desc" style="font-size:24px"></i></b></h2>
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> <b>-</b> Vælg et spørgsmål<b> -</b> </i></p>
+  <br>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#eksamen2" class="bg-info" style="font-weight: bold"><i class="fa fa-caret-square-o-left"></i>&nbsp;&nbsp;Home</a></li>
+    <li><a href="#menu2_1" class="bg-primary" style="font-weight: bold">1</a></li>
+    <li><a href="#menu2_2" class="bg-primary" style="font-weight: bold">2</a></li>
+    <li><a href="#menu2_3" class="bg-primary" style="font-weight: bold">3</a></li>
+    <li><a href="#menu2_4" class="bg-primary" style="font-weight: bold">4</a></li>
+    <li><a href="#menu2_5" class="bg-primary" style="font-weight: bold">5</a></li>
+
+
+  </ul>
+
+  <div class="tab-content">
+    <div id="eksamen2" class="tab-pane fade in active">
+
+      <br><br>
+
+      <a th:href="@{/}" href="index.html" class="btn btn-info" style="font-weight: bold"><i class="fa fa-mail-reply"></i>&nbsp;&nbsp;Gå til Home...</a>
+
+
+    </div>
+
+
+
+    <!-- Spørgsmål 1 -->
+
+    <div id="menu2_1" class="tab-pane fade">
+      <br>
+      <h3><b><i>1.&nbsp; Forklar:&nbsp; Hvad vi kan bruge følgende talsystemer til?<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Samt deres navne.</i></b></h3>
+      <br>
+      <ul>
+        <li><i><p>Base 16 – tal-systemet</p></i></li>
+        <li><i><p>Base 10 – talsystemet</p></i></li>
+        <li><i><p>Base 2 &nbsp;– talsystemet</p></i></li>
+      </ul>
+      <br>
+      <hr>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+      <br>
+      <hr>
+      <br>
+      <p><a th:href="@{https://www.youtube.com/watch?v=-E8GiMe2pb8}" href="https://www.youtube.com/watch?v=-E8GiMe2pb8/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - Video</a></p>
+      <h4><b>Matematik - Talsystemer - Fra Base 2 til 16 - Hvorfor tæller vi som vi gør?</b></h4>
+      <h5>Channel:&nbsp;&nbsp; <i>Sonny Sandberg - 2020</i></h5> <!-- Ændre linket -->
+      <br>
+      <br>
+      <p><a th:href="@{https://www.youtube.com/watch?v=G1fKyBGlUZ8}" href="https://www.youtube.com/watch?v=G1fKyBGlUZ8/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - Video</a></p>
+      <h4><b>Det binære talsystem</b></h4>
+      <h5>Channel:&nbsp;&nbsp; <i>altingflyder - 2017</i></h5> <!-- Ændre linket -->
+      <br>
+      <hr>
+      <br>
+
+      <img th:src="@{img/eksamen1/TALoversigt.PNG}" src="../static/img/eksamen1/TALoversigt.PNG" style="box-shadow: 10px 10px 5px lightgrey" width="300" height="400">
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <hr>
+      <br>
+
+
+      <h3><u><i><b>Gennemgang og uddybning - Tal-systemer:</b></i></u></h3>
+      <br>
+      <h5><u><i>Rækkefølge af tal-systemerne:</i></u></h5>
+      <br>
+
+      <ol>
+        <b><li><p>&nbsp;&nbsp;Base 10</b>&nbsp;&nbsp; - &nbsp; ( <i>Decimal - Tal-system</i> ).</p></li></b>
+        <br>
+        <b><li><p>&nbsp;&nbsp;Base 2</b>&nbsp;&nbsp; &nbsp;&nbsp;-&nbsp;&nbsp; ( <i><u>Bi</u>-nære "Bits" - Tal-system</i> ).</p></li></b>
+        <br>
+        <b><li><p>&nbsp;&nbsp;Base 16</b>&nbsp;&nbsp; - &nbsp; ( <i>Hexa-decimal - Tal-system</i> ).</p></li></b>
+      </ol>
+      <br>
+      <hr>
+      <br>
+
+      <h4><i><b><u>Base 10 - Decimal forklaring:</u> ( 10-tal system )</b></i></h4>
+      <br>
+      <br>
+
+      <!-- Base 10 - Decimal talsystem -->
+
+      <div class="col-md-2">
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 0</b></h5>
+      </div>
+
+      <br>
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img th:src="@{img/eksamen1/PILNED.PNG}" src="../static/img/eksamen1/PILNED.PNG" width="55" height="70">
+      <br>
+
+      <div class="col-md-2">
+          <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 9</b></h5>
+        </div>
+
+      <br>
+      <br>
+      <br>
+
+      <p>I er <i>ti-tal</i> system ( Base 10 ) - Der kan vi kun tælle op til 9.</p>
+      <p>Fordi vi har ikke et fast tal tegn / symbol der indikere et  10 tal. </p>
+      <p>Det er kombineret med 1 symbol + 0 symbol.</p>
+      <br>
+
+      <br>
+
+      <div class="col-md-2">
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 10</b></h5>
+      </div>
+
+      <br>
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img th:src="@{img/eksamen1/PILNED.PNG}" src="../static/img/eksamen1/PILNED.PNG" width="55" height="70">
+      <br>
+
+      <div class="col-md-2">
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 19</b></h5>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <p>Derefter tæller vi op igen.&nbsp;&nbsp; <i>Via 1’ere.</i>  <i>Op til 19.</i>  </p>
+      <p>Men man ender med at tælle op til 9 igen - Med 1 foran.  </p>
+      <p>I Base 10:&nbsp;&nbsp;  Har 0 --> 9   Som samlet giver 10 tal&nbsp;&nbsp; ( 0 er inkluderet )</p>
+      <br>
+      <br>
+      <p>Når vi så passere med <b>20</b> – Starter man forfra via et <i>2 tal foran.</i> </p>
+      <br>
+      <p>Ens <b>0</b> tal --> <b>1’ere tal.</b> </p>
+      <br>
+      <p>Ens <b>2</b> tal --> <b>10’ere tal.</b> &nbsp;&nbsp; Det er <i>10 gange højere.</i></p>
+      <br>
+      <p>Man kan se - Når man tæller op herfra. </p>
+      <p>Kan man se at tallet går op - <i>Til 9 og passere igennem igen.</i></p>
+      <br>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp; - &nbsp; 99</b></h5>
+      </div>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+
+      <p>Det vil sige - At man har <b>9</b> --> <b>10’ere.</b> </p>
+      <br>
+      <p>Plus…&nbsp; Man har talt <b>1’ere</b> op til <b>9 gange.</b>   -->  <b>99</b></p>
+
+      <br>
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp; - &nbsp; 100</b></h5>
+      </div>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+
+      <p>Derfor bliver det <b>100</b> - Ved at tilføje 1 tal - Længst til venstre. </p>
+      <br>
+      <p><u>Man har:</u></p>
+      <br>
+      <p><b>1</b> – <i>100'ere.</i></p>
+      <br>
+      <p><b>0</b> – <i>10’ere</i> </p>
+      <br>
+      <p><b>0</b> – <i>1’ere.</i></p>
+      <br>
+      <p>Derefter fortsætter tal-rækken videre...</p>
+
+      <br>
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp; - &nbsp; 150</b></h5>
+      </div>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+
+      <p>Derfor, når man har 1 cifre mere.&nbsp;&nbsp; - Vil man opnå et tal - Der er 10 gange større.&nbsp;&nbsp;  End før. </p>
+      <p><b>10 * større</b> end <b>100 = 1000</b> --> osv... med fordoblinger. </p>
+
+      <br>
+      <hr>
+      <br>
+
+      <!-- Base 2 - Det binære talsystem -->
+
+      <h4><i><b><u>Base 2 - Det binære - "bits" forklaring</u> ( 2-tal system )</b></i></h4>
+      <br>
+      <br>
+      <p><b>Base 10</b> tal system – Er ikke det eneste tal system der eksistere.</p>
+      <br>
+      <p>Når man anvender en hver form for enhed - <i>Som har en digitale format.</i> </p>
+      <br>
+      <p>Digitale systemer – <i>Bruger 2 tal systemer.</i>   Som hedder <b>Base 2.</b></p>
+      <br>
+      <br>
+      <p>Ved <i>Base 2</i> – Kaldes det <i>Binære tal system</i> </p>
+      <br>
+      <p>Ved det binære betyder - At man har <b>2 dele.</b>  Som kan være <b>0</b> eller <b>1.</b></p>
+      <br>
+      <p>Det kendes også som ( <b>Slukket</b> eller <b>Tændt</b> ) = <i>Stik kontakt.</i> </p>
+      <br>
+      <p>I en computer - Der kan <b>1 bit</b> = Være <i>slukket</i> eller <i>tændt.</i> </p>
+      <br>
+      <p>Har betydning for at <i>computerens interne sammensætning</i> og <i>IP netværk opsætninger.</i></p>
+      <br>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; 1</b></h5>
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 1</b></h5>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+
+      <p>Når det gælder <b>Base 2</b> -  Består kun af <b>2 tal</b> &nbsp; (  <b><i>0  &  1</i></b> )</p>
+      <br>
+      <p>Når tallet når til 1 – Starter den forfra med 0 igen. </p>
+
+      <br>
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; 10</b></h5>
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 2</b></h5>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+
+      <p>Det ser sådan her ud.   Ved base 2 – Der står ikke 10.   Men at vi har 1 + 0. </p>
+      <br>
+      <p>Det vil sige at man har:&nbsp; <b>0</b> – <i>1’ere</i>&nbsp;&nbsp; og  <b>1</b> – <i>2’ere.</i> </p>
+      <br>
+      <br>
+      <p>Hvis man <i>tæller 1</i> mere. </p>
+
+      <br>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; 11</b></h5>
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 3</b></h5>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+      <p>Det er de <i>samme</i> tal.</p>
+      <br>
+      <p>Man har <b>1</b> – <i>1’ere.</i>&nbsp;&nbsp;   Og <b>1</b> – <i>2’ere.</i>&nbsp;&nbsp;  Og det giver <b>3.</b> </p>
+      <br>
+      <p>Hvis man <i>talte 1</i> mere op</p>
+      <br>
+      <p>Vil der i <i>Base 10</i> – Stå <b>4.</b> </p>
+      <br>
+      <p>Men ved ens <i>Base 2</i> – Vil den <i>tælle 1</i> op, hvilket giver os et <i>1 tal.</i> </p>
+      <p>Den vil også <i>tælle den næste tal</i> - I række <b>1</b> op. Som også giver <b>0.</b> </p>
+      <br>
+      <p>Den vil så <i>tælle</i> - Den <i>næste op,</i> og den vil så være <b>1.</b> </p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; 100</b></h5>
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 4</b></h5>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+
+      <p><u>Man har så:</u><br><br> <b>0</b> – <i>1’ere.</i> </p>
+      <br>
+      <p><b>0</b> – <i>2’ere.</i></p>
+      <br>
+      <p><b>1</b> – <i>4’ere.</i> </p>
+      <br>
+      <br>
+      <p>Men i <i>Base 10</i> - Hvor man gik <i>1 til venstre.</i></p>
+      <br>
+      <p>Så blev tallet - <i>10 gange større.</i> </p>
+      <br>
+      <p>Men i <i>Base 2</i> – Bliver det kun talt <i>2 gange.</i>&nbsp;&nbsp;    Derfor hedder det <b>Base 2.</b> </p>
+      <br>
+      <p>Basen beskriver så - Hvor mange tallet, bliver større med.&nbsp; Jo, længere man går til venstre. </p>
+      <br>
+      <br>
+      <p>Hvis man tæller op til <b>9.</b> </p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; 1001</b></h5>
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 9</b></h5>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+
+      <p>Når man så <i>tæller op</i> i <i>Base 10</i> – Vil det blive til <b>10.</b></p>
+      <br>
+      <p>Men det vil så sige at <i>Base 2</i> – Bliver til <b>1 0 1 0.</b> </p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; 1010</b></h5>
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 10</b></h5>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+
+      <p>Så kan man tælle op igen. </b></p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; 1011</b></h5>
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 11</b></h5>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+
+      <p>Også kan man gå videre på den måde… </b></p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; 1111</b></h5>
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 15</b></h5>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+
+      <p>Ved <i>Base 2</i> – Der er <b>15</b> = <b>1 1 1 1</b></p>
+      <br>
+      <p>Er det samme - Som at man har:</p>
+      <br>
+      <p><b>1</b> – <i>1’ere</i>&nbsp;&nbsp;   <b>1</b> – <i>2’ere</i> &nbsp;&nbsp;  <b>1</b> – <i>4’ere</i>&nbsp;&nbsp;  og&nbsp;&nbsp;  <b>1</b> – <i>8’ere.</i></p>
+      <br>
+      <p>Hvis man lægger alle tallene sammen får man - <b>( 1 + 2 + 4 + 8 ) = 15</b></p>
+      <br>
+      <p>Der findes rigtigt mange talsystemer.&nbsp; &nbsp;      <i>”Man kan gå op til 36 talsystemer.”</i> </p>
+      <br>
+      <hr>
+      <br>
+
+      <!-- Base 16 - Det hexa-decimal talsystem -->
+
+      <h4><i><b><u>Base 16 - Det hexa-decimal forklaring</u> ( 16-tal system )</b></i></h4>
+      <br>
+      <p>Indenfor <i>computer verden</i> – Anvender man <b>hexa decimaler</b> </p>
+      <br>
+      <p>Anvendes ved <i>computer-programmering</i> som "kortform" - <i>For det binære talsystem.</i></p>
+      <br>
+      <p>Indenfor <b>"machine-learning"</b> - Er det computerens struktur - Som vi tyder igennem Hexa-decimaler</p>
+      <br>
+      <p><i>Forholder sig således...</i></p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; 0</b></h5>
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 0</b></h5>
+        <h5><b>Base 16 &nbsp;&nbsp; - &nbsp;&nbsp; 0</b></h5>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+
+      <p>Når man prøver at tælle op. </p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; 10</b></h5>
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 2</b></h5>
+        <h5><b>Base 16 &nbsp;&nbsp; - &nbsp;&nbsp; 2</b></h5>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img th:src="@{img/eksamen1/PILNED.PNG}" src="../static/img/eksamen1/PILNED.PNG" width="55" height="70">
+      <br>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; 1001</b></h5>
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 9</b></h5>
+        <h5><b>Base 16 &nbsp;&nbsp; - &nbsp;&nbsp; 9</b></h5>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+
+      <p>Når man når op til <i>Base 10.</i> </p>
+      <p>Så har man ikke flere tal - At vælge imellem.&nbsp;  <i>9 er det højeste tal.</i></p>
+      <br>
+      <p><i>”Hvordan kan Base 16</i> – <i>Skrive et tal - Der er højere end 9 ?”</i></p>
+      <h6><i>Som ikke er et 0 ?</i></h6>
+      <br>
+      <p>Det kan man ved at - <b>Anvende bogstaver.</b> </p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; 1010</b></h5>
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 10</b></h5>
+        <h5><b>Base 16 &nbsp;&nbsp; - &nbsp;&nbsp; A</b></h5>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+
+      <p>Så i stedet for <b>10</b> – Bruger man et <b>A.</b> </p>
+      <br>
+      <p>Det næste tal i rækken er så <b>B.</b> </p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; 1011</b></h5>
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 11</b></h5>
+        <h5><b>Base 16 &nbsp;&nbsp; - &nbsp;&nbsp; B</b></h5>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+
+      <p><i>”Men det er jo ikke et tal?”</i> </p>
+      <p><b>Nej…</b> Det er det ikke.&nbsp;&nbsp;   <i>Men hvad er tal?</i></p>
+      <br>
+      <p>Tal er bare <i>symboler</i> - Som har en form for værdi. </p>
+      <br>
+      <p>Når man laver en <i>streg.</i>&nbsp;&nbsp;   <i>Så betyder det 1.</i></p>
+      <br>
+      <p>Hvis man nu fik lyst til at lave ens talsystemer om imorgen…  </p>
+      <p>Så kan man bare sætte nogen andre værdier på. </p>
+      <br>
+      <p>Ligesom det <i>romerske talsystem:</i>  <b>V = 5</b>  og <b>X = 10</b></p>
+      <br>
+      <br>
+      <p><i>Man prøver at tælle videre op...</i></p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; 1111</b></h5>
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 15</b></h5>
+        <h5><b>Base 16 &nbsp;&nbsp; - &nbsp;&nbsp; F</b></h5>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+
+      <p><b>F = 15</b> – Det er det samme som <i>Base 10 = 15.</i>  </p>
+      <br>
+      <p>Man har talt - Det højeste man kan i - <i>Base 16</i> – Som er <b>15.</b> </p>
+      <br>
+      <ul>
+        <li><p><b>A = 10</b></p></li>
+        <li><p><b>B = 11</b></p></li>
+        <li><p><b>C = 12</b></p></li>
+        <li><p><b>D = 13</b></p></li>
+        <li><p><b>E = 14</b></p></li>
+        <li><p><b>F = 15</b></p></li>
+      </ul>
+      <br>
+      <br>
+      <p>Næste tal i rækken - Bliver derefter <b>( 1 + 0 ).</b></p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; 10000</b></h5>
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 16</b></h5>
+        <h5><b>Base 16 &nbsp;&nbsp; - &nbsp;&nbsp; 10</b></h5>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+
+      <p><u>Det vil sige - At man har:</u> </p>
+      <br>
+      <p><b>0</b> – <i>1’ere</i></p>
+      <br>
+      <p><b>1</b> – <i>16’ere.</i></p>
+      <br>
+      <br>
+      <p>Derefter kan man regne ud - Hvor mange tal man har. = <b>16.</b></p>
+      <br>
+      <p>Hvad så med ens <i>Base 2</i> – Op i tabellen? </p>
+      <br>
+      <p><u>Man har:</u></p>
+      <br>
+      <ul>
+        <li><p>0 – 1’ere.</p></li>
+        <li><p>0 – 2’ere.</p></li>
+        <li><p>0 – 4’ere.</p></li>
+        <li><p>0 – 8’ere. </p></li>
+      </ul>
+      <br>
+      <p>Bortset fra - <b>1</b> – <i>16’ere.</i> </p>
+      <br>
+      <p>Tallet bliver simplethen – Dobbelt så stort. – Hvergang man går <i>1 til venstre.</i> </p>
+      <br>
+      <br>
+      <p>Hvis man prøver at tælle op til <b>20.</b> </p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <div class="col-md-2">
+        <h5><b>Base 2 &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; 10100</b></h5>
+        <h5><b>Base 10 &nbsp;&nbsp; - &nbsp;&nbsp; 20</b></h5>
+        <h5><b>Base 16 &nbsp;&nbsp; - &nbsp;&nbsp; 14</b></h5>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+      <p>Det er <b>20</b> i <i>Base 10.</i> </p>
+      <br>
+      <p>Men i <i>Base 16</i> - Vil det være <b>1 + 4.</b> </p>
+      <br>
+      <p>Men <b>1 0 1 0 0</b> – I <i>Base 2.</i> </p>
+
+      <br><br>
+
+      <hr>
+
+      <br><br>
+
+      <a th:href="@{/eksamen2}" href="eksamen2.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+    </div> <!-- End line - Spørgsmål 1 -->
+
+
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+
+
+    <!-- Spørgsmål 2 -->
+
+    <div id="menu2_2" class="tab-pane fade">
+      <br>
+      <h3><b><i>2.&nbsp; Forklar:&nbsp; Hvordan man regner mellem:&nbsp;&nbsp; Binær og Decimal?</i></b></h3>
+      <br>
+      <hr>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+      <br>
+      <hr>
+      <br>
+      <p><a th:href="@{https://www.youtube.com/watch?v=8ebaRlpiBdA}" href="https://www.youtube.com/watch?v=8ebaRlpiBdA/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - Video</a></p>
+      <h4><b>Det binære talsystem - en introduktion</b></h4>
+      <h5>Channel:&nbsp;&nbsp; <i>Peter Valberg - 2021</i></h5>
+      <br>
+      <br>
+      <p><a th:href="@{https://www.youtube.com/watch?v=OO1-_GKqcqQ}" href="https://www.youtube.com/watch?v=OO1-_GKqcqQ/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - Video</a></p>
+      <h4><b>Det binære talsystem og de fire regnearter</b></h4>
+      <h5>Channel:&nbsp;&nbsp; <i>Peter Valberg - 2021</i></h5>
+      <br>
+      <hr>
+      <br>
+
+      <h4><u><i><b>Kort oversigt af modeller:</b></i></u></h4>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/TALoversigt2.PNG}" src="../static/img/eksamen1/TALoversigt2.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------------------------------------------------------------------------------|</p></div>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/TALoversigt3.PNG}" src="../static/img/eksamen1/TALoversigt3.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------------------------------------------------------------------------------|</p></div>
+      <br>
+      <img th:src="@{img/eksamen1/TALoversigt4.PNG}" src="../static/img/eksamen1/TALoversigt4.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------------------------------------------------------------------------------|</p></div>
+      <br>
+      <img th:src="@{img/eksamen1/TALoversigtModel.PNG}" src="../static/img/eksamen1/TALoversigtModel.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <hr>
+      <br>
+
+      <!-- Udregning af - ( Binær - Decimal ) -->
+
+      <h3><i><u><b>Udregning af - ( Binær --> Decimal ):</b></u></i></h3>
+      <br>
+      <img th:src="@{img/eksamen1/TAL1.PNG}" src="../static/img/eksamen1/TAL1.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p><b>BI = 2</b> - ( Er et 2 tal-system. ) </p>
+      <br>
+      <p>Man regner i <i><u>vægtens potens</u></i> - Såsom:  <b>2 ^ 4 = 16</b>&nbsp;&nbsp; Svarer til  <b>2 * 2 * 2  * 2 = 16</b></p>
+      <br>
+      <p>Man tager fra det <b>MINDST</b> <i>betydende cifre ( <b style="color: green">LSB</b> )</i>&nbsp;&nbsp;&nbsp; Fra <i>Højre side ad.</i></p>
+      <p>Til det <b>MEST</b> <i>betydende cifre ( <b style="color: blue">MSB</b> )</i>&nbsp;&nbsp;&nbsp; På langs <i>venstre side ad.</i>  </p>
+      <br>
+      <p>Man kan selv beslutte rækkefølgen. Men udregningen er det samme. </p>
+      <br>
+      <br>
+      <p>Det gør det lidt nemmere, at udregne / overblik i binære tal værdier.</p>
+      <p>Ved at indsætte "bits'ene" ind i en <b>positions tabel.</b> </p>
+      <br>
+      <br>
+      <p><u><b>Tabel eksempler:</b></u></p>
+      <img th:src="@{img/eksamen1/BITSTABEL.PNG}" src="../static/img/eksamen1/BITSTABEL.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Der bliver omregnet fra det her binære tal:&nbsp; <b>10110</b></p>
+      <br>
+      <p><u>Som eksempel - Fra Binære --> Decimal tal. </u></p>
+      <br>
+      <img th:src="@{img/eksamen1/TAL2.PNG}" src="../static/img/eksamen1/TAL2.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Det <i>lille tal</i> indikere ( <b style="color: red">index</b> ).</p>
+      <p>At det er en Base 2 tal værdi - Der er angivet.</p>
+      <br>
+      <br>
+      <p>Visuel model - Udregning af værdien for:&nbsp; <b>11010</b></p>
+      <br>
+      <img th:src="@{img/eksamen1/TAL3.PNG}" src="../static/img/eksamen1/TAL3.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Resultatet er:&nbsp; <b>22</b> &nbsp;&nbsp; <i>( Base 10 forstand )</i> </p>
+      <br>
+      <p>Fra <u>Base 2:</u>&nbsp; <b>( 1 0 1 1 0 )</b> --> til <u>Base 10</u> <b>( 22 )</b>&nbsp;&nbsp;   <i>De er det samme tal.</i> </p>
+      <br>
+      <p>Det <i>lille 10 tal</i> ved <b>22</b> - Er for at indikere at det <i>Base 10 format.</i> </p>
+      <br>
+      <p><u>Det er 1 måde at regne fra:</u></p>
+      <p>Binære ( Base 2 ) til Decimal ( Base 10 ).</p>
+      <br>
+      <hr>
+      <br>
+      <br>
+
+      <!-- Udregning af - ( Binære - Decimal ) - Alternativ udregning -->
+
+      <h4><i><u><b>En anden måde / udregning…</b></u></i></h4>
+      <br>
+      <p>Er at <b>'udpege'</b> - Hvert bit værdi - Udfra positions tabellen struktur</p>
+      <h6><i>Lidt mere direkte...</i></h6>
+      <br>
+      <img th:src="@{img/eksamen1/TAL4.PNG}" src="../static/img/eksamen1/TAL4.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Det vil sige...</p>
+      <br>
+      <p><u>Udfra <b>10110</b> - Er der:</u></p>
+      <br>
+      <ul>
+        <li><p>0 – 1’ere.&nbsp;&nbsp;&nbsp;&nbsp;	<b>= 0</b></p></li>
+        <br>
+        <li><p>1 – 2’ere.&nbsp;&nbsp;&nbsp;&nbsp;	<b>= 2</b></p></li>
+        <br>
+        <li><p>1 – 4’ere.&nbsp;&nbsp;&nbsp;&nbsp;	<b>= 4</b></p></li>
+        <br>
+        <li><p>0 – 8’ere.&nbsp;&nbsp;&nbsp;&nbsp;	<b>= 0</b></p></li>
+        <br>
+        <li><p>1 – 16’ere.&nbsp;&nbsp;	<b>= 16</b></p></li>
+      </ul>
+      <br>
+      <p><b><u>Udregning</u></b> = <i>2 + 4 + 16</i> = <b>22</b></p>
+      <br>
+      <br>
+      <p><u>Som eksempel - På alternativ udregning:</u></p>
+      <br>
+      <img th:src="@{img/eksamen1/TAL5.PNG}" src="../static/img/eksamen1/TAL5.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Det var den anden måde - Man regnet ( <b>Fra Binære til Decimal.</b> ) </p>
+      <br>
+      <hr>
+      <br>
+      <br>
+
+      <!-- Udregning af - ( Decimal - Binære ) -->
+
+      <h3><i><u><b>Udregning af - ( Decimal --> Binær ):</b></u></i></h3>
+      <br>
+      <p>Hvis man skal regne omvendt?&nbsp;&nbsp;  <b>Fra Decimal til Binære?</b> </p>
+      <br>
+      <p>Når man mener <b>Rest</b> = <i>27 / 2</i> = <b>16,5</b></p>
+      <br>
+      <p>De <b>0,5</b> er <u>rest</u> = Det binære tal:  <b>1</b>  ( <i>Ergo ulige</i> )</p>
+      <br>
+      <br>
+      <p>Men f.eks <i>6 / 2</i> = <b>3</b>  </p>
+      <br>
+      <p>Der er det et <b>”hel tal”</b> og det giver os = Det binære tal:  <b>0.</b>  ( <i>Ergo lige</i> )</p>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/TAL6.PNG}" src="../static/img/eksamen1/TAL6.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Der er taget et vilkårlig tal såsom: <b>27.</b> </p>
+      <br>
+      <p>Hvor man dividere det omvendte resultat.</p>
+      <br>
+      <p>Toppen er det <b style="color: blue">MEST</b> betydende cifre.</p>
+      <p>Bunden er det <b style="color: green">MINDST</b> betydende cifre.</p>
+      <br>
+      <p>Som man derefter lægger ned - I en lang 'horizontal' linje. </p>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/TAL7.PNG}" src="../static/img/eksamen1/TAL7.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+
+      <!-- Udregning af - ( Decimal - Binære ) - Alternativ udregning -->
+
+      <h4><i><u><b>En anden måde / udregning…</b></u></i></h4>
+      <br>
+      <p>Er at udregne det mere direkte...</p>
+      <br>
+      <img th:src="@{img/eksamen1/TAL8.PNG}" src="../static/img/eksamen1/TAL8.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/TAL9.PNG}" src="../static/img/eksamen1/TAL9.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Det er <i>samme berening</i> - Med at <b>dividere</b> hvert tal med <b>2.</b>   </p>
+      <br>
+      <p><b>27 / 2 = 13,5 = <u>Rest</u> på 0,5 = <u>1</u></b></p>
+      <br>
+      <p>Derefter...&nbsp;&nbsp;  <b>6 / 2 = 3  <u>Intet rest</u> = <u>0</u></b></p>
+      <br>
+      <p>Det bliver derefter...&nbsp;&nbsp; <b>ulige = 1</b>&nbsp;   og&nbsp;   <b>lige = 0</b>&nbsp;&nbsp;    <u><b>Fra 27 --> 1 1 0 1 1</b></u></p>
+
+
+      <br>
+      <hr>
+      <hr>
+      <hr>
+      <br>
+
+      <!-- Addition -->
+
+      <p><i>De næste eksempler - Er <b>"Ekstra indhold."</b></i></p>
+      <br>
+      <p>Varieret <i><u>Regne-arter</u></i> af det Binære talsystem</p>
+      <br>
+      <br>
+
+      <img th:src="@{img/eksamen1/TALA1.PNG}" src="../static/img/eksamen1/TALA1.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Man regner med <i>digits.</i>&nbsp;&nbsp;   <b>Bit</b>&nbsp;  =&nbsp;   <i>Digits</i> fra <i>Digits</i>&nbsp;  ( <i>0 eller 1</i> )</p>
+      <br>
+      <p>Der er visse <i>Algebra regler</i> - I den her sammenhæng.</p>
+      <br>
+      <p>Såsom at:&nbsp; ( <b>+</b>&nbsp; og&nbsp; <b>+</b>&nbsp; giver&nbsp; <b>-</b> ) </p>
+      <br>
+      <p><b>1 + 1</b>&nbsp;&nbsp;   <i>Det er <b>0</b></i>.&nbsp;&nbsp;  Men man skal huske - At <b>1</b> over i <i>'mente.'</i> </p>
+      <br>
+      <br>
+      <p><u><b>Det her er addition reglerne:</b></u></p>
+      <br>
+      <img th:src="@{img/eksamen1/TALA2.PNG}" src="../static/img/eksamen1/TALA2.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p><b>1 + 1</b> = <b>10</b>&nbsp;&nbsp;   <i>1 i mente</i>   </p>
+      <br>
+      <br>
+      <p>Det her er en <i>binære udregning</i> af:&nbsp;&nbsp; <b>1011&nbsp; +&nbsp; 101</b></p>
+      <br>
+      <p><u>Resultat bliver:</u> <b>10000</b> bits --> ( <b>16</b> tal )</p>
+      <br>
+      <br>
+      <p><u>Gennemgang af udregningen:</u></p>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <br>
+      <p><u>Øverste bit-række:</u></p>
+      <br>
+      <p><b><u>8  4  2  1</u></b> - ( <i>Positions tabel</i> )</p>
+      <p><b>1  0  1  0</b> - ( <i>Binære tallet</i> )</p>
+      <p><b>8  0  2  1</b> = ( <i>8 + 2 + 1</i> ) = <b>11</b> - ( <i>Decimal tallet</i> )</p>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <br>
+      <p><u>Midterste bit-række:</u></p>
+      <br>
+      <p><b><u>4  2  1</u></b> - ( <i>Positions tabel</i> )</p>
+      <p><b>1  0  1</b> - ( <i>Binære tallet</i> )</p>
+      <p><b>4  0  1</b> = ( <i>4 + 1</i> ) = <b>5</b> - ( <i>Decimal tallet</i> )</p>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+      <br>
+      <p><u>Det samlet binære tal:</u></p>
+      <br>
+      <p><b><u>16  8  4  2  1</u></b> - ( <i>Positions tabel</i> )</p>
+      <p><b>&nbsp;1  0  0  0  0</b> - ( <i>Binære tallet</i> )</p>
+      <p><b>1  6  0  0  0  0</b> = ( <i>16 + 0 + 0 + 0 + 0 </i> ) = <b>16</b> - ( <i>Decimal tallet</i> )</p>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|-----------------------------|</p></div>
+
+      <br>
+      <br>
+
+      <p><u><b>Ekstra eksempel:</b></u></p>
+      <br>
+      <img th:src="@{img/eksamen1/TALA2.PNG}" src="../static/img/eksamen1/TALA2.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p><b><u>8  4  2  1</u></b> - ( <i>Positions tabel</i> )</p>
+      <p><b>1  1  1  1</b> - ( <i>Binære tallet</i> )</p>
+      <p><b>8  4  2  1</b> = ( <i>8 + 4 + 2 + 1</i> ) = <b>15</b> - ( <i>Decimal tallet</i> )</p>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+
+      <!-- Subtraktion -->
+
+      <img th:src="@{img/eksamen1/TALS1.PNG}" src="../static/img/eksamen1/TALS1.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Det kan give mindre problemer - Når man regner med:&nbsp; <b><i>0 – 1</i></b> = <b>1</b></i> </p>
+      <br>
+      <p>Men det gør det også...&nbsp; Hvis man kun kan låne - <i>'1 mente'</i> fra det næste større bit.</p>
+      <br>
+      <br>
+      <p>Hvis man <i>låner 1 bit.</i>  Bliver det <i>fordoblet</i> med <i>2 bit</i> = <b>1 + 1</b> </p>
+      <br>
+      <p>De tal man låner - Går med hinanden - Hvis der er flere end 1 bits. </p>
+      <br>
+      <br>
+      <p><u><b>Det her er subtraktion reglerne:</b></u></p>
+      <br>
+      <img th:src="@{img/eksamen1/TALS2.PNG}" src="../static/img/eksamen1/TALS2.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+
+      <!-- Multiplikation -->
+
+      <img th:src="@{img/eksamen1/TALM1.PNG}" src="../static/img/eksamen1/TALM1.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Når man <i>ganger</i> med <i>decimal tal.</i> </p>
+      <br>
+      <p>Der tager man det <i>enkelte tal</i> - og ganger <i>igennem alle cifre.</i></p>
+      <br>
+      <p>Såsom:&nbsp;  <b>121 * 35</b>&nbsp;   =&nbsp;   <i>Sidste 1 tal</i>&nbsp;  <b>*  5 = 5</b>&nbsp;&nbsp;    <i>og sidste 1 tal</i> <b>* 3 = 3</b>  </p>
+      <br>
+      <p>Derefter går man til næste tal position - <i>I placering 2</i> - Og starter forfra. </p>
+      <br>
+      <br>
+      <p>Når <i>1’eren</i> er klaret.&nbsp; Skal man rykke op til <i>10’erene.</i></p>
+      <br>
+      <p>Derefter <i>afkryser</i> man med <b>x</b> -  På den sidste placering. </p>
+      <p>Man flytter en plads frem til venstre. </p>
+      <br>
+      <p>Det samme med at gange med <i>100’erene.</i> </p>
+      <p>Bare med <b><i>2 x x</i></b> til sidst. </p>
+      <br>
+      <img th:src="@{img/eksamen1/TALM2.PNG}" src="../static/img/eksamen1/TALM2.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Det er sådan - Man ganger med almen <i>'decimal'</i> store tal.</p>
+      <br>
+      <p>Men det bliver lidt på samme måde - Når man <i>ganger med udreninger til bits.</i> </p>
+      <br>
+      <p>Man ender med at:&nbsp;  <b>1 * 1 =  1</b></p>
+      <br>
+      <p>Når det er <b>0</b> - Bliver alt <i>ganget</i> til = <b>0</b></p>
+      <br>
+      <br>
+      <p>Når man har gennemgået tallene. </p>
+      <br>
+      <p>Ligesom det ovenstående multiplikation - Tal eksempel. </p>
+      <br>
+      <p>Der lægger man - <i>Derefter bits’ene sammen</i> - <i>Som i addition eksemplet.</i> </p>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/TALM3.PNG}" src="../static/img/eksamen1/TALM3.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+
+      <p>Det bliver overlagt <b>5 * 11 = 55</b></p>
+      <br>
+      <br>
+      <p>&nbsp;<u><b>32&nbsp; 16&nbsp;&nbsp; 8&nbsp;&nbsp; 4&nbsp;&nbsp; 2&nbsp;&nbsp; 1</b></u> - ( <i>Positions tabel</i> )</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;<b>1&nbsp;&nbsp; 1&nbsp;&nbsp; 0&nbsp;&nbsp; 1&nbsp;&nbsp; 1&nbsp;&nbsp; 1</b> - ( <i>Binære tallet</i> )</p>
+      <p><b>&nbsp;32&nbsp; 16&nbsp;&nbsp; 0&nbsp;&nbsp; 4&nbsp;&nbsp; 2&nbsp;&nbsp; 1</b>  = ( <i>32 + 16 + 0 + 4 + 2 + 1</i> ) = <b>55</b> - ( <i>Decimal tallet</i> )</p>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+
+      <!-- Division -->
+
+      <img th:src="@{img/eksamen1/TALD1.PNG}" src="../static/img/eksamen1/TALD1.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Siden <b>35</b> er et <i>2 cifre tal.</i></p>
+      <br>
+      <p>Skal man fokusere på de - <i>2 første største tal.</i></p>
+      <br>
+      <p><i>Går 35 op i 42?</i> &nbsp; --> &nbsp; <b>Ja,</b> <i>det gør det <u>1 gang.</u></i> </p>
+      <br>
+      <p><b>35 / 42</b>&nbsp; =&nbsp; <b>42 – 35 = 7</b></p>
+      <br>
+      <p>( <i>Vigtigst, at det skal gå op i 35 tallet</i> )&nbsp;&nbsp; Ikke omvendt. </p>
+      <br>
+      <p>Indikere <i>i toppen</i> med et <b>1</b> tal.</p>
+      <p>Der efterlader resultatet <b>7</b> <i>i bunden.</i></p>
+      <br>
+      <br>
+      <p>Derefter hiver man de næste cifre ned... </p>
+      <p>Som er <b>3.</b>&nbsp;&nbsp; Der udregner - Om <b>35</b> går op i <b>73.</b> </p>
+      <br>
+      <p>Det går <u>2 gange</u> op i <b>73.</b>  =  <b>35 + 35 = 70</b></p>
+      <br>
+      <p>Derefter hiver man det <i>sidste 5 tal ned</i> - <i>Og udregner igen.</i> </p>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/TALD2.PNG}" src="../static/img/eksamen1/TALD2.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p><i>Det giver i alt</i> = <b>121</b></p>
+      <p>Ved at <i>dividere</i> med et almen <i>decimal tal.</i></p>
+      <br>
+      <br>
+      <p>Men det er samme udregnng struktur - Når man <i>dividere med udreninger til bits.</i> </p>
+      <br>
+      <img th:src="@{img/eksamen1/TALD3.PNG}" src="../static/img/eksamen1/TALD3.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p><b><u>8  4  2  1</u></b> - ( <i>Positions tabel</i> )</p>
+      <p><b>1  0  1  1</b> - ( <i>Binære tallet</i> )</p>
+      <p><b>8  0  2  1</b> = ( <i>8 + 0 + 2 + 1</i> ) = <b>11</b> - ( <i>Decimal tallet</i> )</p>
+      <br>
+      <br>
+      <p><b><u>Samme logik</u></b> - Bliver overført til <i>Bits / Binære udregninger.</i> </p>
+      <br>
+      <p>At <b>101</b> skal <i>dividere</i> - Med de <b>3</b> <i>første bits i udregningen.</i> </p>
+      <br>
+      <p>Hvad gør man?&nbsp;&nbsp; Når man <i>ikke kan trække</i> <b>1 0 1&nbsp; /&nbsp; 0 0 1 1 ??</b>&nbsp;&nbsp; <i>Siden <b>1 0 1</b> er større?</i></p>
+      <br>
+      <p><i>Siden man ikke kan trække <b>101 fra 0011</b></i> – <i><u>Automatisk</u></i> - Bliver det så <b>0</b> <i>oppe i toppen.</i> </p>
+      <br>
+      <p>Derefter <i>afkrydser</i> man <b><del>101</del> væk.</b>   </p>
+      <p>Derefter...&nbsp; Er det de <i>2 øverste</i> <b>11</b> - Som man så <i>trækker ned</i> i stedet for. </p>
+      <br>
+      <p>Ergo...&nbsp; Bliver det <b>111</b> – <b>101</b> &nbsp; <i>Det kan man godt trække fra.</i></p>
+      <p>Som der, giver et <b>1 i toppen.</b> </p>
+
+      <br><br>
+
+      <hr>
+
+      <br><br>
+
+      <a th:href="@{/eksamen2}" href="eksamen2.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+    </div> <!-- End line - Spørgsmål 2 -->
+
+
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+
+
+    <!-- Spørgsmål 3 -->
+
+    <div id="menu2_3" class="tab-pane fade">
+      <br>
+      <h3><b><i>3.&nbsp; Forklar:&nbsp; Hvordan man regner mellem:&nbsp;&nbsp; Binær og Hexa Decimal?</i></b></h3>
+      <br>
+      <hr>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+      <br>
+      <hr>
+      <br>
+      <p><a th:href="@{https://www.youtube.com/watch?v=H7lzOcz5rsk}" href="https://www.youtube.com/watch?v=H7lzOcz5rsk/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - Video</a></p>
+      <h4><b>Det Hexadecimale talsystem</b></h4>
+      <h5>Channel:&nbsp;&nbsp; <i>Peter Valberg - 2021</i></h5>
+      <br>
+      <hr>
+      <br>
+
+      <h4><u><i><b>Kort oversigt af modeller:</b></i></u></h4>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/TALoversigt2.PNG}" src="../static/img/eksamen1/TALoversigt2.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------------------------------------------------------------------------------|</p></div>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/TALoversigt3.PNG}" src="../static/img/eksamen1/TALoversigt3.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------------------------------------------------------------------------------|</p></div>
+      <br>
+      <img th:src="@{img/eksamen1/TALoversigt4.PNG}" src="../static/img/eksamen1/TALoversigt4.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------------------------------------------------------------------------------|</p></div>
+      <br>
+      <img th:src="@{img/eksamen1/TALoversigtModel.PNG}" src="../static/img/eksamen1/TALoversigtModel.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------------------------------------------------------------------------------|</p></div>
+      <br>
+      <img th:src="@{img/eksamen1/TALoversigtHexa.PNG}" src="../static/img/eksamen1/TALoversigtHexa.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <hr>
+      <br>
+
+      <img th:src="@{img/eksamen1/TALH1.PNG}" src="../static/img/eksamen1/TALH1.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Det ligesom med - Det binære talsystem og decimal talsystem – Det er et position talsystem. </p>
+      <br>
+      <p>Det betyder...</p>
+      <p>At de symboler vi anvender med - For at angive Hexa-decimale tal.</p>
+      <p>Har en værdi - Der afhænger af hvor i tallet - Symbolet er placeret.</p>
+      <br>
+      <br>
+      <p>Det ligger i en <b>Base 16</b> ( <i>16-talsystem</i> )</p>
+      <br>
+      <p>Man anvender <b>0 --> 9</b>&nbsp;&nbsp; <i>Ligesom alle de andre vilkår.</i> </p>
+      <br>
+      <p>Men de sidste <b>10 --> 15</b>&nbsp;&nbsp; Anvender man bogstaver.&nbsp;&nbsp;  <b>A --> F</b></p>
+      <br>
+      <ul>
+        <li><p><b>A&nbsp; =&nbsp; 10</b></p></li>
+        <li><p><b>B&nbsp; =&nbsp; 11</b></p></li>
+        <li><p><b>C&nbsp; =&nbsp; 12</b></p></li>
+        <li><p><b>D&nbsp; =&nbsp; 13</b></p></li>
+        <li><p><b>E&nbsp; =&nbsp; 14</b></p></li>
+        <li><p><b>F&nbsp; =&nbsp; 15</b></p></li>
+      </ul>
+      <br>
+      <br>
+
+      <p>Man regner med <i>vægtens potens</i> <b>16 ^ 2</b>&nbsp; =&nbsp; <b>16 * 16 = 256</b></p>
+
+      <br>
+      <br>
+
+      <img th:src="@{img/eksamen1/TALH2.PNG}" src="../static/img/eksamen1/TALH2.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+
+      <!-- Udregning af Hexa-decimal til Decimal -->
+
+      <img th:src="@{img/eksamen1/TALH3.PNG}" src="../static/img/eksamen1/TALH3.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Der bliver udregnet i - <i>16 potens opløftninger.</i> </p>
+      <br>
+      <p>Angående hvilken position tallet er placeret i.</p>
+      <br>
+      <br>
+      <p><b>A&nbsp;&nbsp;  3&nbsp;&nbsp;  8&nbsp;&nbsp;   =&nbsp;&nbsp;   8</b>&nbsp;  har <i>position</i><b> 0.</b> </p>
+      <br>
+      <p>Derfor bliver <b>16</b> opløftet i <b>0.</b></p>
+      <br>
+      <p><b>Eksempel:&nbsp;&nbsp;    16^0 = 1&nbsp;&nbsp;      16^0&nbsp;&nbsp;  = 1</b>     </p>
+      <br>
+      <p>Når et tal går op i <i>potens</i> med <b>0</b>&nbsp;  Bliver det altid <b>1.</b></p>
+      <br>
+      <p>|--------------------------------------------------|</p>
+      <br>
+      <p><b>A&nbsp;&nbsp;  3&nbsp;&nbsp;  8&nbsp;&nbsp;   =&nbsp;&nbsp;   3</b>&nbsp;  har <i>position</i> <b>1.</b> </p>
+      <br>
+      <p>Derfor bliver <b>16</b> opløftet i <b>1.</b></p>
+      <br>
+      <p><b>Eksempel:&nbsp;&nbsp;    16^1 = 16&nbsp;&nbsp;</b></p>
+      <br>
+      <p>A = 10.&nbsp;&nbsp; Derefter er <b>16^2 = 256.</b> </p>
+
+      <br>
+
+      <p><u><b>Udregning - Eksempel:</b></u></p>
+      <br>
+      <img th:src="@{img/eksamen1/TALH4.PNG}" src="../static/img/eksamen1/TALH4.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+
+      <!-- Udregning af Decimal til Hexa-Decimal -->
+
+      <img th:src="@{img/eksamen1/TALH5.PNG}" src="../static/img/eksamen1/TALH5.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+
+      <p>Siden man har en <b>Base 16</b> - Skal man <i>dividere med 16.</i> </p>
+      <br>
+      <p><u><b>Tal eksempler:</b></u></p>
+      <br>
+      <p><b>3862 / 16</b> = <i>241, 375</i></p>
+      <br>
+      <p><b>241 / 16</b> = <i>16,0625</i></p>
+      <br>
+      <p><b>15 / 16</b>&nbsp; =&nbsp;  <i>Går ikke op</i> = <b>0.</b>&nbsp;  Så derefter bliver dens <b>rest på 15.</b> </p>
+      <br>
+      <br>
+      <p>Derefter bliver det sat i <i>horizontal linje.</i> </p>
+      <p>Med <b  style="color: blue">MEST</b> betydende til <b style="color: green">MINDST</b> betydende rækkefølge af tal.</p>
+      <br>
+      <img th:src="@{img/eksamen1/TALH6.PNG}" src="../static/img/eksamen1/TALH6.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+
+      <img th:src="@{img/eksamen1/TALH7.PNG}" src="../static/img/eksamen1/TALH7.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Det er en lidt mere <i>besværlig</i> - Med at regne direkte fra <i>Hexa --> Binære</i></p>
+      <br>
+      <p>Det er <i>nemmere</i> - At regne fra <i>Hexa-decimal til decimal.</i> </p>
+      <br>
+      <p>Og derefter - <i>Fra decimal til binære.</i> </p>
+      <br>
+      <p>Og derefter <i>omvendt igen</i> - Hvis det er <i>binære til hexa-decimal.</i> </p>
+      <br>
+      <br>
+      <p>Men! Der findes en genvej. </p>
+      <br>
+      <p>Når der  omregnes - Angives det mere direkte med <b>4 binære tal.</b>  </p>
+      <br>
+      <p>Hvor man kan sammensætte / plus ( <b style="color: red">+</b> ) bits'ene sammen</p>
+      <br>
+      <p><b><u>Såsom:</u></b></p>
+      <br>
+      <p><b><u>8  4  2  1</u></b> - ( <i>Positions tabel</i> )</p>
+      <p><b>1  0  1  0</b> =   <b>A</b>   =  <b>10</b> ( <i>Binære tallet</i> )</p>
+      <p><b>8  4  2  1</b> = ( <i>8 + 2</i> ) = <b>10</b> - ( <i>Decimal tallet</i> )</p>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/TALH8.PNG}" src="../static/img/eksamen1/TALH8.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+      <p>Når man vil omregne fra <i>Bits'ene til Hexa-decimal.</i></p>
+      <br>
+      <img th:src="@{img/eksamen1/TALH9.PNG}" src="../static/img/eksamen1/TALH9.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Man udregner altid med <b>4 octet.</b></p>
+      <br>
+      <p><b>| 1 1 1 | 1 0 1 1 | 1 0 0 1 |</b></p>
+      <br>
+      <p>Men man mangler <b>1 bit</b> i <i>forreste position?</i></p>
+      <br>
+      <p>Der kan man altid <i>placere</i> et <b style="color: red">0</b> foran. </p>
+      <br>
+      <p>For at kunne <i>udregne</i> med de <b>4 octet</b> formatter. </p>
+      <br>
+      <p><b>Såsom:</b>&nbsp;&nbsp; <b>| <b style="color: red">0</b>&nbsp;  1 1 1 | 1 0 1 1 | 1 0 0 1 |</b> </p>
+
+      <br><br>
+
+      <hr>
+
+      <br><br>
+
+      <a th:href="@{/eksamen2}" href="eksamen2.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+    </div> <!-- End line - Spørgsmål 3 -->
+
+
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+
+
+
+    <!-- Spørgsmål 4 -->
+
+    <div id="menu2_4" class="tab-pane fade">
+      <br>
+      <h3><b><i>4.&nbsp; Forklar:&nbsp; Hvad forkortelserne DDL og DML.<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        Og hvad de bruges til?</i></b></h3>
+      <br>
+      <hr>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+      <br>
+      <hr>
+      <br>
+      <p><a th:href="@{https://www.youtube.com/watch?v=cWMCHbxMiMI}" href="https://www.youtube.com/watch?v=cWMCHbxMiMI/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - Video</a></p>
+      <h4><b>MySQL Syntax in 20 Minutes | Understanding the Main Components of SQL</b></h4>
+      <h5>Channel:&nbsp;&nbsp; <i>365 Data Science - 2019</i></h5>
+      <br>
+      <hr>
+      <br>
+
+      <h4><b><i><u>Typer af programmering processer:</u></i></b></h4></b></h5>
+      <br>
+      <ul>
+        <li><p><b>Procedural ( <i>Imperative</i> )</b></p></li>
+        <br>
+        <li><p><b>Object-oriented</b></p></li>
+        <br>
+        <li><p><b>Declarative ( <i>non-procedural = SQL</i> )</b></p></li>
+        <br>
+        <li><p><b>Functional</b></p></li>
+      </ul>
+      <br>
+      <br>
+      <p><b>Declarative = SQL </b></p>
+      <p>Fokus er ikke på <b style="color: red">'Hvordan'</b> - Men <b style="color: green">'Hvad'</b> der bliver sat op.</p>
+      <p>Med de resultater - Som man gerne vil <i><b>'hente' / 'opnå'</b></i></p>
+      <br>
+      <br>
+      <p><u><i>Abstrakt måde at forklare det på:</i></u></p>
+      <br>
+      <p>Procedural ( Imperative ) - Er på <b style="color: orange">'Hvordan'</b> man struktur kode med.</p>
+      <h6><i><b>Som er C-# og Java format</b></i></h6>
+      <br>
+      <h6><i>Fremfor....</i></h6>
+      <br>
+      <p>Declarative ( non-procedural ) - Der er på <b style="color: orange">'Hvad'</b> man struktur kode efter.</p>
+
+      <br>
+      <br>
+      <p><u><b><i>Eksempel på - Procedural funktion kodning:</i></b></u></p>
+      <br>
+      <ol>
+        <b><li><p>Åpen døren.</p></li></b>
+        <b><li><p>Go udenfor.</p></li></b>
+        <b><li><p>Tag en spand.</p></li></b>
+        <b><li><p>Bring spanden tilbage.</p></li></b>
+      </ol>
+
+      <br>
+      <br>
+
+      <p><b><u><i>En declarative ( non-procedural ) kode proces:</i></u></b></p>
+      <br>
+      <ol>
+        <b><li><p>Hent spanden - Nu</p></li></b>
+      </ol>
+      <br>
+      <p>Den her SQL declarative proces</p>
+      <p>Declarative - Fungere som en <b>Optimizer</b> til <i>Procedural ( imperative )</i></p>
+      <br>
+      <p>Det er en anden form.&nbsp;  <b>For algoritme.</b> </p>
+      <p>Med en <i>optimzer</i> der tilpasser sig til den <i>procedural proces.</i></p>
+      <br>
+      <p>Procedural gør man med en <b><i>step by step</i></b></p>
+      <br>
+      <p>Når man anvender <b>SQL</b> - Koncenterer man sig på <b style="color: green">'Hvad'</b> man gerne vil <i>hente fra sin database.</i></p>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <h4><u><i>SQL - Structure Query Language</i></u></h4>
+      <p>For at <i>skabe</i> og <i>manipulere</i> relationalle databaser.</p>
+      <p>Forholder sig til varieret typer af <b><i>'Statements.'</i></b></i></p>
+      <p>Som udfører <i>kommandoer / operationer.</i></p>
+      <br>
+      <br>
+      <h4><b>DDL:</b> <u><i>Data Definition Language</i></u></h4>
+      <ul>
+        <li><p>Inputtet - Hvor man <i>definere / modificere</i> med SQL data - struktur - objekt kode.</p></li>
+        <p>= en Database - <i>Opsætte selve 'tabel strukturen'</i></p>
+        <li><p>Man <i>opbygger</i> og <i>designer</i> dens databasen <i>'bibliotek.'</i></p></li>
+      </ul>
+
+      <br>
+      <br>
+      <br>
+      <p><b><u><i>Visuel DDL eksempel:</i></u></b></p>
+      <img th:src="@{img/eksamen1/DDLcreate1.PNG}" src="../static/img/eksamen1/DDLcreate1.PNG" width="400" height="200" style="box-shadow: 10px 10px 5px lightgrey">
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <h4><b>DML:</b> <u><i>Data Manipulation Language.</i></u></h4>
+      <ul>
+        <li><p>Inputtet - Hvor man <i>manipulere</i> data'erne ind i tabellerne.</p></li>
+        <li><p>Man <i>placere</i> og <i>sætter</i> bøger ( SQL koden ) op på biblioteket <i>'hylder.'</i> </p></li>
+        <h6><i>( Tabellens - rækker / kolonner )</i></h6>
+      </ul>
+
+      <br>
+      <br>
+      <br>
+      <p><b><u><i>Visuel DML eksempel:</i></u></b></p>
+      <img th:src="@{img/eksamen1/DMLinsert1.PNG}" src="../static/img/eksamen1/DMLinsert1.PNG" width="400" height="200" style="box-shadow: 10px 10px 5px lightgrey">
+
+
+
+      <br>
+      <br>
+      <br>
+      <hr>
+      <br>
+
+      <h3><b><i><u>Oversigt af SQL Language struktur:</u></i></b></h3></b></h5>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/DatabaseStruktur.PNG}" src="../static/img/eksamen1/DatabaseStruktur.PNG" width="500" height="400" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <h4><b><u>DDL - Data Definition Language - ( Skabelse af Data )</u></b></h4>
+      <br>
+      <p><b style="color: blue">CREATE:</b></p>
+      <p>Anvendes til at skabe hele databaser og database objekter - Såsom: <i>tables</i></p>
+      <p>Et table navn kan sammenfalde med navnet - Der er tildelt til databasen.</p>
+      <br>
+      <img th:src="@{img/eksamen1/DDL1.PNG}" src="../static/img/eksamen1/DDL1.PNG" width="350" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <br>
+      <br>
+
+      <p><b style="color: blue">ALTER:</b></p>
+      <p>Anvendes til <i>'altering'</i> ændringer af eksisterende objekter.</p>
+      <p>Anvender: <b style="color: blue">ADD</b> - <b style="color: blue">REMOVE</b> - <b style="color: blue">RENAME</b></p>
+      <br>
+      <img th:src="@{img/eksamen1/DDL2.PNG}" src="../static/img/eksamen1/DDL2.PNG" width="350" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <br>
+      <br>
+
+      <p><b style="color: blue">DROP:</b></p>
+      <p>Anvendes for at slette et database objekt. </p>
+      <br>
+      <img th:src="@{img/eksamen1/DDL3.PNG}" src="../static/img/eksamen1/DDL3.PNG" width="350" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <br>
+      <br>
+
+      <p><b style="color: blue">RENAME:</b></p>
+      <p>Tillader en at 'omdøbe' et objekt. </p>
+      <br>
+      <img th:src="@{img/eksamen1/DDL4.PNG}" src="../static/img/eksamen1/DDL4.PNG" width="350" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <br>
+      <br>
+
+      <p><b style="color: blue">TRUNCATE:</b></p>
+      <p>I stedet for at slette en hel tabel med DROP kommandoen. </p>
+      <p>Kan man også fjerne tabellens data og forsætte med at bevarer tabellen.</p>
+      <p>Som en objekt i databasen.</p>
+      <br>
+      <img th:src="@{img/eksamen1/DDL5.PNG}" src="../static/img/eksamen1/DDL5.PNG" width="350" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <br>
+      <br>
+
+      <p><b><u>Keywords forklaring:</u></b></p>
+      <p>Eksempler: <i>CREATE - ADD - ALTER...osv.</i>  </p>
+      <br>
+      <p><b>Keywords i SQL</b> <i><b>kan ikke!</b></i></p>
+      <p><b><i>Være variable navne!</i></b></p>
+      <br>
+      <p>Keywords er <i><b>reseveret</b></i> kode-ord.</p>
+      <br>
+      <p>Objekter eller databaser - Kan ikke har navne, som sammenfalder med SQL Keywords.</p>
+      <br>
+      <p>Keywords bliver generelt placeret forrest i en syntaks linje.</p>
+      <br>
+      <img th:src="@{img/eksamen1/DDL6.PNG}" src="../static/img/eksamen1/DDL6.PNG" width="350" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+
+
+      <br>
+      <br>
+      <br>
+      <p><b>|-------------------------------------------------------------------------------------------------------|</b></p>
+      <br>
+
+      <h4><b><u>DML - Manipulation Language - ( Manipulation af Data )</u></b></h4>
+      <br>
+      <p><b style="color: blue">SELECT:</b></p>
+      <p>Anvendes til at <i>hente data</i> fra database objekter - <i>Såsom 'tables'</i></p>
+      <br>
+      <img th:src="@{img/eksamen1/DML1.PNG}" src="../static/img/eksamen1/DML1.PNG" width="350" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <br>
+      <br>
+
+      <p>Den <i>asterisk</i> <b>( * )</b> tegn.</p>
+      <p>Henter <i>alle rækker</i> i en SQL <b>SELECT</b> statement.</p>
+      <br>
+      <p>Man kan <i>udvælge bestemte navne</i>&nbsp;&nbsp; <b style="color: blue">SELECT</b> <b>( input )</b> <b style="color: blue">FROM</b> <b>sales.</b></p>
+      <p>Hvis man ønsker - At <i>hente bestemte / udvalgte rækker.</i> </p>
+      <br>
+
+      <img th:src="@{img/eksamen1/DML2.PNG}" src="../static/img/eksamen1/DML2.PNG" width="350" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <br>
+      <br>
+
+      <p><i>Hvorfor man kun har brug for 1 stk af en tabel?</i></p>
+      <br>
+      <p>Forestil at man har en tabel - Med over 2 millioner af rækker af data.</p>
+      <p>Kan være brugbart, hvis man kun henter dele af en tabel.</p>
+      <p>Som viser bestemte kriterier - Ved at anvende SELECT statements korrekt.</p>
+
+      <br>
+      <br>
+
+      <p><b style="color: blue">INSERT:</b></p>
+      <p>Anvendes til at implementere data ind i tabellerne.</p>
+      <br>
+      <p><b style="color: blue">INSERT INTO</b> - <b style="color: blue">VALUES</b></p>
+      <br>
+      <img th:src="@{img/eksamen1/DML3.PNG}" src="../static/img/eksamen1/DML3.PNG" width="350" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <br>
+      <br>
+
+      <p>Hvis man vil lave den <i>korte</i> udgave.</p>
+      <br>
+      <img th:src="@{img/eksamen1/DML4.PNG}" src="../static/img/eksamen1/DML4.PNG" width="350" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <p>De her <i>syntaks'er er ens.</i></p>
+      <p>Det vil registrere - Igennem værdien - Første angivet placering.</p>
+      <br>
+      <p><b>1,</b> ( <b>….</b> ) = <i>purchase_number</i> = <b>1.</b> </p>
+      <br>
+      <img th:src="@{img/eksamen1/DML5.PNG}" src="../static/img/eksamen1/DML5.PNG" width="350" height="150" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <br>
+      <br>
+
+      <p>For den næste række - Vil man angive det næste tal placering.</p>
+      <p>Plus... Dens værdier i næste kolonne.</p>
+      <br>
+      <img th:src="@{img/eksamen1/DML6.PNG}" src="../static/img/eksamen1/DML6.PNG" width="350" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+
+      <p><b style="color: blue">UPDATE:</b></p>
+      <p>Tillader en at 'renew' ( fornye ) eksisterende data af ens tabeller.</p>
+      <br>
+      <p><b>Generel - Format:</b> <b style="color: blue">UPDATE</b>... <b style="color: blue">SET</b>... <b style="color: blue">WHERE</b></p>
+      <br>
+      <img th:src="@{img/eksamen1/DML7.PNG}" src="../static/img/eksamen1/DML7.PNG" width="350" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img th:src="@{img/eksamen1/PILNED.PNG}" src="../static/img/eksamen1/PILNED.PNG" width="55" height="70">
+      <br>
+
+      <br>
+      <img th:src="@{img/eksamen1/DML8.PNG}" src="../static/img/eksamen1/DML8.PNG" width="350" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img th:src="@{img/eksamen1/PILNED.PNG}" src="../static/img/eksamen1/PILNED.PNG" width="55" height="70">
+      <br>
+
+      <br>
+      <img th:src="@{img/eksamen1/DML9.PNG}" src="../static/img/eksamen1/DML9.PNG" width="350" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+
+      <br>
+      <br>
+
+      <p><b style="color: blue">DELETE:</b></p>
+      <p>Fungere ensartet med TRUNCATE statement'en</p>
+      <br>
+      <p><b>Generel - Format:</b> <b style="color: blue">DELETE</b>... <b style="color: blue">FROM</b>... <b style="color: blue">WHERE</b></p>
+      <br>
+      <p><b>TRUNCATE</b> tillader en - <i>At fjerne alle ( records ) indhold i en tabel.</i></p>
+      <p><b>VS.</b></p>
+      <p>Med <b>DELETE</b> kan man - <i>specificere mere præcis - Hvad man gerne vil slette.</i></p>
+      <br>
+      <br>
+      <p>Fungere på samme måde.</p>
+      <br>
+      <img th:src="@{img/eksamen1/DML10.PNG}" src="../static/img/eksamen1/DML10.PNG" width="350" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Her sletter vi indholdet fra rækken af 1. </p>
+      <p>Nr 2. Vil stadig være intakt. </p>
+      <br>
+      <img th:src="@{img/eksamen1/DML11.PNG}" src="../static/img/eksamen1/DML11.PNG" width="350" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img th:src="@{img/eksamen1/PILNED.PNG}" src="../static/img/eksamen1/PILNED.PNG" width="55" height="70">
+      <br>
+
+      <br>
+      <img th:src="@{img/eksamen1/DML12.PNG}" src="../static/img/eksamen1/DML12.PNG" width="350" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+
+
+      <br><br>
+
+      <hr>
+
+      <br><br>
+
+      <a th:href="@{/eksamen2}" href="eksamen2.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+    </div> <!-- End line - Spørgsmål 4 -->
+
+
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+
+
+    <!-- Spørgsmål 5 -->
+
+    <div id="menu2_5" class="tab-pane fade">
+      <br>
+      <h3><b><i>5.&nbsp; Beskriv:&nbsp; Hvordan man opretter et MySQL DBMS på Azure.<br><br>&nbsp;&nbsp;&nbsp;&nbsp; Og hvad vi kan bruge
+        sådan et til?</i></b></h3>
+      <br>
+      <hr>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+      <br>
+      <hr>
+      <br>
+      <p><a th:href="@{https://www.youtube.com/watch?v=hjeKZLH50hA}" href="https://www.youtube.com/watch?v=hjeKZLH50hA/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - Video</a></p>
+      <h4><b>How to create AZURE Database for MySQL | ....</b></h4>
+      <h5>Channel:&nbsp;&nbsp; <i>Data Cafe - 2022</i></h5>
+      <br>
+      <br>
+      <p><a th:href="@{https://azure.microsoft.com/en-gb/products/category/databases/}" href="https://azure.microsoft.com/en-gb/products/category/databases/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - azure.microsoft.com</a></p>
+      <h4><b>Types of Databases on Azure</b></h4>
+      <h5></h5>
+      <br>
+      <hr>
+      <br>
+
+      <p><b>Azure</b> har et udvalg af fuldt ud <i>administrerende relationelle databaser.</i></p>
+      <p>Inkluderende... <i>NoSQL og in-memory databaser.</i></p>
+      <br>
+      <p>For at tilpasse til <i>moderne app-udvikleres behov.</i></p>
+      <br>
+      <br>
+      <p><u>Infrastruktur management – herunder:</u></p>
+      <br>
+      <p><b><i>Scalability, Availability, og Security.</i></b></p>
+      <p>Vilkår er <i>automatiseret,</i> hvilket <i>sparer en tid og penge.</i></p>
+      <br>
+      <p><b>Performance insights</b> igennem en <b>embedded intelligence.</b> </p>
+      <p><b>Scaling</b> uden begræsninger - <i>Håndteringer af <b>security</b> trusler.</i> </p>
+
+      <br>
+      <hr>
+      <br>
+      <h3><b><i>Hvordan man skaber en Azure Database - MySQL</i></b></h3>
+      <br>
+      <br>
+      <h4><b><u>Klassens 'Korte' gennemgang:</u></b></h4>
+      <br>
+      <p><b><i>Opret et MySQL DBMS - Azure:</i></b></p>
+
+      <ol>
+        <li><p>&nbsp;&nbsp; Fuldfør Login proceduren:</p></li>
+        <li><p>&nbsp;&nbsp; I søgefeltet øverst på websitet - Indtastet: <b><i>"Azure Database for MySQL flexible servers"</i></b></p></li>
+        <li><p>&nbsp;&nbsp; Klik på knappen - <b style="color: blue">Create</b></p></li>
+        <li><p>&nbsp;&nbsp; Indtast <b>"Ressource group"</b> - Med et <i>(Password)</i> - <i>Noget der kan huskes.</i></p></li>
+        <li><p>&nbsp;&nbsp; Alt. justere på <b><i>"Compute + Storage"</i></b> - Til behov og billigst beløb.</p></li>
+        <li><p>&nbsp;&nbsp; Indtast <b>"Server name"</b> med et <i>unikt navn - Andre servere må ikke hedde det samme.</i></p></li>
+        <li><p>&nbsp;&nbsp; Vælg en region tæt på Dannmark - Såsom: "North Europe" </p></li>
+        <li><p>&nbsp;&nbsp; Indtast <b>"Work Load"</b> - Sæt den til <i>"For development or hobby projects"</i></p></li>
+        <li><p>&nbsp;&nbsp; Indtast værdier for <b><i>"Admin username" - "Password" - "Confirm password"</i></b></p></li>
+        <li><p>&nbsp;&nbsp; Placer <b>checkmark</b> på <i>"Allow public access from any Azure service within Azure to this server."</i></p></li>
+        <li><p>&nbsp;&nbsp; Klik på "+ Add 0.0.0.0 - 255.255.255.255" &nbsp;&nbsp; Så alle kan tilgå ens MySQL DBMS.</p></li>
+        <li><p>&nbsp;&nbsp; Klik på enten knappen:&nbsp; <b style="color: blue">"Create"</b> eller <b style="color: blue">"Review+Create</b></p></li>
+      </ol>
+      <br>
+      <p>Derefter går <i>Azure platformen</i> - Igang med at <b><i>deploy</i></b> og <b><i>oprette</i></b> en <b>MySQL DBMS</b></p>
+      <br>
+      <p>Det tag et par min - Derefter har man en MySQL til rådighed.</p>
+      <br>
+      <br>
+      <br>
+      <p><u><b>Alternativ noter:</b></u></p>
+      <p>Klik på <b>Create a Ressource.</b></p>
+      <p>Vælg i venstre panel:&nbsp; <b>Databases</b> - Derefter:&nbsp; <b>SQL Database.</b></p>
+      <br>
+      <p>Vælg <b>RDP</b> ( <i>Remote Desktop Protocol</i> )</p>
+      <p><i>Vælges for få adgang til enheden - Igennem ens internet.</i> </p>
+      <br>
+      <p><i>Når ens virtualle maskine er deployed.</i></p>
+      <p>Kan man finde ens virtuelle enheder igen - Via Knappen:&nbsp; <b>All ressources.</b></p>
+
+      <br>
+      <hr>
+      <br>
+
+      <!-- Hvordan man skaber en MySQL DBMS - Azure: -->
+
+      <h3><b><u>Visuel guide gennemgang:</u></b></h3>
+      <br>
+      <br>
+      <h4><b><u>Hvordan man skaber en MySQL DBMS - Azure:</u></b></h4>
+      <br>
+      <br>
+      <p>Gå til websitet - Login med ens profil</p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData1.PNG}" src="../static/img/eksamen1/AzureData1.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Søg efter <b>mysql</b> --> Og Vælg - <b><i>Azure database for MYSQL servers.</i></b> </p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData2.PNG}" src="../static/img/eksamen1/AzureData2.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Derefter kan man vælge imellem <b>2</b> <b style="color: blue"><i>create buttons</i></b> - For at starte processen. </p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData3.PNG}" src="../static/img/eksamen1/AzureData3.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Man kan vælge i <i>ressource</i> - Imellem en:&nbsp; <i><b>Flexible</b> eller <b>Single</b> server.</i> </p>
+      <h6><i>Vælg en <b>single server.</b></i></h6>
+      <br>
+      <p>Klik på den blå knap – <b style="color: blue">Create.</b> </p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData4.PNG}" src="../static/img/eksamen1/AzureData4.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Udvælg den rette Ressource Group format. </p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData5.PNG}" src="../static/img/eksamen1/AzureData5.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p><i><u>Navngiv</u></i> sin server. </p>
+      <br>
+      <p>Vælg om man vil - Har en <i><u>backup løsning</u></i>.</p>
+      <br>
+      <p>Vælg ens <i><u>lokation</u></i> – Hvor ens virtuelle server bliver oprettet henne. </p>
+      <h6><i>Såsom: "North Europe"</i></h6>
+      <br>
+      <p>Vælg hvad for en - <i><u>Version</u></i> man forholder sig til. </p>
+      <br>
+      <p>Vælg imellem forskellige <b>Storage / Ydeevne ( performance )</b> muligheder. </p>
+      <br>
+      <p>Klik på <b style="color: blue">Configure server.</b> </p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData6.PNG}" src="../static/img/eksamen1/AzureData6.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>I forhold til hvilken udgave - Af <b>performance</b> man vælger.&nbsp;  <i>Desto bedre – Desto dyrere.</i> </p>
+      <br>
+      <p>Det <i>billigste format</i> er:&nbsp; <b><i>Basic – 1 VCore</i></b> </p>
+      <br>
+      <p>Ens <i>storage</i> er sat til <b>5GB</b> – Den angivet plads man har. </p>
+      <br>
+      <p>Klik på <b style="color: blue">Ok</b> knappen</p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData7.PNG}" src="../static/img/eksamen1/AzureData7.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData8.PNG}" src="../static/img/eksamen1/AzureData8.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Ved <b>Additional settings</b> tab'en – Er det muligt at anvende <b>Data encryption.</b> </p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData9.PNG}" src="../static/img/eksamen1/AzureData9.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Det samme med at tildele <b>Tags.</b> </p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData10.PNG}" src="../static/img/eksamen1/AzureData10.PNG" width="400" height="200" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Hvis man prøver at lave maskinen for hurtigt - <b style="color: crimson">Validation warning.</b> </p>
+      <br>
+      <p>Alting skal lige <i>valideres først.</i></p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData11.PNG}" src="../static/img/eksamen1/AzureData11.PNG" width="300" height="400" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Under <b>Basic</b> tab'en:</p>
+      <p><b><i>Username + Passwords</i></b> - Skal lige tilføjes. </p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData12.PNG}" src="../static/img/eksamen1/AzureData12.PNG" width="400" height="100" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Nu er det muligt - At vælge <b style="color: blue">Review + Create.</b> </p>
+      <br>
+      <p>Når vilkårene er blevet gennemtjekket. Kan man klikke på <b style="color: blue">Create</b> knappen igen. </p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData13.PNG}" src="../static/img/eksamen1/AzureData13.PNG" width="300" height="400" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Derefter bliver maskinen <b><i>’deployed’ + Created.</i></b> </p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData14.PNG}" src="../static/img/eksamen1/AzureData14.PNG" width="300" height="100" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Man kan se at ens <b style="color: green">Deployment</b> er færdig</p>
+      <br>
+      <p>Man kan få et <i>overblik af detaljerne</i> på ens enhed. </p>
+      <br>
+      <p>Klik på:&nbsp; <b style="color: blue">Go to Ressource.</b></p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData15.PNG}" src="../static/img/eksamen1/AzureData15.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Inde i <i>Ressource page:</i> Kan man se et <i>overview</i> - Af detajler på ens nyskabte virtuelle maskine. </p>
+      <br>
+      <p><i>I venstre panel</i> – Har man en <i>del yderligere valgmuligheder.</i> </p>
+      <br>
+      <p>Der er det <b>vigtigt</b> - At man <i>notere / kopiere</i> ens <b>server name</b> + <b>server admin login name.</b> </p>
+      <br>
+      <p><b>Vigtigt</b> - At kunne finde ens <b><i>servernavn ID info</i></b>.&nbsp; Når man skal <b>forbinde</b> ens <b>DBMS</b> til en <b>MySQL Database Workbench.</b> </p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData16.PNG}" src="../static/img/eksamen1/AzureData16.PNG" width="400" height="200" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Hvis man går tilbage til <b>Home page.</b>&nbsp; Kan man også vælge ens <i>enhed herfra.</i> </p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData17.PNG}" src="../static/img/eksamen1/AzureData17.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <hr>
+      <br>
+
+      <!-- Forbind Azure til DBMS - MySQL WorkBench -->
+
+      <h4><b><u>Hvordan man forbinder ens Azure DBMS --> MySQL Workbench:</u></b></h4>
+      <br>
+      <p>Man åbner ens <b>MySQL Workbench.</b> </p>
+      <br>
+      <p>Hvis man ønsker et <i>ny forbindelse</i> – Klik på <b>(+)</b> tegnet. </p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData18.PNG}" src="../static/img/eksamen1/AzureData18.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p><u>Navngiv</u> - Hvad ens <i>MySQL forbindelse</i> skal hedde. </p>
+      <br>
+      <ol>
+        <li><p>Tilfører ( <i>Copy n Paste</i> ) i <b>Hostname.</b>  --> <b>Servername.</b> </p></li>
+        <li><p>Tilfører ( <i>Copy n Paste</i> ) i <b>Username</b>   --> <b>Server admin login name</b></p></li>
+      </ol>
+      <br>
+      <p>Klik på - <b>Test Connection.</b> </p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData19.PNG}" src="../static/img/eksamen1/AzureData19.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img th:src="@{img/eksamen1/PILNED.PNG}" src="../static/img/eksamen1/PILNED.PNG" width="55" height="70">
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData20.PNG}" src="../static/img/eksamen1/AzureData20.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Hvis den her <i>fejl besked</i> opstår?</p>
+      <br>
+      <p>Skal der justeres en <i>Firewall indstilling</i> inde i Azure platformen</p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData21.PNG}" src="../static/img/eksamen1/AzureData21.PNG" width="400" height="200" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Der skal justeres - <i>Tilføjes / Bypasses en IP adresse.</i> </p>
+      <br>
+      <p>Vælg i venstre panel - <b>Connection Secuirty.</b> - </p>
+      <br>
+      <p>Klik på:&nbsp;&nbsp; <b style="color: blue">+ Add current IP address.</b></p>
+      <br>
+      <p>Er derefter tilføjet til en Firewall protokol i Azure. </p>
+      <h6><i>Ved at tilpasse / overfører IP Adresser.</i></h6>
+      <br>
+      <p>Klik på <b style="color: blue">Save</b> til sidst. </p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData22.PNG}" src="../static/img/eksamen1/AzureData22.PNG" width="600" height="400" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Hvis man får <b><i>succesful update</i></b> forbindelse. </p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData23.PNG}" src="../static/img/eksamen1/AzureData23.PNG" width="400" height="200" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Kan man klikke på - <b>Test Connection</b> igen. </p>
+      <br>
+      <p>Hvis det er muligt - Kan man indtaste et password - Er man godt kørende.</p>
+      <h6><i>Vælg - <b>Save password in vault.</b> Hvis det er præferencen/sikkerhed. </i></h6>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData24.PNG}" src="../static/img/eksamen1/AzureData24.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p><i>Forbindelsen fungere.</i> </p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData25.PNG}" src="../static/img/eksamen1/AzureData25.PNG" width="400" height="200" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>Nu er der <i>oprettet en database forbindelse.</i> </p>
+      <p>Til ens <i>Azure DBMS platform</i></p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData26.PNG}" src="../static/img/eksamen1/AzureData26.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>For at arbejde i databasen - Klikker man på ens <i>oprettet database forbindelse.</i> </p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData27.PNG}" src="../static/img/eksamen1/AzureData27.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p><u>Nu kan vi:</u></p>
+      <br>
+      <p><b style="color: blue">Create Database</b> - Skab en database</p>
+      <br>
+      <p><b style="color: blue">Use database</b> - Brug en database</b></p>
+      <br>
+      <p><b style="color: blue">Create a table</b> - Skab en tabel som indeholder ( <i><b style="color: blue">Int</b> = Tal / <b style="color: blue">VARCHAR</b> = Strings-Tekst</i> )</p>
+      <br>
+      <p><b style="color: blue">Show tables</b> - Vis tabellen.</p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData28.PNG}" src="../static/img/eksamen1/AzureData28.PNG" width="600" height="400" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <p><b style="color: blue">INSERT INTO</b> <i><b>( id, name, email, )</b></i> - Sætte variabler ind i "Tabellen"</p>
+      <br>
+      <p><b style="color: blue">VALUES</b> <i><b>( id-værdi, name-værdi, email-værdi )</b></i> - Sætte værdier ind i "Tabellen"</p>
+      <br>
+      <p><b style="color: blue">SELECT</b> <b>*</b> <b style="color: blue">FROM</b> - Man vælger at se <i>( Alt = <b>*</b> )</i> indholdet fra "Tabellen"</p>
+      <br>
+      <img th:src="@{img/eksamen1/AzureData29.PNG}" src="../static/img/eksamen1/AzureData29.PNG" width="600" height="400" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+
+      <br><br>
+
+      <hr>
+
+      <br><br>
+
+      <a th:href="@{/eksamen2}" href="eksamen2.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+    </div> <!-- End line - Spørgsmål 5 -->
+
+
+  </div>
+  <br>
+  <hr>
+  <!--  <p class="act"><b>Active Tab</b>: <span></span></p>
+   <p class="prev"><b>Previous Tab</b>: <span></span></p> -->
+</div>
+
+<script>
+  $(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+      $(this).tab('show');
+    });
+    $('.nav-tabs a').on('shown.bs.tab', function(event){
+      var x = $(event.target).text();         // active tab
+      var y = $(event.relatedTarget).text();  // previous tab
+      $(".act span").text(x);
+      $(".prev span").text(y);
+    });
+  });
+</script>
+
+</body>
+</html>

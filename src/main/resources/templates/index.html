@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Teknologi - Lærings mål.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <br>
+    <h2><i class="fa fa-code" style="font-size:24px"></i>&nbsp;&nbsp;&nbsp;<b><i>Teknologi - Lærings mål.&nbsp;&nbsp;&nbsp;<i class="fa fa-code" style="font-size:24px"></i></i></b></h2>
+
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> <b>-</b> Vælg et eksamen område <b>-</b> </i></p>
+
+    <br>
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#home" class="bg-info" style="font-weight: bold">Home</a></li>
+        <li><a href="#menu1" class="bg-primary" style="font-weight: bold">Område 1</a></li>
+        <li><a href="#menu2" class="bg-primary" style="font-weight: bold">Område 2</a></li>
+        <li><a href="#menu3" class="bg-primary" style="font-weight: bold">Område 3</a></li>
+        <li><a href="#menu4" class="bg-primary" style="font-weight: bold">Område 4</a></li>
+        <li><a href="#webservice" class="bg-danger" style="font-weight: bold">Webservice</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+            <br>
+            <h3><i>Programmet arbejder med<br> de her 4 læringsmål:</i></h3>
+            <br>
+
+            <p><i class="fa fa-database"></i>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;<b>Område 1:</b>&nbsp;&nbsp;&nbsp;&nbsp; <i>Cloud - Operativ systemer - Database.</i></p>
+            <p><i class="fa fa-sort-numeric-desc"></i>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;<b>Område 2:</b>&nbsp;&nbsp;&nbsp;&nbsp; <i>Talsystemer - Debug.</i></p>
+            <p><i class="fa fa-calendar-times-o"></i>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;<b>Område 3:</b>&nbsp;&nbsp;&nbsp;&nbsp;<i>Samtidigheds-problematikker.</i></p>
+            <p><i class="fa fa-wifi"></i>&nbsp;&nbsp;-&nbsp;&nbsp;<b>Område 4:</b>&nbsp;&nbsp;&nbsp; <i>Computer-netværk.</i></p>
+            <p><i class="fa fa-download"></i>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;<b>Webservice:</b> <i>Test af webservice.</i></p>
+
+            <br>
+
+            <hr>
+            <i class="fa fa-group" style="font-size:24px"></i>
+            <br><br>
+
+            <h5><u><b>Mini projekt - Medlemmer:</b></u></h5>
+            <ul>
+            <p><li>Nikki Deleuran&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;- &nbsp;&nbsp; nikk0375@stud.kea.dk</li></p>
+                <p><li>Murat Kaan Arici&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; mura0717@stud.kea.dk</li></p>
+            </ul>
+            <br>
+            <p><b>Gruppenavn</b>&nbsp;&nbsp; -&nbsp;&nbsp; getBest()</p>
+            <br>
+            <p><u><b>Deadline:</b></u></p><p> 27 november - 2022</p>
+        </div>
+
+
+        <div id="menu1" class="tab-pane fade">
+            <h3><b><i>Cloud - Operativ systemer - Database.</i>&nbsp;&nbsp;&nbsp;<i class="fa fa-database" style="font-size:24px"></i></b></h3>
+            <br>
+            <p><u>Eksamen Spørgsmål:</u></p>
+
+
+
+                <ol>
+                    <b><li><i><p>Beskriv:&nbsp; En computer's hardware?</p></i></li></b><br>
+                    <b><li><i><p>Beskriv:&nbsp; Azure Cloud.<br> Og hvad du kan bruge den til?</p></i></li></b><br>
+                        <b><li><i><p>Hvad er en Raspberry Pi?<br> Og hvad kan det bruges til?</p></i></li></b><br>
+                            <b><li><i><p>Hvilke typer:&nbsp; Harddiske findes i en computer?<br> Og hvad er forskellen på dem?</p></i></li></b><br>
+                                <b><li><i><p>Hvilke typer:&nbsp;&nbsp;Busser findes der i en computer?</p></i></li></b><br>
+                    <b><li><i><p><u>Computernetværk:</u> <br>Hvad er forskellen på:&nbsp;&nbsp; IP og MAC?</p></i></li></b><br>
+                                        <b><li><i><p>Hvilke typer:&nbsp; Kategorier findes der for en PSU? <br>Og hvad betyder de?</p></i></li></b><br>
+                                            <b><li><i><p>Hvad er forskellen på:&nbsp;&nbsp; RAM og Harddisk?</p></i></li></b><br>
+                                                <b><li><i><p>Hvad er et:&nbsp; DBMS MySQL?<br> Og hvad kan det bruges til?</p></i></li></b>
+                </ol>
+
+
+
+            <br>
+            <a th:href="@{/eksamen1}" href="eksamen1.html" class="btn btn-success active" style="font-weight: bold" role="button" >Område 1 - Svar...</a>
+
+        </div>
+
+        <div id="menu2" class="tab-pane fade">
+
+            <h3><b><i>Talsystemer - Debug.</i>&nbsp;&nbsp;&nbsp;<i class="fa fa-sort-numeric-desc" style="font-size:24px"></i></b></h3>
+                <br>
+                <p><u>Eksamen Spørgsmål:</u></p>
+                <ol>
+                    <b><li><i><p>Forklar:&nbsp; Hvad vi kan bruge følgende talsystemer til?<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Samt deres navne.</p></i></li></b>
+                    <ul>
+                        <li><i><p>16 – talsystemet</p></i></li>
+                        <li><i><p>10 – talsystemet</p></i></li>
+                        <li><i><p>2 – talsystemet</p></i></li>
+                    </ul><br>
+                    <b><li><i><p>Forklar:&nbsp; Hvordan man regner mellem:&nbsp;&nbsp; Binær og Decimal?</p></i></li></b><br>
+                    <b><li><i><p>Forklar:&nbsp; Hvordan man regner mellem:&nbsp;&nbsp; Binær og Hexa Decimal?</p></i></li></b><br>
+                        <b><li><i><p>Forklar:&nbsp; Hvad forkortelserne DDL og DML.<br> Og hvad de bruges til?</p></i></li></b><br>
+                            <b><li><i><p>Beskriv:&nbsp; Hvordan man opretter et MySQL DBMS på Azure.<br> Og hvad vi kan bruge
+                        sådan et til?</p></i></li></b>
+
+                </ol>
+                <br>
+                <a th:href="@{/eksamen2}" href="eksamen2.html" class="btn btn-success active" style="font-weight: bold" role="button">Område 2 - Svar...</a>
+        </div>
+
+
+        <div id="menu3" class="tab-pane fade">
+            <h3><b><i>Samtidigheds-problematikker.</i>&nbsp;&nbsp;&nbsp;<i class="fa fa-calendar-times-o" style="font-size:24px"></i></b></h3>
+            <br>
+            <p><u>Eksamen Spørgsmål:</u></p>
+            <ol>
+                <b><li><i><p>Beskriv:&nbsp; Hvad der gør et problem, til et samtidighedsproblem. <br>Gerne ift. jeres projekt?</p></i></li></b><br>
+                    <b><li><i><p>Beskriv:&nbsp; En type af samtidighedsproblemer.<br> Og gerne praktisk?</p></i></li></b><br>
+                        <b><li><i><p>Findes der nogle standard løsninger?<br> Til at løse samtidighedsproblemer på?</p></i></li></b><br>
+                            <b><li><i><p>Beskriv:&nbsp; Deadlock?</p></i></li></b>
+
+            </ol>
+            <br>
+            <a th:href="@{/eksamen3}" href="eksamen3.html" class="btn btn-success active" style="font-weight: bold" role="button">Område 3 - Svar...</a>
+        </div>
+
+
+        <div id="menu4" class="tab-pane fade">
+            <h3><b><i>Computer-netværk.</i>&nbsp;&nbsp;&nbsp;<i class="fa fa-wifi" style="font-size:24px"></i></b></h3>
+            <br>
+            <p><u>Eksamen Spørgsmål:</u></p>
+            <ol>
+                <b> <li><i><p>Hvad bruges DNS til?<br><br>   Ift. Computer netværk?</p></i></li></b><br>
+                    <b><li><i><p>Kan man se hvilke data ( filer )?<br> Der bruges af et Webside?<br>Hvis ja, hvordan?</p></i></li></b><br>
+                        <b><li><i><p>Hvordan kan man kende forskel på:&nbsp;&nbsp; IPv4 og IPv6?</p></i></li></b><br>
+                            <b><li><i><p>Vis, eller beskriv:&nbsp;&nbsp; De kommandoer du kender til. <br> Ift. netværk som kan bruges i et terminal vindue.
+                    <br><br> Det kan f.eks. være ”ping” kommandoen.
+                </p></i></li></b>
+
+            </ol>
+            <br>
+            <a th:href="@{/eksamen4}" href="eksamen4.html" class="btn btn-success active" style="font-weight: bold" role="button">Område 4 - Svar...</a>
+        </div>
+
+
+        <div id="webservice" class="tab-pane fade">
+            <h3><b><i>Test af webservice.</i>&nbsp;&nbsp;&nbsp;<i class="fa fa-download" style="font-size:24px"></i></b></h3>
+            <br>
+            <i><p>Gå til webservice test page.</p></i>
+            <br>
+            <a th:href="@{/webservice}" href="webservice.html" class="btn btn-warning active" style="font-weight: bold" role="button">Webservice - Test...</a>
+        </div>
+
+        <br>
+        <hr>
+
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function(){
+        $(".nav-tabs a").click(function(){
+            $(this).tab('show');
+        });
+        $('.nav-tabs a').on('shown.bs.tab', function(event){
+            var x = $(event.target).text();         // active tab
+            var y = $(event.relatedTarget).text();  // previous tab
+            $(".act span").text(x);
+            $(".prev span").text(y);
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Teknologi - Lærings mål.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <br>
+  <h2><b><i>Test af Webservice</i> &nbsp;&nbsp;&nbsp;<i class="fa fa-download" style="font-size:24px"></i></b></h2>
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> <b>-</b> Afprøv webservicen<b> -</b> </i></p>
+  <br>
+
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#webservice" class="bg-info" style="font-weight: bold">Home</a></li>
+    <li><a href="#menu1" class="bg-danger" style="font-weight: bold">Webservice</a></li>
+
+  </ul>
+
+  <div class="tab-content">
+    <div id="webservice" class="tab-pane fade in active">
+
+      <br><br>
+
+      <a th:href="@{/}" href="index.html" class="btn btn-info" style="font-weight: bold"><i class="fa fa-mail-reply"></i>&nbsp;&nbsp;Gå til Home...</a>
+
+
+    </div>
+
+
+    <div id="menu1" class="tab-pane fade">
+      <h3><b><i>Webservice:</i></b></h3>
+      <hr>
+      <br>
+
+      <p>Under Construction...</p>
+
+      <br>
+
+      <hr>
+
+      <br><br>
+
+      <a th:href="@{/webservice}" href="webservice.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+
+    </div>
+
+
+
+
+
+
+  </div>
+  <br>
+  <hr>
+  <!--  <p class="act"><b>Active Tab</b>: <span></span></p>
+   <p class="prev"><b>Previous Tab</b>: <span></span></p> -->
+</div>
+
+<script>
+  $(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+      $(this).tab('show');
+    });
+    $('.nav-tabs a').on('shown.bs.tab', function(event){
+      var x = $(event.target).text();         // active tab
+      var y = $(event.relatedTarget).text();  // previous tab
+      $(".act span").text(x);
+      $(".prev span").text(y);
+    });
+  });
+</script>
+
+</body>
+</html>

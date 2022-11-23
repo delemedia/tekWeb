@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Teknologi - Lærings mål.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <br>
+ <h2><b><i>Computer-netværk.</i> &nbsp;&nbsp;&nbsp;<i class="fa fa-wifi" style="font-size:24px"></i></b></h2>
+
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> <b>-</b> Vælg et spørgsmål<b> -</b> </i></p>
+  <br>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#eksamen4" class="bg-info" style="font-weight: bold"><i class="fa fa-caret-square-o-left"></i>&nbsp;&nbsp;Home</a></li>
+    <li><a href="#menu4_1" class="bg-primary" style="font-weight: bold">1</a></li>
+    <li><a href="#menu4_2" class="bg-primary" style="font-weight: bold">2</a></li>
+    <li><a href="#menu4_3" class="bg-primary" style="font-weight: bold">3</a></li>
+    <li><a href="#menu4_4" class="bg-primary" style="font-weight: bold">4</a></li>
+
+  </ul>
+
+  <div class="tab-content">
+    <div id="eksamen4" class="tab-pane fade in active">
+
+      <br><br>
+
+      <a th:href="@{/}" href="index.html" class="btn btn-info" style="font-weight: bold"><i class="fa fa-mail-reply"></i>&nbsp;&nbsp;Gå til Home...</a>
+
+
+    </div>
+
+
+
+    <!-- Spørgsmål 1 -->
+
+    <div id="menu4_1" class="tab-pane fade">
+      <br>
+      <h3><b><i>1.&nbsp; Hvad bruges DNS til?<br><br>&nbsp;&nbsp;&nbsp;&nbsp; Ift. Computer netværk?</i></b></h3>
+      <br>
+      <hr>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+      <br>
+      <hr>
+      <br>
+
+      <p><a th:href="@{https://www.fortinet.com/resources/cyberglossary/what-is-dns}" href="https://www.fortinet.com/resources/cyberglossary/what-is-dns/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - fortinet.com</a></p>
+      <h4><b>What Is DNS?</b></h4>
+      <h6><i></i></h6>
+
+      <br>
+      <hr>
+      <br>
+
+      <h3><b><u><i>DNS Servers og IP Adresser</i></u></b></h3>
+      <br>
+      <br>
+      <h4><b><u><i>DNS Definition:</i></u></b></h4>
+      <p>Domain Name System (DNS) gør domæne-navne til IP-adresser.</p>
+      <p>Som browsere anvender til at hente internet-sider. </p>
+      <h6><i>'DNS henter IP adressen til brugeren.'</i></h6>
+      <br>
+      <p>Hver enhed der er tilsluttet internettet, har sin egen IP-adresse. </p>
+      <p>Som bruges af andre enheder til at lokalisere enheden.</p>
+      <br>
+      <p>DNS-servere gør det muligt for folk, at let indtaste: </p>
+      <p>"Normale ord / navne" i deres browsere.</p>
+      <h6><i>Såsom Google.com = ( 8.8.8.8 )</i></h6>
+      <br>
+      <p>Uden DNS ville man holde styr på en lang liste af IP-adresser.</p>
+      <p><i>For hver website man besøger.</i></p>
+      <br>
+      <p>Computere og forskellige enheder, der bruger internettet. </p>
+      <h6><i>Er afhængige af IP-adresser.</i></h6>
+      <br>
+      <p>Hvis man f.eks. indtaster et website i ens webbrowser, </p>
+      <p>kan den her URL, ”ikke i sig selv” bringe dig til websitet. </p>
+      <p>De her bogstaver kan ikke "læses" af de servere. </p>
+      <br>
+      <p>Serverne er dog i stand til at læse IP-adresser. </p>
+
+      <br><br>
+
+      <hr>
+
+      <br>
+
+      <h4><b><u><i>Hvad er en DNS Server?</i></u></b></h4>
+      <p>En DNS-server er en computer med en database, </p>
+      <p>der indeholder de offentlige IP-adresser, </p>
+      <p>der er forbundet med navnene på de websteder,</p>
+      <p>en IP-adresse bringer en bruger til. </p>
+      <br>
+      <p>DNS fungerer som en telefonbog for internettet. </p>
+      <p>Når folk skriver domænenavne, som google.com</p>
+      <p>eller Facebook.com, i adresse-linjen ( *URL’en ) i webbrowsere, </p>
+      <p>finder DNS den rigtige IP-adresse. </p>
+      <br>
+      <br>
+      <p>Når først DNS-serveren finder den korrekte IP-adresse, </p>
+      <p>browsere adressen og bruger den til at sende data til Content Delivery Network (CDN) </p>
+      <p>edge-servere eller origin-servere. </p>
+      <br>
+      <p>Når dette er gjort, kan oplysningerne på hjemmesiden tilgås af brugeren.</p>
+      <br>
+      <p>DNS-serveren starter processen ved at finde den tilsvarende IP-adresse til et websteds *URL </p>
+      <br>
+      <p>*URL = (Uniform ressource locator).</p>
+
+      <br><br>
+
+      <hr>
+
+      <br>
+
+      <h4><b><u><i>Hvordan virker DNS?</i></u></b></h4>
+      <p>I en sædvanlig DNS-forespørgsel (query) skal den URL</p>
+      <p>som brugeren har indtastet, gå gennem 4 servere, </p>
+      <p>for at IP-adressen kan angives. </p>
+      <br>
+      <p>De 4 servere arbejder med hinanden.</p>
+      <p>For at få den korrekte IP-adresse til klienten.</p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+      <br>
+
+      <p><i><u>De inkluderer:</u></i></p>
+      <br>
+      <h5><b>1. <u>DNS Recursor:</u></b></h5>
+      <p>DNS Recursor’en... Som også referes som en DNS resolver.</p>
+      <p>Der modtager forespørgslen ( query ), fra The DNS Client.</p>
+      <br>
+      <p>Derefter kommunikerer den med andre DNS servere.</p>
+      <p>For at finde den rigtige IP-adresse. </p>
+      <br>
+      <p>Efter at Resolver'en har hentet anmodningen fra klienten.</p>
+      <p>Fungerer resolver'en som en klient selv. </p>
+      <br>
+      <p>Mens den gør dette, laver den forespørgsler, ( querries ) </p>
+      <p>der sendes til de 3 andre DNS servere: </p>
+      <br>
+      <ul>
+        <li><i><b>Root Name-servere.</b></i> </li>
+        <br>
+        <li><i><b>Top-Level Domain - ( TLD ).</b></i></li>
+        <br>
+        <li><b><i>Authoritative Name-servere.</i></b></li>
+      </ul>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+      <br>
+
+      <h5><b>2. <u>Root Name-servere:</u></b></h5>
+      <p>Root Name-servere... Er udpeget ( designated ), </p>
+      <p>til internettets ( DNS Root Zone ).</p>
+      <br>
+      <p>Dens opgave er at besvare forespørgsler.</p>
+      <p>Sendt til den, omkring ( records ) registreringer i ( Root zone ).</p>
+      <br>
+      <p>Den besvarer anmodninger ved at sende en liste tilbage.</p>
+      <p>Over de ( Authoritative name-servere ), der følger med den korrekte TLD.</p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+      <br>
+
+      <h5><b>3. <u>TLD Name-servere:</u></b></h5>
+      <p>TLD-name-servere...  beholder IP-adressen på domænet. </p>
+      <p>På ( second-level domain ) indeholdt ( Contained ) i TLD-navnet. </p>
+      <br>
+      <p>Det frigiver derefter webstedets IP-adresse, </p>
+      <p>og sender forespørgslen ( query ) til ( domain’s name-servere )</p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+      <br>
+
+      <h5><b>4. <u>Authoritative nameservers:</u></b></h5>
+      <p>Authoritative nameservers...  Er det, der giver dig det rigtige svar.</p>
+      <p>På din DNS-forespørgsel ( query ). </p>
+      <br>
+      <p>Der er 2 typer Authoritative nameservers:</p>
+      <ul>
+        <li><b><i>Master server / Primary name-server.</i></b></li>
+        <h6><i>Beholder de <b>originale kopier</b> af zone records.</i></h6>
+        <br>
+        <li><i><b>Slave server / Secondary name-server. </b></i></li>
+        <h6><i>Er en <b>nøjagtig kopi</b> af masterserveren-</i></h6>
+        <br>
+      </ul>
+
+      <img th:src="@{img/eksamen1/DNS.PNG}" src="../static/img/eksamen1/DNS.PNG" width="400" height="350" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+
+      <br><br>
+
+      <hr>
+
+      <br><br>
+
+      <h3><b><u><i>Ekstra - DNS forklaring:</i></u></b></h3>
+      <br>
+      <br>
+      <h4><b><u><i>Authoritative DNS Servers vs. Recursive DNS Servers: </i></u></b></h4>
+      <h5>- <i><b>Hvad er forskellen?</b></i> -</h5>
+      <br>
+      <p>Authoritative nameservers opbevarer oplysninger om DNS records.  </p>
+      <p>En Recursive server fungerer som en ”middle-man.” </p>
+      <p>Placeret mellem den autoritative server, og slutbrugeren. ”End user”</p>
+      <br>
+      <p>For at nå name-serveren, skal den Recursive server "gentage" ( recurse ) gennem ”DNS tree” </p>
+      <p>For at få adgang til domænets registreringer. ( the domain’s records. )</p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+      <br>
+
+      <h4><b><u><i>Authoritative DNS Server </i></u></b></h4>
+      <br>
+      <p>For at bruge telefonbogs-analogien...</p>
+      <p>Man skal tænke på IP-adressen, som telefon-nummeret og personens navn som websitets URL. </p>
+      <p>Autoritative DNS-servere har en kopi af "telefonbogen" </p>
+      <br>
+      <p>Der forbinder disse IP-adresser med deres tilsvarende domænenavne. ”corresponding” domain names.</p>
+      <p>De giver svar på de forespørgsler, ( querries ) der sendes af recursive DNS name-servere.</p>
+      <p>Og giver oplysninger om, hvor man kan finde specifikke websites. </p>
+      <br>
+      <p>De tildelte  svar har IP-adresserne på de domains, </p>
+      <p>Der er involveret i forespørgslen. ( Query )</p>
+      <br>
+      <br>
+      <p>Authoritative DNS-servere er ansvarlige for specifikke regioner.</p>
+      <p>Såsom et land, en organisation eller et lokalt område. </p>
+      <br>
+      <p>Uanset hvilken region der er dækket.</p>
+      <p>udfører en autoritativ DNS server, 2 vigtige opgaver. </p>
+      <br>
+      <br>
+      <p><b>1st:</b><br> Beholder serveren lister over domænenavne ”domain names” </p>
+      <p>Og de IP-adresser, der følger med dem. </p>
+      <br>
+      <p><b>2nd:</b><br> Derefter svarer serveren på anmodninger. </p>
+      <p>Fra den rekursive DNS-server</p>
+      <p>Vedrørende den IP-adresse,</p>
+      <p>der svarer til et domænenavn. ”domain name”</p>
+      <br>
+      <p>Når den rekursive DNS-server får svaret, </p>
+      <p>sender den disse oplysninger tilbage,</p>
+      <p>til den computer, der anmodede om det. </p>
+      <br>
+      <p>Computeren bruger så de her infomrationer.</p>
+      <p>til at forbinde forbindelse til IP-adressen, </p>
+      <p>og brugeren får lov til at se hjemmesiden.</p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+      <br>
+
+      <h4><b><u><i>Recursive DNS Server</i></u></b></h4>
+      <br>
+      <p>Efter en bruger har indtastet en URL i deres webbrowser, </p>
+      <p>Gives den her URL til den rekursive DNS-server. </p>
+      <br>
+      <p>Den rekursive DNS-server undersøger derefter sin cache hukommelse ”cache-memory” </p>
+      <p>For at se, om IP-adressen for URL'en allerede er gemt.( stored / opbevaret )</p>
+      <br>
+      <p>Hvis IP-adresseoplysningerne ( IP address information ) allerede eksisterer,</p>
+      <p>vil den rekursive DNS-server sende IP-adressen til browseren. </p>
+      <br>
+      <p>Brugeren kan derefter se den hjemmeside, som de har indtastet URL'en til.</p>
+      <br>
+      <br>
+      <p>På den anden side, hvis den recursive DNS-server. </p>
+      <p>.Ikke finder IP-adressen, når den søger i sin hukommelse, ”memory”</p>
+      <p>Vil den fortsætte gennem processen med at hente IP-adressen til brugeren. </p>
+      <br>
+      <p>Den recursive DNS-servers næste trin. </p>
+      <p>Er at gemme ( oplagre / store  ) IP-adressen i et bestemt tidsrum. </p>
+      <br>
+      <p>Denne tids-periode er defineret af den person.</p>
+      <p>Der ejer  domain'et ved hjælp af en indstilling,</p>
+      <p>Der kaldes time to live (TTL).</p>
+
+      <br><br>
+
+      <hr>
+
+      <br><br>
+
+      <h4><b><u><i>Browser - DNS Caching:</i></u></b></h4>
+      <br>
+      <p>Ens Operativsystem (OS), der anvendes på ens enhed,</p>
+      <p>( stored ) gemmer DNS resource records ved brug af caching. </p>
+      <br>
+      <p>Caching forhindrer redundans, ( udnødvendigheder ) </p>
+      <p>når nogen forsøger at gå til et websted.</p>
+      <br>
+      <p>Dette reducerer til gengæld den tid, det tager at komme til websitet. </p>
+      <br>
+      <p>Hvis den enhed, man anvender, ”for nylig,” </p>
+      <p>gik til den side, den forsøger at få adgang til, </p>
+      <p>kan IP-adressen leveres af cachen. </p>
+      <br>
+      <p>På den her måde...</p>
+      <p>Kan website anmodningen fuldføres, uden at involvere DNS-serveren.</p>
+      <br>
+      <p>DNS-cachen hjælper derved med at ”streamline” </p>
+      <p>DNS lookup process'en - som ellers ville være nødvendig</p>
+      <p>For at link et domain-name til en IP-adresse. </p>
+      <p>Dette gør processen med at komme til websitet meget hurtigere.</p>
+
+      <br><br>
+
+      <hr>
+
+      <br><br>
+
+      <h4><b><u><i>OS - DNS Caching</i></u></b></h4>
+      <br>
+      <p>Operativ-systemerne på mange forskellige enheder.</p>
+      <p>Er i stand til at vedligeholde en lokal kopi af DNS lookups.</p>
+      <br>
+      <p>Dette gør det muligt for operativsystemet hurtigt. </p>
+      <p>få de oplysninger, det skal bruge for at løse. </p>
+      <p>”Resolve” URL'en til den korrekte IP-adresse.</p>
+
+      <br><br>
+
+      <hr>
+
+      <br><br>
+
+      <h4><b><u><i>Hvad er typerne af DNS Queries?</i></u></b></h4>
+      <br>
+      <p>Under ”DNS lookup process...”   </p>
+      <p>Udføres 3 forskellige slags forespørgsler. ( Queries )  </p>
+      <br>
+      <p>Forespørgslerne ( The querries ) kombineres </p>
+      <p>For at optimere opløsningen ( resolution )</p>
+      <p>Af DNS. hvilket sparer tid.</p>
+      <br>
+      <ul>
+        <li>Recursive query</li>
+        <br>
+        <li>Iterative query</li>
+        <br>
+        <li>Non-recursive query</li>
+      </ul>
+
+
+      <br><br>
+
+      <hr>
+
+      <br><br>
+
+      <a th:href="@{/eksamen4}" href="eksamen4.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+
+    </div> <!-- End line - Spørgsmål 1 -->
+
+
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+
+
+    <!-- Spørgsmål 2 -->
+
+    <div id="menu4_2" class="tab-pane fade">
+      <br>
+      <h3><b><i>2.&nbsp; Kan man se hvilke data ( filer )?<br>&nbsp;&nbsp;&nbsp;&nbsp; Der bruges af et Webside?<br><br>&nbsp;&nbsp;&nbsp;&nbsp; Hvis ja, hvordan?</i></b></h3>
+      <br>
+      <hr>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+      <br>
+      <hr>
+      <br>
+      <p><a th:href="@{https://kinsta.com/blog/inspect-element/}" href="https://kinsta.com/blog/inspect-element/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - kinsta.com</a></p>
+      <h4><b>How to Use Your Browser’s Inspect Element Tool to Edit Webpages</b></h4>
+      <h6>Published&nbsp;&nbsp;<i>September 16 - 2022</i></h6>
+      <br>
+      <hr>
+      <br>
+
+      <h3><b><u><i>Developer - Inspect tools:</i></u></b></h3>
+      <br>
+      <p>Ja...&nbsp; Man kan orientere sig og finde data’er + info via:</p>
+      <p>( <i>Developer tools / Inpect tools</i> ) ??</p>
+      <br>
+      <p>Det er ret effektiv, til at søge efter - <i>FrontEnd elementer</i> til design vilkår. </p>
+      <br>
+      <p><i>Til en hvis grad hente data / filer.</i> </p>
+      <br>
+      <p>De fleste browsere, har en top menu. </p>
+      <p>Enten med 3 streger.&nbsp;&nbsp; ( Eller 3 prikker. )</p>
+      <br>
+      <p>I mit tilfælde bruger jeg Brave browser. </p>
+      <p>Ellers fungere <i>Chrome / Firefox</i> &nbsp; i samme forstand.</p>
+      <br>
+      <br>
+      <p>Gennemgangen har udgangspunkt - Igennem KEA.dk website.</p>
+      <br>
+      <hr>
+      <br>
+      <h4><b><u><i>Elements + Styles tabs:</i></u></b></h4>
+      <br>
+
+      <img th:src="@{img/eksamen1/Inspect1.PNG}" src="../static/img/eksamen1/Inspect1.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <br>
+      <p>For at komme til - Tool'et vindue.</p>
+      <p>Vælg --> <i>Indstillinger</i> --> <i>More Tools</i> --> <i>Developer Tools.</i> </p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect2.PNG}" src="../static/img/eksamen1/Inspect2.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Eller højreklik på skærmen. --> Vælg <i>Inspect.</i></p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect3.PNG}" src="../static/img/eksamen1/Inspect3.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Ligeledes... Er der også - <i>View Page Source</i> udgaven:</p>
+      <p>Højreklik på vinduet --> Vælg - <i>View Page Source.</i></p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect4.PNG}" src="../static/img/eksamen1/Inspect4.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Viser kun den enkelte kode side.</p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect5.PNG}" src="../static/img/eksamen1/Inspect5.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Man kan vælge det lille <i>'inspect' ikon.</i></p>
+      <p>Ved venstre top hjørne - I Top Menu Tabs'ene</p>
+      <br>
+      <p>Derefter kan man klikke på forskellige elementer på websitet - F.eks et Billede ( IMG ).</p>
+      <p>Som bliver <i>'highlightet'</i> i <b>Elements tab</b> vinduet med oversigt af HTML tags + øvrige.</p>
+      <p>I højre boks via Styles tab - Kan man se en oversigt af CSS input. </p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect6.PNG}" src="../static/img/eksamen1/Inspect6.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Eller <i>”små”</i> ændre på elementer. </p>
+      <p>Man kan også søge, mere direkte efter bestemte elementer. </p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect7.PNG}" src="../static/img/eksamen1/Inspect7.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Hvis man klikker på Højre boks - Top Menu --> <b>Computed.</b></p>
+      <p>Kan man se mere CSS forklaringer + Få et overblik af <i><b>Padding - Border - Margin</b></i> strukturen.</p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect8.PNG}" src="../static/img/eksamen1/Inspect8.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Man kan klikke på de 3 prikker - Indstillinger ( Settings )</p>
+      <p>Vælge --> <b>Open file.</b></p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect9.PNG}" src="../static/img/eksamen1/Inspect9.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Derefter kan man søge efter - <i>Bestemte filer</i> - Såsom: <i>"Et Billede"</i></p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect10.PNG}" src="../static/img/eksamen1/Inspect10.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Man bliver ført videre til <b>Source Page tab'en</b> – Og viser fil’en. </p>
+      <br>
+      <p>Derefter er det muligt at kunne ”hente” filen. </p>
+      <p>Højreklik --> <b>Save As...</b></p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect11.PNG}" src="../static/img/eksamen1/Inspect11.PNG" width="500" height="200" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Man kan også gå direkte til <b>Source Page</b> – <i>Og finde sine filer direkte.</i></p>
+      <p>Ved at orientere sig i websitet mappe system.</p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect12.PNG}" src="../static/img/eksamen1/Inspect12.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Derefter er det muligt at kunne ”hente” filen. </p>
+      <p>Højreklik --> <b>Save As...</b></p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect13.PNG}" src="../static/img/eksamen1/Inspect13.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <h5><b><u><i>Øvrige funktioner:</i></u></b></h5>
+      <br>
+      <br>
+      <p><u><b>Console - tab’en:</b></u>    Man kan kode mere direkte, og <i>”logge”</i> </p>
+      <p>Hvis man muligvis - Har sit eget projekt at arbejde med i fremtiden. </p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect14.PNG}" src="../static/img/eksamen1/Inspect14.PNG" width="500" height="200" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p><u><b>Network - tab’en:</b></u>    Man kan kode mere direkte, og <i>”logge”</i> </p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect15.PNG}" src="../static/img/eksamen1/Inspect15.PNG" width="500" height="200" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Man kan også orientere sig efter <i><b>”cookies”</b></i> </p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect16.PNG}" src="../static/img/eksamen1/Inspect16.PNG" width="500" height="200" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Det er muligt at - <i><b>'Emulere'</b></i> det i <i>mobil form</i> – Viser den <i><b>responsive udgave.</b></i> </p>
+      <p>I vinduet's Top Tab - Ved Højre Top Menu - Ved højre side af ---> Inspect ikonet.</p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect17.PNG}" src="../static/img/eksamen1/Inspect17.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Derefter kan man udvide størrelserne - Vælge hvilken mobil-first design man ønsker.</p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect18.PNG}" src="../static/img/eksamen1/Inspect18.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Hvis man ønsker at fortage en *SEO analyse vurdering af KEA website.</p>
+      <p>Ved den yderste højre Top Menu tab - Kaldet:&nbsp; <b><i>Lighthouse.</i></b></p>
+      <br>
+      <p>Derefter vælg - Den blå knap - Kaldet:&nbsp; <b><i>Analyse Page Load</i></b></p>
+      <br>
+      <h6><i>*SEO = Search Engine Optimization</i></h6>
+      <h6><i>Er processen med at forbedre kvaliteten og kvantiteten af websteds-trafik til et websted eller en webside fra søgemaskiner.</i></h6>
+      <h6><i>SEO målretter mod ubetalt trafik (kendt som "naturlige" eller "organiske" resultater)</i></h6>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect19.PNG}" src="../static/img/eksamen1/Inspect19.PNG" width="500" height="200" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p>Derefter loader ( Auditing - Overvåger ) den resultatet til en.</p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect20.PNG}" src="../static/img/eksamen1/Inspect20.PNG" width="500" height="200" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <p><u>Derefter er der et udvalg af muligheder:</u></p>
+      <br>
+      <ul>
+        <li><p><b>Performance</b></p></li>
+        <li><p><b>Accessibility</b></p></li>
+        <li><p><b>Best Practices</b></p></li>
+        <li><p><b>SEO</b></p></li>
+        <li><p><b>PWA</b></p></li>
+      </ul>
+      <br>
+      <p>Et eksempel med - <b><u>Performance:</u></b></p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect21.PNG}" src="../static/img/eksamen1/Inspect21.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect22.PNG}" src="../static/img/eksamen1/Inspect22.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect23.PNG}" src="../static/img/eksamen1/Inspect23.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+
+      <h><b><u><i>Overblik af TABS</i></u></b></h>
+      <br>
+      <p>At lære at bruge en browsers Inspect Element-værktøj er en sådan kraftfuld læring-værktøj. </p>
+      <p>Et der er lige ved hånden, og altid tilgængeligt på et website / browsere.</p>
+      <br>
+      <br>
+      <p>Inspect Element-værktøjet er meget mere end en måde at vise kode på. </p>
+      <br>
+      <p><u>Der er ofte flere paneler at få adgang til:</u></p>
+      <br>
+      <ul>
+        <li><p><b>Inspector</b> — Dette kaldes elementer i nogle browsere. </p></li>
+        <p>Det er hovedskærmen i Inspect Element-værktøjet og viser dig sidekoden sammen med elementspecifik CSS. </p>
+        <p>Du finder også yderligere detaljer om et websteds "gitter-system" og andre aspekter.</p>
+        <br>
+        <li><p><b>Consol</b> — Dette er en <i>frontend-warning-log</i> for et websted. </p></li>
+        <p>Det er et sted, hvor du også kan indtaste kodestykker. For at udføre en hurtig test af en idé.</p>
+        <br>
+        <li><p><b>Network</b> — Her kan du se anmodningerne ( requests ) til og fra en server. </p></li>
+        <p>Såsom alle <i>POST- og GET-anmodninger.</i></p>
+        <br>
+        <li><p><b>Performance</b> — Selvfølgelig skal et websted være yde-dygtigt. </p></li>
+        <p>Som sådan - Er der et dedikeret værktøj til at hjælpe dig. </p>
+        <p>Med at måle nogle væsentlige websteds-målinger.</p>
+        <p>Nogle browsere klarer sig bedre end andre her.</p>
+        <br>
+        <li><p><b>Memory</b> — Dette panel lader dig se, hvordan et websted bruger hukommelse. </p></li>
+        <p>og igen tilbyder nogle browsere omfattende metrikker.</p>
+        <br>
+        <li><p><b>Applikation</b> — I dette panel kan du se en lang række oplysninger.</p></li>
+        <p>Om webstedets cache, baggrundstjenester og mere.</p>
+      </ul>
+      <br>
+      <p>Oven i dette - Er der flere paneler, du kan tilføje:</p>
+      <br>
+      <img th:src="@{img/eksamen1/Inspect24.PNG}" src="../static/img/eksamen1/Inspect24.PNG" width="300" height="600" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+
+
+
+
+
+
+
+
+
+
+
+      <br><br>
+
+      <hr>
+
+      <br><br>
+
+      <a th:href="@{/eksamen4}" href="eksamen4.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+    </div> <!-- End line - Spørgsmål 2 -->
+
+
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+
+
+    <!-- Spørgsmål 3 -->
+
+    <div id="menu4_3" class="tab-pane fade">
+      <br>
+      <h3><b><i>3.&nbsp; Hvordan kan man kende forskel på:&nbsp;&nbsp; IPv4 og IPv6?</i></b></h3>
+      <br>
+      <hr>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+      <br>
+      <hr>
+      <br>
+      <p><a th:href="@{https://www.guru99.com/difference-ipv4-vs-ipv6.html}" href="https://www.guru99.com/difference-ipv4-vs-ipv6.html/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - guru99.com:</a></p>
+      <h4><b>IPv4 vs IPv6 – Difference Between Them</b></h4>
+      <h5>Published:&nbsp; <i>September 23, 2022</i></h5>
+      <br>
+      <br>
+      <p><a th:href="@{https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless}" href="https://www.redhat.com/en/topics/cloud-native-apps/stateful-vs-stateless/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - redhat.com:</a></p>
+      <h4><b>Stateful vs stateless</b></h4>
+      <h5>Published:&nbsp; <i>March 28, 2020</i></h5>
+      <br>
+      <br>
+      <p><a th:href="@{https://www.fortinet.com/resources/cyberglossary/qos-quality-of-service}" href="https://www.fortinet.com/resources/cyberglossary/qos-quality-of-service/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - fortinet.com:</a></p>
+      <h4><b>What is QoS in Networking?</b></h4>
+      <h5></i></h5>
+      <br>
+      <hr>
+
+      <br>
+
+      <h4><b><u><i>Hvad er IPv4?</i></u></b></h4>
+      <br>
+      <p>IPv4 er en IP-version, der er meget brugt til at identificere enheder, </p>
+      <p>på et netværk ved hjælp af et addressing-system.</p>
+      <br>
+      <p>IPv4 var den første version af IP.</p>
+      <p>Der blev implementeret til produktion i ARPANET i 1983. </p>
+      <br>
+      <p>IPv4 bruger et 32-bit ”address scheme” </p>
+      <p>Til at gemme 2^32 adresser, hvilket er mere end 4 milliarder address.</p>
+      <br>
+      <p>Det anses som den primære internet-protocol </p>
+      <p>og holder 94% af internet-trafikken.</p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+      <br>
+
+      <h5><b><u><i>Følgende er funktionerne i IPv4:</i></u></b></h5>
+      <br>
+      <ul>
+        <li>Forbindelses-fri protokol.</li>
+        <br>
+        <li>Tillad oprettelse af et simpelt virtuelt kommunikation-layer over diversified enheder.</li>
+        <br>
+        <li>Kræver mindre hukommelse, og lettere at huske addresses.</li>
+        <br>
+        <li>Allerede supported protokol, af millioner af enheder.</li>
+        <br>
+        <li>Tilbyder video-biblioteker og konferencer.</li>
+      </ul>
+
+      <br>
+
+      <hr>
+
+      <br>
+
+      <h4><b><u><i>Hvad er IPv6?</i></u></b></h4>
+      <br>
+      <p>IPv6 er den seneste version af internet-protokollen...</p>
+      <p>Denne nye IP-address version er ved at blive ”deployed.”</p>
+      <p>For at opfylde behovet, for flere internet address. </p>
+      <br>
+      <p>Det havde til formål at løse. </p>
+      <p>”Resolve” problemer, der er forbundet med IPv4. </p>
+      <br>
+      <p>Med 128-bit ”address space”</p>
+      <p>Tillader det 340 undebillion unikke "address space". </p>
+      <br>
+      <p>IPv6 kaldes også IPng - (Internet Protocol next generation).</p>
+      <br>
+      <br>
+      <p>Internet Engineer Taskforce startede det i begyndelsen af 1994.</p>
+      <p>Designet og udviklingen af denne suite kaldes nu IPv6.</p>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+      <br>
+
+      <h5><b><u><i>Følgende er funktionerne i IPv6:</i></u></b></h5>
+      <br>
+      <ul>
+        <li>Hierarkisk addressing og routing infrastruktur</li>
+        <br>
+        <li>*Stateful og *Stateless konfiguration</li>
+        <br>
+        <li>Support til service-kvalitet (QoS)</li>
+        <br>
+        <li>En ideel protokol til interaktion med "neighbouring node interaction"</li>
+        <h6><i>Internet Control Message Protocol - for IPv6 - (ICMPv6)</i></h6>
+
+      </ul>
+
+      <br>
+
+      <hr>
+
+      <br>
+
+      <p><b>*QoS </b>= <i>Quality of service (QoS)</i></p>
+      <h6><i>Er brugen af mekanismer eller teknologier, der virker på et netværk </i></h6>
+      <h6><i>for at kontrollere trafik og sikre ydeevnen af kritiske applikationer </i></h6>
+      <h6><i>med begrænset netværkskapacitet. </i></h6>
+      <br>
+      <h6><i>Det gør det muligt for organisationer at justere deres overordnede netværks-trafik </i></h6>
+      <h6><i>Ved at prioritere specifikke højt-ydende applikationer.</i></h6>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+      <br>
+
+      <p><b>*Stateful</b></p>
+      <h6><i>Stateful applikationer og processer er dog dem, </i></h6>
+      <h6><i>der kan vendes tilbage til igen og igen - Såsom: netbank eller e-mail. </i></h6>
+      <br>
+      <h6><i>De udføres i sammenhæng med tidligere transaktioner. </i></h6>
+      <h6><i>Og den aktuelle transaktion kan blive påvirket af. </i></h6>
+      <h6><i>Hvad der skete under tidligere transaktioner.  </i></h6>
+      <br>
+      <h6><i>Af disse grunde bruger statelige apps de samme servere.  </i></h6>
+      <h6><i>Hver gang de behandler en anmodning - Fra en bruger. </i></h6>
+
+      <br>
+
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+      <br>
+
+      <p><b>*Stateless</b></p>
+      <h6><i>En stateless proces eller ansøgning kan forstås isoleret. </i></h6>
+      <h6><i>Der er ingen lagret viden om eller reference til tidligere transaktioner.  </i></h6>
+      <h6><i>Hver transaktion udføres som fra bunden for første gang.  </i></h6>
+      <br>
+      <h6><i>Stateless applikationer leverer én tjeneste eller funktion.  </i></h6>
+      <h6><i>Og bruger Content Delivery Network - (CDN), web eller print-servere. </i></h6>
+      <h6><i>Til at behandle disse kortsigtede anmodninger.  </i></h6>
+
+      <br>
+
+      <hr>
+
+      <br>
+
+      <h4><b><u><i>Hvad er forskellen imellem IPv4 & IPv6</i></u></b></h4>
+      <br>
+      <p>IPv4 og IPv6 er begge IP-adresser, der er binære tal. </p>
+      <p>IPv4 er et 32-bit binært tal, og IPv6 er en 128-bit binært tal addresses</p>
+      <p>IPv4-adresser er adskilt af punktum, ( . ) mens IPv6-adresser er adskilt af kolon. ( : )</p>
+      <br>
+      <p>Begge IP-adresser bruges til at identificere maskiner, der er tilsluttet et netværk. </p>
+      <p>I princippet ligner de næsten hinanden, men de er forskellige i, hvordan de fungerer.</p>
+      <br>
+      <p>IPv4 og IPv6 kan ikke kommunikere med andre. </p>
+      <p>Men kan eksistere sammen på det samme netværk. </p>
+      <p>Det er kendt som <b><i>Dual Stack.</i></b></p>
+      <br>
+      <p>IPv4 er den fjerde version af Internet Protocol (IP). </p>
+      <p>Mens IPv6 er den seneste version af Internet Protocol. </p>
+      <p>Derfor er IPv6 mere avanceret, sikker og hurtigere - Sammenlignet med IPv4.</p>
+      <br>
+      <br>
+
+      <img th:src="@{img/eksamen1/IPv4vsIPv6.PNG}" src="../static/img/eksamen1/IPv4vsIPv6.PNG" width="500" height="150" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+
+
+      <h5><b><u><i>Minor overview:</i></u></b></h5>
+      <br>
+      <ul>
+        <li>IPv4 er en 32-bit IP-adresse - Hvorimod IPv6 er en 128-bit IP-adresse.</li>
+        <br>
+        <li>IPv4 er en numerisk addressing method - Hvorimod IPv6 er en alfa-numerisk addressing method.</li>
+        <br>
+        <li>IPv4 binære bit er adskilt af en prik(.) - Hvorimod IPv6 binære bit er adskilt af et kolon(:).</li>
+        <br>
+        <li>IPv4 tilbyder 12 ”*Header fields” - Hvorimod IPv6 tilbyder 8 ”*Header fields.” </li>
+        <br>
+        <li>IPv4 support broadcast - Hvorimod IPv6 ikke supporter broadcast.</li>
+        <br>
+        <li>IPv4 har ”*Checksum fields” - Mens IPv6 ikke har ”*Checksum fields.”  </li>
+        <br>
+        <li>Når man sammenligner - IPv4 og IPv6.</li>
+        <ul>
+          <li><p>IPv4 - Support - VLSM (Variable Length Subnet Mask - Diagram).</p></li>
+          <li><p>IPv6 - Support ikke - VLSM.</p></li>
+        </ul>
+        <br>
+        <li>ARP ( Address Resolution Protocol ) - NDP ( Neighbour Discovery Protocol ) </li>
+        <ul>
+          <li><p>IPv4 bruger ARP - Til at kortlægge ”map” til MAC-adresse.</p></li>
+          <li> <p>IPv6 bruger NDP - Til at kortlægge ”map” til MAC-adresse.</p></li>
+        </ul>
+
+      </ul>
+
+      <br>
+      <p><b>*Header fields.</b> = Overskrifts-felter.</p>
+      <br>
+      <p><b>*Checksum fields.</b> = Kontrolsum-felter. </p>
+
+      <br>
+
+      <hr>
+
+      <br>
+
+      <h5><b><u><i>Major main overview:</i></u></b></h5>
+      <br>
+
+      <table style="width:100%" class="table table-hover">
+        <tr>
+          <th>Basis for forskel</th>
+          <th>IPv4</th>
+          <th>IPv6</th>
+        </tr>
+        <tr>
+          <td>Size of IP addresss</td>
+          <td>IPv4 is a 32-Bit IP Address.</td>
+          <td>IPv6 is 128 Bit IP Address.</td>
+        </tr>
+        <tr>
+          <td>Addressing method</td>
+          <td>IPv4 is a numeric address, and its binary bits are separated by a dot (.)</td>
+          <td>IPv6 is an alphanumeric address whose binary bits are separated by a colon (:). It also contains hexadecimal.</td>
+        </tr>
+        <tr>
+          <td>Number of header fields</td>
+          <td>12</td>
+          <td>8</td>
+        </tr>
+
+
+        <tr>
+          <td>Length of header filed</td>
+          <td>20</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>Checksum</td>
+          <td>Has checksum fields</td>
+          <td>Does not have checksum fields</td>
+        </tr>
+        <tr>
+          <td>Example</td>
+          <td>12.244.233.165</td>
+          <td>2001:0db8:0000:0000:0000:ff00:0042:7879</td>
+        </tr>
+        <tr>
+          <td>Type of Addresses</td>
+          <td>Unicast, broadcast, and multicast.</td>
+          <td>Unicast, multicast, and anycast.</td>
+        </tr>
+        <tr>
+          <td>Number of classes</td>
+          <td>IPv4 offers five different classes of IP Address. Class A to E.</td>
+          <td>lPv6 allows storing an unlimited number of IP Address.</td>
+        </tr>
+        <tr>
+          <td>Configuration</td>
+          <td>You have to configure a newly installed system before it can communicate with other systems.</td>
+          <td>In IPv6, the configuration is optional, depending upon on functions needed.</td>
+        </tr>
+
+        <!-- 10 Rows -->
+
+
+        <tr>
+          <td>VLSM support</td>
+          <td>IPv4 support VLSM (Variable Length Subnet mask).</td>
+          <td>IPv6 does not offer support for VLSM.</td>
+        </tr>
+        <tr>
+          <td>Fragmentation</td>
+          <td>Fragmentation is done by sending and forwarding routes.</td>
+          <td>Fragmentation is done by the sender.</td>
+        </tr>
+        <tr>
+          <td>Routing Information Protocol (RIP)</td>
+          <td>RIP is a routing protocol supported by the routed daemon.</td>
+          <td>RIP does not support IPv6. It uses static routes.</td>
+        </tr>
+        <tr>
+          <td>Network Configuration</td>
+          <td>Networks need to be configured either manually or with DHCP. IPv4 had several overlays to handle Internet growth, which require more maintenance efforts.</td>
+          <td>IPv6 support autoconfiguration capabilities.</td>
+        </tr>
+        <tr>
+          <td>Best feature</td>
+          <td>	Widespread use of NAT (Network address translation) devices which allows single NAT address can mask thousands of
+            non-routable addresses, making end-to-end
+            integrity achievable.</td>
+          <td>It allows direct addressing because of vast address
+            Space.</td>
+        </tr>
+        <tr>
+          <td>Address Mask</td>
+          <td>Use for the designated network from host portion.</td>
+          <td>Not used.</td>
+        </tr>
+        <tr>
+          <td>SNMP</td>
+          <td>SNMP is a protocol used for system management.</td>
+          <td>SNMP does not support IPv6.</td>
+        </tr>
+        <tr>
+          <td>Mobility & Interoperability</td>
+          <td>Relatively constrained network topologies to which move restrict mobility and interoperability capabilities.</td>
+          <td>IPv6 provides interoperability and mobility
+            capabilities which are embedded in network devices.</td>
+        </tr>
+        <tr>
+          <td>Security</td>
+          <td>Security is dependent on applications – IPv4 was not designed with security in mind.</td>
+          <td>IPSec(Internet Protocol Security) is built into the IPv6 protocol, usable with
+            a proper key infrastructure.</td>
+        </tr>
+        <tr>
+          <td>Packet size</td>
+          <td>Packet size 576 bytes required, fragmentation optional</td>
+          <td>1208 bytes required without fragmentation</td>
+        </tr>
+
+        <!-- 20 rows -->
+
+        <tr>
+          <td>Packet fragmentation</td>
+          <td>Allows from routers and sending host</td>
+          <td>Sending hosts only</td>
+        </tr>
+        <tr>
+          <td>Packet header</td>
+          <td>Does not identify packet flow for QoS handling which includes checksum options.</td>
+          <td>Packet head contains Flow Label field that specifies packet flow for QoS handling</td>
+        </tr>
+        <tr>
+          <td>DNS records</td>
+          <td>Address (A) records, maps hostnames</td>
+          <td>Address (AAAA) records, maps hostnames</td>
+        </tr>
+        <tr>
+          <td>Address configuration</td>
+          <td>Manual or via DHCP</td>
+          <td>Stateless address autoconfiguration using Internet Control Message Protocol version 6 (ICMPv6) or DHCPv6</td>
+        </tr>
+        <tr>
+          <td>IP to MAC resolution</td>
+          <td>Broadcast ARP</td>
+          <td>Multicast Neighbour Solicitation</td>
+        </tr>
+        <tr>
+          <td>Local subnet Group management</td>
+          <td>Internet (Group Management Protocol) - GMP</td>
+          <td>Multicast Listener Discovery (MLD)</td>
+        </tr>
+        <tr>
+          <td>Optional Fields</td>
+          <td>Has Optional Fields</td>
+          <td>Does not have optional fields. But Extension headers are available.</td>
+        </tr>
+        <tr>
+          <td>IPSec</td>
+          <td>Internet Protocol Security (IPSec) concerning network security is optional</td>
+          <td>Internet Protocol Security (IPSec) Concerning network security is mandatory</td>
+        </tr>
+        <tr>
+          <td>Dynamic host configuration Server</td>
+          <td>Clients have approach DHCS (Dynamic Host Configuration server) whenever they want to connect to a network.</td>
+          <td>A Client does not have to approach any such server as they are given permanent addresses.</td>
+        </tr>
+        <tr>
+          <td>Mapping</td>
+          <td>Uses ARP (Address Resolution Protocol) to map to MAC address</td>
+          <td>Uses NDP (Neighbour Discovery Protocol) to map to MAC address</td>
+        </tr>
+
+        <!-- 30 rows -->
+
+        <tr>
+          <td>Combability with mobile devices</td>
+          <td>IPv4 address uses the dot-decimal notation. That’s why it is not suitable for mobile networks.</td>
+          <td>IPv6 address is represented in hexadecimal, colon- separated notation.
+            IPv6 is better suited to mobile
+            networks.</td>
+        </tr>
+
+
+      </table>
+
+
+      <br>
+
+      <hr>
+
+      <br><br>
+
+      <a th:href="@{/eksamen4}" href="eksamen4.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+    </div> <!-- End line - Spørgsmål 3 -->
+
+
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+
+
+    <!-- Spørgsmål 4 -->
+
+    <div id="menu4_4" class="tab-pane fade">
+      <br>
+      <h3><b><i>4.&nbsp; Vis, eller beskriv:&nbsp; De kommandoer du kender til?<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ift. netværk, som kan bruges i et terminal vindue.
+        <br><br>&nbsp;&nbsp;&nbsp;&nbsp; Det kan f.eks. være ”ping” kommandoen.</i></b></h3>
+      <br>
+      <hr>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+      <br>
+      <hr>
+      <br>
+      <p><a th:href="@{https://www.simplilearn.com/tutorials/cyber-security-tutorial/understanding-the-networking-commands}" href="https://www.simplilearn.com/tutorials/cyber-security-tutorial/understanding-the-networking-commands/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - simplilearn.com:</a></p>
+      <h4><b>Basic Networking Commands Explained with Examples</b></h4>
+      <h5></h5>
+      <br>
+      <br>
+      <p><a th:href="@{https://www.computernetworkingnotes.com/networking-tutorials/basic-networking-commands-explained-with-examples.html}" href="https://www.computernetworkingnotes.com/networking-tutorials/basic-networking-commands-explained-with-examples.html/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - computernetworkingnotes.com:</a></p>
+      <h4><b>Best Walkthrough for Understanding the Networking Commands</b></h4>
+      <h5></h5>
+      <br>
+      <hr>
+      <br>
+
+      <p>Windows-operativsystemet giver sin bruger et <i>kraftfuldt værktøj</i> - Dvs. <i>kommandoprompt.</i> ( CMD )</p>
+      <p>Som giver os mulighed for at få adgang til og <i>konfigurere system-indstillinger</i> og data.</p>
+      <br>
+      <p>De her <b>netværks-kommandoer</b> kan være nyttige... </p>
+      <p>Når der er behov for at <i>konfigurere…</i>&nbsp; Eller <i>fejlfinde</i> netværks-indstillingerne i vores system.</p>
+      <br>
+      <hr>
+      <br>
+
+      <h3><b><u><i>Hvad er Network Commands:</i></u></b></h3>
+      <br>
+      <p>Hvert system er forbundet til adskillige forskellige netværk,</p>
+      <p>og systemer gennem interne eller eksterne netværks-forbindelser.</p>
+      <p>De her netværks-indstillinger løber ofte ind i problemer og påvirker systemets funktioner.</p>
+      <br>
+      <p>De her netværks-problemer kan løses ved hjælp af <i>’Network-commands’.</i></p>
+      <br>
+      <p>De her kommandoer er <i>specielt designet</i> til at <i>fejlfinde</i> netværks-problemer. </p>
+      <br>
+      <p>Med en <i>minimal overblik</i> ved hjælp af <i>Windows kommandoprompt værktøj.</i> ( <b>CMD.exe</b> )</p>
+      <br>
+      <p>Indenfor Network commands – Er der en <i>alt for stor liste</i> af network commands at gennemgå…</p>
+      <br>
+      <p>Her er et lille udvalg...</p>
+      <br>
+      <p><u><i>Af de mest grundlæggende netværks-kommandoerne:</i></u></p>
+      <br>
+      <hr>
+      <br>
+
+      <h4><b><u><i>IPCONFIG:</i></u></b></h4>
+      <br>
+      <p>ipconfig netværks-kommandoen giver et omfattende overblik. </p>
+      <p>Over almen oplysninger vedrørende IP-adresse konfigurationen. </p>
+      <p>For den enhed, vi arbejder på i øjeblikket.</p>
+      <br>
+      <p>ipconfig kommandoen har en vis input variation udover <i>'ipconfig'</i> kommando. </p>
+      <p>Der er rettet mod specifikke system-indstillinger eller data.</p>
+      <br>
+      <p>Viser alle de aktuelle <i>TCP/IP-netværks konfigurationsværdier.</i> </p>
+      <p>Opdaterer <b>*DHCP</b> <i>( Dynamic Host Configuration Protocol ).</i></p>
+      <p>og <i>*Domain Name System</i> <b>( DNS )</b> indstillinger.</p>
+      <br>
+      <p>Den her kommando bruges hovedsageligt til at se IP-adresserne.</p>
+      <p>På de computere, der er konfigureret til at hente deres IP-adresse automatisk.</p>
+      <br>
+      <br>
+      <h6><i><b>*DHCP</b> = ( <i>Dynamic Host Configuration Protocol</i> )</i></h6>
+      <h6><i>Server / Funktion - Der deler ud / sender ud IP adresser - Til netværkets enheder / clients.</i></h6>
+      <br>
+      <h6><i><b>*DNS</b> = ( <i>Domain Name System</i> )</i></h6>
+      <h6><i>Server / Funktion - Der tildeler et navn til en IP-adresse.</i></h6>
+
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+      <br>
+
+      <p><u>Input kommandoen:</u> – <b>ipconfig</b></p>
+      <p><i>Beksrivelse:&nbsp; Display IP-adresserne - Subnet Mask - Default Gateway - For alle netværk adapters</i></p>
+      <br>
+      <br>
+
+
+      <table style="width:100%" class="table table-hover">
+        <tr>
+          <th>Commands:</th>
+          <th>Beskrivelse:</th>
+        </tr>
+
+      <tr>
+        <td>ipconfig/<b>all</b> </td>
+        <td>Display - Den fulde TCP/IP konfiguration for - <i>Alle</i> netværks-adaptere.</td>
+      </tr>
+
+        <tr>
+          <td>ipconfig/<b>renew</b> [Adapter] </td>
+          <td>Renews - DHCP konfiguration - For alle adapters - ( Hvis en adapter er inkluderet )</td>
+        </tr>
+
+        <tr>
+          <td>ipconfig/<b>release</b> [Adapter] </td>
+          <td>Sender en DHCP(RELEASE) besked til ens DHCP server.<br> For at <i>'Release'</i> Frigøre den nuværende DHCP konfiguration.<br> Og discard ( Fjerne ) IP adresse konfiguration. - ( Hvis en adapter er inkluderet )</td>
+        </tr>
+
+        <tr>
+          <td>ipconfig/<b>flushdns</b>  </td>
+          <td><i>Flushes</i> ( Renser ) - Og <i>resets</i> ( Omstarter ) indholdet af ens DNS client resolver cache.</td>
+        </tr>
+
+      </table>
+
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+      <br>
+
+      <h5><b><u><i>ipconfig - promt - eksempler:</i></u></b></h5>
+      <br>
+      <img th:src="@{img/eksamen1/IPCONFIG.PNG}" src="../static/img/eksamen1/IPCONFIG.PNG" width="500" height="400" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/IPCONFIG2.PNG}" src="../static/img/eksamen1/IPCONFIG2.PNG" width="500" height="400" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <hr>
+      <br>
+
+
+      <h4><b><u><i>NSLOOKUP</i></u></b></h4>
+      <br>
+      <p>Kommandoen kan vi få adgang til informationen relateret til vores systemer.</p>
+      <p><b><i>DNS-server</i></b> - DVS. domain names og IP-adresse.</p>
+      <br>
+      <p><u>Input kommandoen:</u> – <b>nslookup</b></p>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+      <br>
+      <h5><b><u><i>nslookup - promt - eksempler:</i></u></b></h5>
+      <br>
+      <img th:src="@{img/eksamen1/NSLOOKUP.PNG}" src="../static/img/eksamen1/NSLOOKUP.PNG" width="500" height="400" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <hr>
+      <br>
+
+      <h4><b><u><i>HOSTNAME</i></u></b></h4>
+      <br>
+      <p>Kommandoen viser systemets hostname.</p>
+      <p>Meget nemmere at bruge - End at søge inde i system indstillingerne.</p>
+      <br>
+      <p><u>Input kommandoen:</u> – <b>hostname</b></p>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+      <br>
+      <h5><b><u><i>hostname - promt - eksempel:</i></u></b></h5>
+      <br>
+      <img th:src="@{img/eksamen1/HOSTNAME.PNG}" src="../static/img/eksamen1/HOSTNAME.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <hr>
+      <br>
+
+      <h4><b><u><i>PING</i></u></b></h4>
+      <br>
+      <p>Ping-kommandoen er en af de mest udbredte kommando værktøj.</p>
+      <p>Siden den giver brugeren mulighed - For at kontrollere forbindelsen.</p>
+      <p>Imellem vores system - Og en anden host / client / enhed.</p>
+      <br>
+      <p>Den her kommando sender 4 'test packets = *ICMP'  til destination hosten. </p>
+      <p>For at kontrollere, om den modtager dem med en succes rate. <b>( 100% = 4 recieved )</b> - ( Hvis ja )... </p>
+      <p>Kan man kommunikere med destination hosten. </p>
+      <br>
+      <p>Men i tilfælde af, at pakkerne ( <i>packets</i> ) ikke er blevet modtaget. <b>( 100% = 4 losts )</b> </p>
+      <p>Betyder det - At der ikke kan etableres kommunikation med destination hosten.</p>
+      <br>
+      <p>Ping-kommandoen bruges til at teste forbindelsen mellem to hosts ( enheder )</p>
+      <p>Den sender ICMP echo-requests messages til destinationen.</p>
+      <p>Destination hosten svarer med ICMP-reply message. </p>
+      <br>
+      <p>Hvis ping-kommandoen får et reply fra destination hosten. </p>
+      <p>Viser den the reply sammen med round-trip times info.</p>
+      <br>
+      <p>Hvis man angiver <i>hostname</i> som et argument. </p>
+      <p>Bruger ping-kommandoen den konfigurerede <i>DNS client service.</i></p>
+      <p>Til at... Automatisk oversætte <i>hostname til IP-adressen.</i></p>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+      <br>
+      <p><u>Input kommandoen:</u> – <b>ping</b></p>
+      <br>
+      <p>Ping destination - <i>[ Hosten's IP ] eller [ DNS Navn ]</i></p>
+      <br>
+      <p><u>Input kommandoen: ( DNS )</u> – <b>ping google.com</b></p>
+      <br>
+      <p><u>Input kommandoen: ( IP )</u> – <b>ping 8.8.8.8</b></p>
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+      <br>
+      <h5><b><u><i>ping - promt - eksempler:</i></u></b></h5>
+      <br>
+      <img th:src="@{img/eksamen1/PING.PNG}" src="../static/img/eksamen1/PING.PNG" width="500" height="350" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/PING2.PNG}" src="../static/img/eksamen1/PING2.PNG" width="500" height="350" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <h4><b><u><i>TRACERT</i></u></b></h4>
+      <br>
+      <p>Kommandoen bruges til at spore ruten under transmissionen af datapakken.</p>
+      <p>Over til destination hosten - Giver os også <i><b>"hop"-counts</b></i> under transmissionen.</p>
+      <br>
+      <p>Ved at bruge antallet af hop og hop IP-adressen.</p>
+      <p>Kan vi fejlfinde ( troubleshoot ) netværks-problemer.</p>
+      <p>Og identificere problemets punkter i ruten - Under overførslen af datapakken.</p>
+      <br>
+      <p>Den her kommando bruges til at diagnosticere <i>path</i>-relaterede problemer. </p>
+      <p>På et IP-netværk... Der vil <i>'Routen'</i> veklse IP-pakker - Imellem kilden ( source ) og destinationen. </p>
+      <p>De tager IP-pakker - Fra the source host - Og videresender dem i en rækkefølge ( sequence ) - Indtil de når destination hosten. </p>
+      <br>
+      <p>Rækkefølgen af routere - Imellem kilden ( source ) og destinationen - Er kendt som: <b>( The Path ).</b> </p>
+      <br>
+      <p>En 'path' består af alle routere - I en sekvens - Som IP-pakkerne der er sendt.</p>
+      <p>Fra source host der gennemstrømmer ( traverse ) - For at nå destination host.</p>
+      <br>
+      <p>Kommandoen printer the path. </p>
+      <p>Hvis alle routere på <i>the path</i> - Er funktionelle - Printer den her kommando hele <i>the path.</i> </p>
+      <p>Hvis en router er <b><i>down</i></b> på <i>the path</i> - Printer den her kommando <i>the path</i> op til den <i>'sidste operationelle router.</i></p>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+      <br>
+      <p><u>Input kommandoen:</u> – <b>tracert</b></p>
+      <br>
+      <p>Tracert destination - <i>[ Destination Navn ] eller [ IP adresse ]</i></p>
+      <br>
+      <p><u>Input kommandoen: ( DNS )</u> – <b>tracert google.com</b></p>
+      <br>
+      <p><u>Input kommandoen: ( IP )</u> – <b>tracert 8.8.8.8</b></p>
+      <br>
+      <br>
+      <br>
+
+      <p>Ekstra <i>valgmuligheder</i> af <b>tracert</b> kommandoen:</p>
+      <br>
+      <table style="width:100%" class="table table-hover">
+        <tr>
+          <th>Commands:</th>
+          <th>Beskrivelse:</th>
+        </tr>
+
+        <tr>
+          <td>tracert <b>-d</b> </td>
+          <td>Man kan ikke <i>'resolve'</i> ( Ændre ) - På IP-adresserne af <i>'Intermediate Routere'</i> navne. </td>
+        </tr>
+
+        <tr>
+          <td>tracert <b>-h</b> </td>
+          <td>Angiver det maksimale - <i>Antal hop ( routere )</i><br> Der skal søges på <i>'The Path'</i><br> <i>Default: 30 hops.</i></td>
+        </tr>
+
+        <tr>
+          <td>tracert <b>-w</b></td>
+          <td>Angiver antallet af tid i mm.<br> Der venter på en reply message fra routeren. <br>Hvis den ikke modtages inden for <i>time-out,</i> er display'ed med en stjerne (*) - ( asterisk )<br> <i>Default time-out er <b>4000 (4 seconds).</b></i></td>
+        </tr>
+
+      </table>
+
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+      <br>
+      <br>
+
+      <h5><b><u><i>tracert - promt - eksempler:</i></u></b></h5>
+      <br>
+      <img th:src="@{img/eksamen1/TRACERT.PNG}" src="../static/img/eksamen1/TRACERT.PNG" width="500" height="400" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <img th:src="@{img/eksamen1/TRACERT2.PNG}" src="../static/img/eksamen1/TRACERT2.PNG" width="500" height="400" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <h4><b><u><i>NETSTAT</i></u></b></h4>
+      <br>
+      <p>Kommandoen viser en oversigt - Over alle netværks forbindelserne i enheden. </p>
+      <br>
+      <p><u>Tabellen viser detaljer:</u></p>
+      <p>Om forbindelses protokollen,</p>
+      <p>Adressen og netværkets nuværende tilstand.</p>
+      <br>
+      <p>Den her kommando viser aktive forbindelser, porte, som computeren lytter til. </p>
+      <p><i>Ethernet-statistik - IP-routing tabellen - IP-statistik.</i></p>
+      <br>
+      <p>Outputtet af den her kommando - Er organiseret i rækker og kolonner. </p>
+      <p>Hver række repræsenterer - En ny forbindelse eller en indgang i outputtet. </p>
+      <p>Indeholder 4 kolonner - De her kolonner giver følgende oplysninger om rækken ( Row ).</p>
+      <br>
+      <ul>
+        <li><p><b>Proto:</b>&nbsp; Den her kolonne viser navnet på protokollen (+TCP eller +UDP).</p></li>
+        <br>
+        <li><p><b>Local address:</b>&nbsp; Den her kolonne viser IP-adressen på den lokale computer og det port-nummer, der anvendes. </p></li>
+        <p>Hvis porten endnu ikke er etableret - Vises port-nummeret som en stjerne (*).</p>
+        <p></p>
+        <br>
+        <li><p><b>Foreign Address:</b>&nbsp; Den her kolonne viser IP-adressen og port-nummeret på den remote-computer, som porten er tilsluttet</p></li>
+        <br>
+        <li><p><b>State:</b>&nbsp; Den her kolonne viser status for forbindelsen.</p></li>
+      </ul>
+      <br>
+      <br>
+      <br>
+      <p>Ekstra <i>valgmuligheder</i> af <b>netstat</b> kommandoen:</p>
+      <p></p>
+      <br>
+
+      <table style="width:100%" class="table table-hover">
+        <tr>
+          <th>Commands:</th>
+          <th>Beskrivelse:</th>
+        </tr>
+
+        <tr>
+          <td>netstat <b>-a</b> </td>
+          <td>Displays alle aktive TCP forbindelser og TCP og UDP portene på computeren der afhører med ( listening. )</td>
+        </tr>
+
+        <tr>
+          <td>netstat <b>-e</b> </td>
+          <td>Displays Ethernet statistik, såsom nummeret af bytes og packets der sendt og modtaget.</i></td>
+        </tr>
+
+        <tr>
+          <td>netstat <b>-n</b></td>
+          <td>Displays aktive TCP forbindelser.<br> Hvorledes, adresserne og port numre er udtrykt numrerisk<br> Og intet forsøg er skab til at fastlægge navne.</td>
+        </tr>
+
+        <tr>
+          <td>netstat <b>-o</b></td>
+          <td>Displays aktive TCP forbindelser og inkludere processen ID (PID) for hver forbindelse.</td>
+        </tr>
+
+
+        <tr>
+          <td>netstat <b>-p</b></td>
+          <td>Viser forbindelserne for protokollen specifikation af Protokollen.<br> I det her eksempel, kan protokollen være TCP, UDP, tcpv6, eller udpv6.</td>
+        </tr>
+
+
+        <tr>
+          <td>netstat <b>-s</b></td>
+          <td>Displays statistik af protokollen.<br> Ved default, er statistikken vist for TCP, UDP, ICMP, og IP protokoller.</td>
+        </tr>
+
+
+        <tr>
+          <td>netstat <b>-r</b></td>
+          <td>Display'er indholdet af IP routing tabellen.</td>
+        </tr>
+
+
+      </table>
+      <br>
+      <h6><i><b>TCP</b> = Transport Control Protocol</i></h6>
+      <br>
+      <h6><i><b>UDP</b> = User Datagram Protocol</i></h6>
+      <br>
+      <h6><i><b>ICMP</b> = Internet Control Message Protocol</i></h6>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+      <h5><b><u><i>netstat - promt - eksempel:</i></u></b></h5>
+      <br>
+      <img th:src="@{img/eksamen1/NETSTAT.PNG}" src="../static/img/eksamen1/NETSTAT.PNG" width="500" height="400" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <hr>
+      <br>
+
+      <h4><b><u><i>ARP - ( Address Resolution Protocol )</i></u></b></h4>
+      <br>
+      <p>Kommandoen bruges til at få adgang - Til mapping structure - Af IP-adresser til MAC-adressen. </p>
+      <p>Det her giver os en bedre forståelse - Af transmissionen af packets i network channel.</p>
+      <br>
+      <p>For at sende IP-pakker - Skal en computer bruge to adresser. </p>
+      <p>De her adresser er - MAC-adressen og IP-adressen. </p>
+
+      <p><b>MAC-adresse:</b>&nbsp; Er NIC'ens <b>fysiske adresse</b> eller <b>hardware-adresse</b> ( <i>Fysisk ID</i> )</p>
+      <p><b>IP-adresse:</b>&nbsp; Er NIC's <b>logiske adresse</b> eller <b>software-adresse.</b> ( <i>Logisk ID</i> )</p>
+      <br>
+      <p>Hvis en <i>computer kender</i> destination computerens IP-adresse. </p>
+      <p>Men den <i>ikke kender</i> destination computerens MAC-adresse</p>
+      <p>Bruger den <i>ARP-protokollen</i> til at kende destination computerens MAC-adresse.</p>
+      <br>
+      <br>
+      <p><b>ARP-Protokollen</b> - Broadcasts en givende IP-adresse, over et lokalt network ( LAN ).</p>
+      <p>Den tilsvarende host - Respons på the broadcast med sin MAC-adresse. </p>
+      <p>For at undgå gentagelse - Gemmer ( stores ) <b>ARP</b> svaret i en tabel - Kendt som: <b>ARP-table.</b></p>
+      <p><b>ARP</b> vedligeholder en <i>separat ARP-table</i> - For hvert NIC.</p>
+
+      <br>
+      <br>
+      <p><u>Input kommandoen:</u> – <b>arp</b></p>
+      <br>
+
+      <img th:src="@{img/eksamen1/ARP.PNG}" src="../static/img/eksamen1/ARP.PNG" width="500" height="400" style="box-shadow: 10px 10px 5px lightgrey">
+      <br>
+      <br>
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+      <br>
+      <p>Som <i>default</i> - Viser kommandoen ARP-protokollen - For det aktive NIC.</p>
+      <p>Hvis der er installeret flere NIC's på computeren.</p>
+      <br>
+      <p>Kan man anvende input <b>-a</b> med denne kommando. </p>
+      <p>Hvis input <b>-a</b> anvendes - Viser ARP-kommandoen - <i>For alle ARP-tabeller.</i></p>
+      <br>
+      <br>
+      <p><u>Input kommandoen:</u> – <b>arp -a</b></p>
+      <br>
+      <img th:src="@{img/eksamen1/ARP2.PNG}" src="../static/img/eksamen1/ARP2.PNG" width="500" height="400" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+      <br>
+      <br>
+      <p>For at vise <b><i>ARP-cache-entry</i></b> for <i>en specifik</i> IP-adresse </p>
+      <p>Skal man angive IP-adressen med <b>-N</b> inputtet.  </p>
+      <br>
+      <p>Kan man bruge inputtet <b>-a</b> med denne kommando. </p>
+      <p>Hvis inputtet <b>-a</b> anvendes - Viser ARP-kommandoen alle ARP-tabeller.</p>
+      <br>
+      <p>Viser følgende kommando <b><i>ARP-cache-table</i></b> for den interface.</p>
+      <p>F.eks - Der er tildelt med IP-adressen <b><i>192.168.42.171.</i></b></p>
+      <br>
+      <br>
+      <p><u>Input kommandoen:</u> – <b>arp -a -N 192.168.42.171.</b></p>
+      <br>
+      <img th:src="@{img/eksamen1/ARP3.PNG}" src="../static/img/eksamen1/ARP3.PNG" width="500" height="400" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br>
+      <br>
+      <br>
+      <hr>
+      <br>
+
+      <h4><b><u><i>SYSTEMINFO</i></u></b></h4>
+      <br>
+      <p>Kommandoen kan bruges til at man får oversigt - Til systemets hardware og software detaljer. </p>
+      <p>Såsom:&nbsp; Processor-data - Opstarts-data - Windows-version... osv.</p>
+      <br>
+      <br>
+      <p><u>Input kommandoen:</u> – <b>systeminfo</b></p>
+      <br>
+
+      <img th:src="@{img/eksamen1/SYSTEMINFO.PNG}" src="../static/img/eksamen1/SYSTEMINFO.PNG" width="500" height="400" style="box-shadow: 10px 10px 5px lightgrey">
+
+      <br><br><br>
+
+      <hr>
+
+      <br><br>
+
+      <a th:href="@{/eksamen4}" href="eksamen4.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+    </div> <!-- End line - Spørgsmål 4 -->
+
+
+
+  </div>
+  <br>
+  <hr>
+  <!--  <p class="act"><b>Active Tab</b>: <span></span></p>
+   <p class="prev"><b>Previous Tab</b>: <span></span></p> -->
+</div>
+
+<script>
+  $(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+      $(this).tab('show');
+    });
+    $('.nav-tabs a').on('shown.bs.tab', function(event){
+      var x = $(event.target).text();         // active tab
+      var y = $(event.relatedTarget).text();  // previous tab
+      $(".act span").text(x);
+      $(".prev span").text(y);
+    });
+  });
+</script>
+
+</body>
+</html>

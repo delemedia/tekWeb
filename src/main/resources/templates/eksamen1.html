@@ -1,0 +1,2512 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Teknologi - Lærings mål.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <br>
+    <h2><b><i>Cloud - Operativ systemer - Database.</i>&nbsp;&nbsp;&nbsp;<i class="fa fa-database" style="font-size:24px"></i></b></h2>
+
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i> <b>-</b> Vælg et spørgsmål<b> -</b> </i></p>
+    <br>
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#eksamen1" class="bg-info" style="font-weight: bold"><i class="fa fa-caret-square-o-left"></i>&nbsp;&nbsp;Home</a></li>
+        <li><a href="#menu1_1" class="bg-primary" style="font-weight: bold">1</a></li>
+        <li><a href="#menu1_2" class="bg-primary" style="font-weight: bold">2</a></li>
+        <li><a href="#menu1_3" class="bg-primary" style="font-weight: bold">3</a></li>
+        <li><a href="#menu1_4" class="bg-primary" style="font-weight: bold">4</a></li>
+        <li><a href="#menu1_5" class="bg-primary" style="font-weight: bold">5</a></li>
+        <li><a href="#menu1_6" class="bg-primary" style="font-weight: bold">6</a></li>
+        <li><a href="#menu1_7" class="bg-primary" style="font-weight: bold">7</a></li>
+        <li><a href="#menu1_8" class="bg-primary" style="font-weight: bold">8</a></li>
+        <li><a href="#menu1_9" class="bg-primary" style="font-weight: bold">9</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="eksamen1" class="tab-pane fade in active">
+
+            <br><br>
+
+            <a th:href="@{/}" href="index.html" class="btn btn-info" style="font-weight: bold"><i class="fa fa-mail-reply"></i>&nbsp;&nbsp;Gå til Home...</a>
+
+
+        </div>
+
+        <!-- Spørgsmål 1 -->
+
+        <div id="menu1_1" class="tab-pane fade">
+            <br>
+            <h3><b><i>1.&nbsp; Beskriv:&nbsp; En computer's hardware?</i></b></h3>
+            <br>
+            <hr>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+            <br>
+            <hr>
+            <br>
+            <br>
+           <!-- <div class="kildeBorder" style="border-bottom: dotted black 2px" > -->
+            <p><a th:href="@{https://www.youtube.com/watch?v=HB4I2CgkcCo}" href="https://www.youtube.com/watch?v=HB4I2CgkcCo/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - Video</a></p>
+            <h4><b>Computer Basics: Inside a Computer</b></h4>
+            <h5>Channel:&nbsp;&nbsp; <i>GCFLearnFree.org - 2020</i></h5>
+           <!-- </div> -->
+            <br>
+            <br>
+            <!-- <div class="kildeBorder" style="border-bottom: dotted black 2px" > -->
+            <p><a th:href="@{https://www.youtube.com/watch?v=SSnNY8GfZig}" href="https://www.youtube.com/watch?v=SSnNY8GfZig/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - Video</a></p>
+            <h4><b>TYPES OF HARDWARE || INTERNAL HARDWARE || EXTERNAL HARDWARE || COMPUTER FUNDAMENTALS</b></h4>
+            <h5>Channel: &nbsp;&nbsp;<i>Make It Easy Education - 2020</i></h5>
+           <!-- </div> -->
+            <br>
+            <hr>
+            <br>
+            <br>
+
+            <!-- Internal Hardware -->
+
+            <img th:src="@{img/eksamen1/internalHardware.PNG}" src="../static/img/eksamen1/internalHardware.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Delene inde i enheden):</h4>
+            <br><br>
+
+            <!-- MotherBoard -->
+
+            <h4><u>Motherboard:</u> ( Arve mor - Bundkort )</h4>
+            <p>Er den <b>centrale board,</b> inde i enheden/systemet. </p>
+            <p>Som kobler alle de andre dele sammen. </p>
+            <p>Indeholder de vigtigste dele af en computer.</p>
+            <img th:src="@{img/eksamen1/motherboard.PNG}" src="../static/img/eksamen1/motherboard.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+
+            <br><br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- CPU -->
+
+            <h4><u>CPU</u> - ( Central Processing Unit ):</h4>
+            <p>CPU som er hjernen af en computer. </p>
+            <p>Er ansvarlig for alle data processer / overførelser. </p>
+            <p>CPU’en er placeret i CPU Socket holderen. På Motherboardet. </p>
+            <br>
+            <p>Central Processing Unit. ( Processor ). = <b><i>Brain of the computer.</i></b> </p>
+            <p>Siden CPU'en overfører informationer og kommandoer. </p>
+            <br>
+            <p>CPU er firkant for det er nemmere at allokere / stable.</p>
+            <p>Bliver tyndere og tyndere. Pågrund af en varme fordeling / genere mindre varme.</p>
+            <br>
+            <p>Fetche / loade = 1 instruks. Til flere instrukser. </p>
+            <p> Armitisk logisk unity = <b>ALU.</b> --> Gate ( Logiske operatetioner = <b>OR / AND</b> )</p>
+            <p>Opadgående/nedgående flanker fra CPU til RAM. 1 trin af gangen.  </p>
+            <p>CPU og Rammen skal være nogenlunde samme hastighed.</p>
+            <br>
+            <img th:src="@{img/eksamen1/CPU1.PNG}" src="../static/img/eksamen1/CPU1.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <img th:src="@{img/eksamen1/CPU2.PNG}" src="../static/img/eksamen1/CPU2.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+
+            <br><br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- Internal Memory -->
+
+            <h4><u>Internal Memory</u> - RAM / ROM - ( Intern hukommelse  ):</h4>
+            <p>Det er den <b>interne hukommelse,</b> for at opbevarer computer data. </p>
+            <p>RAM er placeret fixed på Motherboardet. Det samme gælder ROM. </p>
+            <br>
+            <p>Indeholder også RAM. Computerens hukommelse. </p>
+            <br>
+            <img th:src="@{img/eksamen1/ram1.PNG}" src="../static/img/eksamen1/ram1.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <img th:src="@{img/eksamen1/ram2.PNG}" src="../static/img/eksamen1/ram2.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <img th:src="@{img/eksamen1/ram3.PNG}" src="../static/img/eksamen1/ram3.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <img th:src="@{img/eksamen1/ram4.PNG}" src="../static/img/eksamen1/ram4.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <img th:src="@{img/eksamen1/ram5.PNG}" src="../static/img/eksamen1/ram5.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br><br>
+            <p>Short-term memory = Calculation. </p>
+
+            <br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- PSU - Power Supply -->
+
+            <h4><u>Power Supply Unit</u> - PSU - ( Strøm forsyningen ):</h4>
+            <p>Sender strøm igennem kabler til selve motherboardet, og til andre komponenter.</p>
+            <p>PSU = <b>The Backbone</b> power for every computer. </p>
+            <br>
+            <img th:src="@{img/eksamen1/PSU1.PNG}" src="../static/img/eksamen1/PSU1.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <img th:src="@{img/eksamen1/PSU2.PNG}" src="../static/img/eksamen1/PSU2.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+
+            <br><br><br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- Graphic Card -->
+
+            <h4><u>Graphic Card</u> - ( Grafik kort ):</h4>
+            <p>Grafik kortet er sat på motherboardet. Og viser computerens <b>visuelle billeder</b> på monitoren. </p>
+            <br>
+            <img th:src="@{img/eksamen1/GraphicCard.PNG}" src="../static/img/eksamen1/GraphicCard.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+
+            <br><br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- The Fan -->
+
+            <h4><u>Fanen</u> - ( The Fan ):</h4>
+            <p>Fanen bruges som en varme nedsætning effekt.</p>
+            <p>Køler CPU’en ned, og stopper for <b>over opvarme</b> computeren.</p>
+            <br>
+            <img th:src="@{img/eksamen1/Fan.PNG}" src="../static/img/eksamen1/Fan.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <img th:src="@{img/eksamen1/Heatsink.PNG}" src="../static/img/eksamen1/Heatsink.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br><br>
+
+            <p>Som trækker varmen væk fra processor.</p>
+            <br>
+
+            <p><i><u>Terminologisk teori.</u></i></p>
+            <p>Man kan ikke fjerne kulde, man kan fjerne varme. </p>
+
+            <br><br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- Sound Card -->
+
+            <h4><u>Lydkort</u> - ( Sound card ):</h4>
+            <p>Garantere at computeren til at kunne producere <b>lyd.</b> </p>
+            <p>Hjælper også med at tilføje mikrofonen til computer systemet. </p>
+            <br>
+            <img th:src="@{img/eksamen1/SoundCard.PNG}" src="../static/img/eksamen1/SoundCard.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+
+            <br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- Expansion Slots -->
+
+            <h4><u>Expansion Slot</u> - ( Udvidning slots ):</h4>
+            <p>Det er udvidning slots på motherboardet. </p>
+            <br>
+            <p>Den kan holde en expansion card, såsom et:</p>
+            <p>- Video card</p>
+            <p>- Sound card</p>
+            <p>- Network card ( NIC )</p>
+            <br>
+            <p>For at udvide computerens funktionalitet.</p>
+            <br>
+            <img th:src="@{img/eksamen1/ExpansionSlot1.PNG}" src="../static/img/eksamen1/ExpansionSlot1.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <img th:src="@{img/eksamen1/ExpansionSlot2.PNG}" src="../static/img/eksamen1/ExpansionSlot2.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+
+            <br>
+            <br>
+            <br>
+
+            <p>Tillader at opgradere yderligere komponenter.</p>
+            <br>
+            <p>De fleste Laptop har ikke expansion slots.</p>
+
+            <br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- Hard Drives -->
+
+            <h4><u>Drives</u> - ( Harddiske ):</h4>
+            <p>De er forbundet til motherboard. <b>Oplagere data’er.</b>  + SSD ( Solid State Drive = Chips ) </p>
+            <br>
+            <img th:src="@{img/eksamen1/HardDrives1.PNG}" src="../static/img/eksamen1/HardDrives1.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <img th:src="@{img/eksamen1/HardDrives2.PNG}" src="../static/img/eksamen1/HardDrives2.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br><br>
+
+            <p>Holder på alle computerens data. Selv når computeren er slukket. </p>
+            <br>
+            <img th:src="@{img/eksamen1/HardDrives3.PNG}" src="../static/img/eksamen1/HardDrives3.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br><br>
+
+            <p>En del computere bruger en <b>magnetisk plade</b> til at opbevare data. </p>
+            <br>
+            <img th:src="@{img/eksamen1/SSD.PNG}" src="../static/img/eksamen1/SSD.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br><br>
+
+            <p>En del nyere computere har en SSD. = <b>Data chips.</b> </p>
+
+            <br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br><br>
+
+            <!-- External Hardware -->
+
+            <img th:src="@{img/eksamen1/externalHardware.PNG}" src="../static/img/eksamen1/externalHardware.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Delene udenfor enheden):</h4>
+            <br><br>
+
+            <!-- Peripheral devices -->
+
+            <p>Er hardware komponenter som er fundet <b>udenfor,</b> selve enhedens overflade. </p>
+            <p>Som er forbundet til systemet enhed. De hedder <b><i><u>Peripheral devices</u></i></b></p>
+            <br>
+            <img th:src="@{img/eksamen1/periphalDevices.PNG}" src="../static/img/eksamen1/periphalDevices.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br><br>
+            <img th:src="@{img/eksamen1/periphalDevices2.PNG}" src="../static/img/eksamen1/periphalDevices2.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+
+            <br><br><br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br><br>
+
+            <!-- Input Devices -->
+
+            <img th:src="@{img/eksamen1/inputDevices.PNG}" src="../static/img/eksamen1/inputDevices.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br><br>
+
+            <p>Er anvendt til at <b>”Enter data”</b> og instruktioner ind i computeren.</p>
+
+            <br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br><br>
+
+            <!-- Output Devices -->
+
+            <img th:src="@{img/eksamen1/outputDevices.PNG}" src="../static/img/eksamen1/outputDevices.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br><br>
+
+            <p>Modtager informationerne fra computeren, og sender det videre til en, i en menneskelig form.</p>
+            <p>Som man kan modtage. Såsom - <b><i>Text / Audio / Video.</i></b></p>
+
+            <br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br><br>
+
+            <!-- Storage Devices -->
+
+            <img th:src="@{img/eksamen1/storageDevices.PNG}" src="../static/img/eksamen1/storageDevices.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br><br>
+
+            <p>Brugt til at <b>opbevarer data.</b></p>
+
+            <br><br>
+
+            <hr>
+
+            <br><br>
+
+            <a th:href="@{/eksamen1}" href="eksamen1.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+
+
+        </div> <!-- End line - Spørgsmål 1 -->
+
+
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+
+        <!-- Spørgsmål 2 -->
+
+        <div id="menu1_2" class="tab-pane fade">
+            <br>
+            <h3><b><i>2.&nbsp; Beskriv:&nbsp; Azure Cloud.<br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Og hvad du kan bruge den til?</i></b></h3>
+            <br>
+            <hr>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+            <br>
+            <hr>
+            <br>
+            <p><a th:href="@{https://www.youtube.com/watch?v=k0645eXL0oc}" href="https://www.youtube.com/watch?v=k0645eXL0oc/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - Video</a></p>
+            <h4><b>Don't buy a new computer - create a Virtual Machine in Azure Cloud instead</b></h4>
+            <h5>Channel:&nbsp;&nbsp; <i>Learning and Technology with Frank - 2021</i></h5>
+            <br>
+            <br>
+            <p><a th:href="@{https://www.youtube.com/watch?v=yl_tabphLb8}" href="https://www.youtube.com/watch?v=yl_tabphLb8/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - Video</a></p>
+            <h4><b>Windows Azure Platform explained</b></h4>
+            <h5>Channel:&nbsp;&nbsp; <i>IMGROUPonline - 2010</i></h5>
+            <br>
+            <br>
+            <p><a th:href="@{https://www.youtube.com/watch?v=mPplWvvrVnU}" href="https://www.youtube.com/watch?v=mPplWvvrVnU/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - Video</a></p>
+            <h4><b>What is SQL Azure?</b></h4>
+            <h5>Channel:&nbsp;&nbsp; <i>sqlazure - 2010</i></h5>
+
+            <br>
+            <hr>
+            <br>
+
+            <h3><u><b><i>Overordnet forklaring:</i></b></u></h3>
+            <br>
+
+            <p><b>Azure</b> er en <i><b>cloud computing platform,</b></i> og en <i>online portal.</i> </p>
+            <p>Som tillader en <i>adgang og håndtering</i> af <i>cloud services.</i> </p>
+            <p>Og <i>ressourcer tildelt</i> af Microsoft.</p>
+            <br>
+            <p>Hvis man nu <b><i>ikke har</i></b> <i>ekstra Ram / Plads på ens PC / Laptop.</i></p>
+            <p>For at kunne lave en virtual maskine, eller andre <i>computer værk funktioner.</i></p>
+            <br>
+            <p>Så kan en <b>Azure cloud service</b> være <i>brugbart.</i> </p>
+            <br>
+            <br>
+            <p><u><i>Såsom: (Virtuelle)</i></u></p>
+            <br>
+            <ul>
+                <li><p><b>Operative systemer. ( OS )</b></p></li>
+                <li><p><b>Disks = Storage ( VHD ) / Image's.</b></p></li>
+                <li><p><b>Virtuelle netværk.</b></p></li>
+                <li><p><b>Deploy & Migration. & Servers.</b></p></li>
+            </ul>
+            <br>
+            <br>
+            <p><b>Azure</b> er <i>fleksible ressourcer</i> som kan <i>skaleres</i> op og ned som behov.</p>
+            <br>
+            <p>Har en <i><b>høj påligelighed</b></i> ( <i>reliable</i> ) og en <i><b>høj tilrådighed</b></i> ( <i>avaibility</i> )</p>
+            <h6><i>Plus - <i>24x7 tech support.</i></i></h6>
+            <br>
+            <p>Tilbyder en <i><b>Pay-as-you-go-Pricing plan.</b></i></p>
+            <br>
+            <p>Supporter <i><b>backup</b> og <b>kastastofe recovery</b> værktøjer.</i></p>
+            <br>
+            <p>Er en <i>bred rækkevidde af services</i> - <b>Instant to create.</b></p>
+            <br>
+            <p>Enhver virtual maskine tilbyder sin egen <i>virutal hardware.</i></p>
+            <p><i><b>CPU'er - Memory - Hard-drives - Network interfaces</b> - og andre enheder</i>.</p>
+            <br>
+            <p>Tilbyder fleksibilitet af <i>Virtualization</i> - <i>Uden fysisk at købe og vedligeholde hardware.</i></p>
+            <br>
+            <br>
+            <p><i><u><b>Fordele ved Azure:</b></u></i></p>
+            <ul>
+                <li><p><i>Nemt development og testing.</i></p></li>
+                <li><p><i>Agilt og Skalertbart. ( Scalability )</i></p></li>
+                <li><p><i>Forbedret Ydeevne. ( Performance )</i></p></li>
+                <li><p><i>Pay-as-you-go priser.</i></p></li>
+                <li><p><i>Udvidet Data-center.</i></p></li>
+                <li><p><i>Katastofe recovery.</i></p></li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <p>Ved at gå til - En cloud baseret virtualle maskine. </p>
+            <br>
+            <p>Kan man justere de her <i>ressourcer</i> – Som man har brug for. </p>
+            <p>Hvis man ikke har brug for <i>alverden ressourcer.</i> </p>
+            <p>Er det muligt at <i>”gå tilbage” igen.</i></p>
+            <br>
+            <p>Man kan også bruge ens forrige computer.</p>
+            <p>Eller anden form for enhed - Tilkoblet til cloud'en.</p>
+            <br>
+            <p>Man kan være koblet til den her virtualle maskine. </p>
+            <p>Fra et <i>kontinent.</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Såsom:&nbsp; <i>Amerika</i> </p>
+            <p>Til et <i>andet kontinent:</i>&nbsp; Såsom:&nbsp; <i>Europa</i></p>
+            <br>
+            <p>Uden at skulle <i>købe hardware</i> - For de her enheds dele. </p>
+
+            <br>
+            <br>
+            <p>Generelt er <i>brugerens behov</i> - Er <b>KVM.</b></p>
+            <p><b>KVM = Keyboard - Video - Mouse</b></p>
+            <br>
+            <p>Man vurdere <i>computeren ydeevne</i> - Udfra hvilken <b>CPU</b> vi forholder os til. </p>
+            <br>
+            <p><i>Desto mere CPU – Desto mere Memory</i> = <b>Bedre Compute Experince ( Exp )</b></p>
+            <br>
+            <p>Hvis man vil udføre en ydeevne der forventer - <i>Lidt mere grafisk effekt.</i>&nbsp; <b>( GPU = Graphical Proces Unit )</b></p>
+            <br>
+            <p><b>GPU</b> er en <b>augmentation</b> del til ens <b>Compute Exp.</b></p>
+            <br>
+            <p>Det samme gælder også – Om det er <b>Storage</b> – Om det er <b>HD / SDD…</b> osv.</p>
+            <br>
+            <p>Man har behov for - At kunne <i>koble op til internettet.</i> </p>
+            <p><i>Desto bedre internet – Desto bedre data overførsel.</i> </p>
+            <p><i>Moderne internet hastighed</i> – Kan sagtens anvendes til <i>online ressourcer.</i></p>
+            <br>
+            <p>Man placere sin <i>storage</i> - Ind i cloud servicen. ( <i>Ligesom en fysisk ekstern harddisk</i> )</p>
+            <br>
+            <p>Cloud service, kan give <i><b>”free storage”</b></i> eller <b><i>”paid storage”</i></b></p>
+            <br>
+            <p>Eller <b>Data-center.</b> Såsom <b>backup</b> eller <b>extentions.</b></p>
+            <p>Hvis man mangler mere. Kan man altid betale for mere. ( <i>Ligesom: Dropbox / Google Drive</i> )</p>
+            <br>
+            <br>
+            <p>Det er <i>ikke</i> - Kun at <b>oplagre</b> – Man kan også tilpasse ens <b>computer-layer</b> ind i cloud'en. </p>
+            <br>
+            <p>Det man <b>ikke kan</b> - <i>Er at implementere <b>GPU'er.</b></i></p>
+            <p>Der findes andre <i>online servicer</i> til det formål.</p>
+            <br>
+            <p>Hvis man har en forældet computer.</p>
+            <p>Men stadig nogen <i>solide keyboard og mouse</i></p>
+            <p>Og en <i>solid hastighed til internettet.</i></p>
+            <br>
+            <p>Hvis man så derefter - Vil udfører en <b><i>'Powerful'</i></b> proces - Såsom: <b>Data Analytics.</b></p>
+            <br>
+            <p>Der kan man så <b><i>allokere mere</i></b> <i>Storage - RAM - GPU krafter</i> i clouden.</p>
+            <br>
+            <p>Der kan man <i>udvide ydeevnen</i> - Via <b>KVM</b> - <b><i>'Back and forth'</i></b> som brugere.</p>
+            <br>
+            <br>
+            <p><u><b><i>Visuel overblik:</i></b></u></p>
+            <br>
+            <img th:src="@{img/eksamen1/AZURE1.PNG}" src="../static/img/eksamen1/AZURE1.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+
+            <br>
+            <hr>
+            <br>
+
+            <!-- Applikationer -->
+
+            <h3><u><b><i>Fokus på Applikationer:</i></b></u></h3>
+            <br>
+
+            <p>Hvis man vil <i>videre-bygge og forbinde applikationer</i> til cloud’en.</p>
+            <p>Såsom:&nbsp; At kode en <b><i>web-application.</i></b></p>
+            <br>
+            <p>Typisk - Har man noget hardware:&nbsp;&nbsp; <b>1 server.</b>&nbsp; <b>1 OS</b> <i>( Operativ system )</i> </p>
+            <p>Hvad der kører på ens <b>OS</b> - Kan være:&nbsp;&nbsp; <b>1 APP</b> <i>( Application ).</i> </p>
+            <p>Et hvilket som helst <i>program / website.</i></p>
+            <br>
+            <p>Det er generelt <i>fysisk installeret</i> - På ens <i>egen server.</i> </p>
+            <p>Hvis applikationen har brug for det - Er <i>app'en forbundet</i> til en database.</p>
+            <p>Som også drives i sin egen <i>"Unikke Boks"</i></p>
+            <br>
+            <p>Det kræver en del - <i>Selv-drivende Management at vedligeholde.</i></p>
+            <h6><i>Hardware - OS'er - Databaser = <u>Skalerebare</u> vilkår.</i></h6>
+            <br>
+            <p>Fremfor...&nbsp; At kun fokuserer på sit <i>eget applikation projekt.</i></p>
+            <br>
+            <p>Indenfor Azure cloud'en er der også <i>andre services</i> - <i>Som udfører specialiseret jobs.</i></p>
+            <p><i><b>Access-control / Security / Networking…</b></i> osv.</p>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/AZURE2.PNG}" src="../static/img/eksamen1/AZURE2.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <p>Der er stadig hardware <b>”Powering it”</b> - Men man ser ikke ens hardware. </p>
+            <br>
+            <p>Det kører på et <b>Data-center.</b> &nbsp; Som er en del af et <b>globalt netværk.</b> </p>
+            <br>
+            <p>Application er <i>distribueret, ”across”</i> de her <i>virtualle servere.</i> </p>
+            <br>
+            <p>Der behøver ikke at tænkes over: &nbsp; <i><b>Patch - Update - Management</b></i> af ens hardware.</p>
+            <h6><i>Det gør Windows Azure for en - <b>”behind the scenes”</b></i></h6>
+            <h6><i>Kommer an på ens <b>kapacitet</b> man har brug for.</i></h6>
+            <br>
+            <br>
+            <p>Hvis man vil <i>anvende / oprette</i> af et <i>par brugere.</i> </p>
+            <p>For at servicere mange <i>flere brugere</i> i en applikation.</p>
+            <br>
+            <p>Den her mulighed - <i>Er åben for enhver.</i> </p>
+            <h6><i>Uanset <i>virksomhed størrelse</i> eller nuværende <i>IT ressourcer.</i></i></h6>
+            <br>
+            <p>Windows som sin platform... </p>
+            <p>Kan anvendes for at <i><b>beskytte, udvide og forbedre</b></i> lokale computere ressourcer.</p>
+            <p>Ofte... <i>Uden behovet</i> for at tilføje ekstra kodning. For at lave forbindelserne. </p>
+            <br>
+            <p><b>Cloud computing</b> - Tillader nye former for <b><i>”collaboration.”</i></b> <i>( Samarbejde )</i> </p>
+            <br>
+            <p>Betyder...&nbsp; At give udefrakommende <i>partnere tilladelse</i> - Til en linje af <i><b>buisness applikationer.</b></i> </p>
+            <p>Udvikle en form for <i>'remote workers' tilladelse</i> - Til at tilgå data’er.&nbsp; Hvor end deres lokation er i verden. </p>
+            <br>
+            <p>Azure - Tillader en bred form for services og værktøjer. - For at <i>løse buisness udfordringer.</i></p>
+            <br>
+            <p>Derved kan man fokuserer - På at tilføje mere <b><i>Buisness value.</i></b></p>
+            <p>Ved at tilføje <b>key-features</b> til applikationerne processer.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>De services - Som kan håndtere - De mere udfordrende aspekter. </p>
+            <p><i>- Der forbinder applikationer.</i></p>
+            <br>
+            <br>
+            <p><b><i><u>The Service Bus:</u></i></b></p>
+            <p>Tillader en at <i>tilkoble applikationer.</i></p>
+            <br>
+            <p>Om det er <b>Cloud til Cloud</b> vilkår. Eller hvis det er <b>On premise.</b> </p>
+            <h6><i>( On premise = Fra sin fysiske enhed )</i></h6>
+            <br>
+            <p>Uden at skulle kode - Ethvert af de aspekter - Til forbindelser til ens software. </p>
+            <br>
+            <br>
+            <br>
+            <p><b><i><u>The Access Control Service:</u></i></b></p>
+            <p>Tillader en adgang - <i>Af ens cloud service.</i> </p>
+            <br>
+            <p>Udenfor ens <i>Corporate netværk.</i> </p>
+            <p>Uden at <i>miste kontrollen</i> - Om hvordan platformen anvender de ressourcer. </p>
+            <br>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/AZURE3.PNG}" src="../static/img/eksamen1/AZURE3.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img th:src="@{img/eksamen1/PILNED.PNG}" src="../static/img/eksamen1/PILNED.PNG" width="55" height="70">
+            <br>
+
+            <br>
+            <img th:src="@{img/eksamen1/AZURE4.PNG}" src="../static/img/eksamen1/AZURE4.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+
+            <br>
+            <hr>
+            <br>
+
+            <!-- Databaser -->
+
+            <h3><u><b><i>Fokus på Databaser:</i></b></u></h3>
+            <br>
+            <p><i>Database komponenten i Azure platform...</i>  </p>
+            <br>
+            <p><b>SQL Azure</b> giver en <i>robust - Relational database service</i> i cloud’en</p>
+            <p>Som <b>opbevarer</b> både <i>lokale og cloud</i> baseret applikationer. </p>
+            <br>
+            <p>At <b>opbevarer</b> <i>relational data – lokalt.</i> &nbsp;&nbsp;Betyder at <i><b>købe</b> flere servere og data-baseret software.</i></p>
+            <p>Det kræver at - <i><b>Installere - Set-up - Patche - Update - Manage</b></i> - Flere databaser servere.</p>
+            <br>
+            <p><b>High avalabilty,</b> og <b>Katestofe recovery</b> - Kræver endnu mere <i>hardware, software og adminstrative overblik.</i></p>
+            <p><i>At scale op og ned</i> - Kan være svært - At få gjort <i>hurtigt og overkommeligt</i> - Det <i>koster</i> også mere. </p>
+            <br>
+            <p>Man skal stadig <i>implementere <b>”High avaiblity”</b></i> og <i><b>"Fault tolerance"</b> vilkår.</i></p>
+            <br>
+            <p>Man står overfor de samme problemer med <i><b>scaling.</b></i>&nbsp; <i>Som med On-Premises database vilkår.</i> </p>
+            <br>
+            <br>
+            <p>Man kan anvende en <b><i>Hosted SQL database</i></b> i Azure platformen.</p>
+            <br>
+            <img th:src="@{img/eksamen1/AZURE5.PNG}" src="../static/img/eksamen1/AZURE5.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <p><b>SQL Azure</b> – Baseret på <b>Microsoft SQL Server.</b></p>
+            <br>
+            <p><i>Man betaler for en database</i> - Som man vil anvende.  <i>"Lidt ligesom en el-regning."</i> </p>
+            <br>
+            <p><b>SQL Azure</b> udfører ens database behov - Udfra eksisterende servere.&nbsp; <i>Via service og værktøjer.</i> </p>
+            <h6><i><b>Vedligeholdelse / Management / Synkroniseringer...</b> osv</i></h6>
+            <h6><i>Om det er <i>Microsoft</i> eller <i>Third parties.</i> </i></h6>
+            <br>
+            <p><b>SQL Azure</b> - Tillader også <i>brugere</i> i ens <i>organisation</i> – At kunne anvende sin egen <i><b>skills og knowledge</b></i></p>
+            <br>
+            <p><b>SQL Azure</b> – Supporter også <b>Transactions SQL</b> = <b>T-SQL</b> </p>
+            <p>Tillader en til at etablere en <b>investment</b> i <b>T–SQL development.</b> </p>
+            <br>
+            <p><i><b>Providing:</b>&nbsp; ”a familiar data model in the cloud”</i></p>
+            <p><b>HA</b> = <i>High Avaiblility</i></p>
+            <p><b>FT</b> = <i>Fault Tolerance.</i> </p>
+            <h6><i>Er indbygget ind I systemet.</i></h6>
+            <br>
+            <br>
+            <p><b>SQL Azure</b> - <i>Opbevarer <b>automatiske kopier</b> af ens database.</i> </p>
+            <h6><i>Hvis noget sker med maskinen. Som hoster ens <b><i>live ”copy”</i></b></i></h6>
+            <h6><i>Er der <i>forberedt</i> en <b>identisk kopi</b> - Der står parat på at blive <i>aktiveret.</i></i></h6>
+            <h6><i>( Fault tolerance = Undgå nedbrydninger )</i></h6>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/AZURE6.PNG}" src="../static/img/eksamen1/AZURE6.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <p>Hvis man gerne vil fokusere på - At tilføje mere <b>Buisness value</b> til ens applikation. </p>
+            <p>Eller <b>out-source</b> ens proces. &nbsp; <i>'Måske'</i>&nbsp;&nbsp; <b>Management</b> og <b>”provising”</b> ( forsyne ) af ens databaser.</p>
+            <br>
+            <p>Kan man <i><b>scale database behovet</b></i> - Uden de store problemer. </p>
+            <p>Hvis man senere - <b><i>Ikke har behov</i></b> for så meget <b>kapacitet.</b> </p>
+            <p>Kan man <i>gå tilbage</i> - Til at anvende <b>mindre kapacitet.</b> </p>
+            <br>
+            <p>Om man er en <b>Army of one.</b>&nbsp;&nbsp; Eller et større <b>Company.</b> </p>
+            <p>Kan man <i>fleksible, justere ens behov</i> man har brug for. </p>
+            <h6><i>Via sin applikation eller brugere. </i></h6>
+            <br>
+            <br>
+            <p><b><i>Independant ( Uafhængige ) software developer</i></b> - Kan tilbyde <i>developer løsninger.</i> </p>
+            <p>Igennem en <b>"Software as a Service model"</b> = <b>SaaS.</b></p>
+            <br>
+            <p>Kan man udvikle en <b><u>line af buisness applications.</u></b>&nbsp; På Windows Azure. </p>
+            <br>
+            <p><b>Department Inside Interprises</b> – Kan der udvikles applikationer der tilføjer værdier.</p>
+            <p>Til ens buisness - Uden at skulle manage - En data server proces.</p>
+            <br>
+            <p>Igangsætte arbejdere - Til at få adgang til ens data.&nbsp; <i>Hvor end de er i verden.</i></p>
+            <p>Ved at vælge - <i>En relational database service cloud.</i> </p>
+            <br>
+            <p><b>SQL Azure</b> – <i>Åbner nye måder...</i></p>
+            <p>For at <i>udvide ens værdier</i> - Af enhver <b>data driven applikation.</b></p>
+            <h6>Enten via <i>On-premise</i> eller <i>cloud baseret</i> vilkår. </i></h6>
+
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/AZURE7.PNG}" src="../static/img/eksamen1/AZURE7.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+
+            <br><br>
+
+            <hr>
+
+            <br><br>
+
+            <a th:href="@{/eksamen1}" href="eksamen1.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+        </div> <!-- End line - Spørgsmål 2 -->
+
+
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+
+
+        <!-- Spørgsmål 3 -->
+
+        <div id="menu1_3" class="tab-pane fade">
+            <br>
+            <h3><b><i>3.&nbsp; Hvad er en Raspberry Pi?<br><br>&nbsp;&nbsp;&nbsp;&nbsp; Og hvad kan det bruges til?</i></b></h3>
+            <br>
+            <hr>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+            <br>
+            <hr>
+            <br>
+            <p><a th:href="@{https://www.youtube.com/watch?v=h86D_6yh1nk}" href="https://www.youtube.com/watch?v=h86D_6yh1nk/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - Video</a></p>
+            <h4><b>The Raspberry Pi 400 is Awesome! Review, Overclock, Emulation, Tear Down</b></h4>
+            <h5>Channel:&nbsp;&nbsp; <i>ETA PRIME - 2020</i></h5>
+            <br>
+            <hr>
+            <br>
+
+            <h3><u>Cover:</u></h3>
+            <br>
+            <img th:src="@{img/eksamen1/raspberryPI1.PNG}" src="../static/img/eksamen1/raspberryPI1.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/raspberryPI2.PNG}" src="../static/img/eksamen1/raspberryPI2.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <p>Det er en all-in-one personal computer.&nbsp;&nbsp; Powered af den samme CPU, som Raspberry PI 4.</p>
+            <br>
+            <p>Det er et keyboard, med et Raspberry PI – OS inkluderet.&nbsp;&nbsp; Tiltænkt som en lettere skole version. </p>
+            <br>
+            <p>Det her et KIT-version = 100 dollars.  Ca. 737,35 kr.  </p>
+            <br>
+            <p>Kommer med sin egen PSU. HDMI input. MicroSD + en Mus. </p>
+
+            <br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br><br>
+
+            <h3><u>Indhold:</u></h3>
+            <br>
+            <img th:src="@{img/eksamen1/raspberryPI3.PNG}" src="../static/img/eksamen1/raspberryPI3.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/raspberryPI4.PNG}" src="../static/img/eksamen1/raspberryPI4.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/raspberryPI5.PNG}" src="../static/img/eksamen1/raspberryPI5.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <p>Fra venstre til højre, har enheden de her porte:&nbsp;&nbsp; + Den har en power LED indikator. </p>
+            <br>
+            <p><i>40 Pins. &nbsp; --> &nbsp; MicroSD kort slot. &nbsp; --> &nbsp; Dual micro HDMI porte. &nbsp; --> &nbsp; Power porten. &nbsp; --> &nbsp; 3 USB porte. &nbsp; --> &nbsp; 1 NIC port.</i></p>
+            <br>
+            <br>
+            <br>
+            <h5>&nbsp;&nbsp;&nbsp;<i><u>Technical description:</u></i></h5>
+            <img th:src="@{img/eksamen1/raspberryPI6.PNG}" src="../static/img/eksamen1/raspberryPI6.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+
+            <br><br>
+            <br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br><br>
+
+            <h3><u>Opsætning:</u></h3>
+            <br>
+            <img th:src="@{img/eksamen1/raspberryPI7.PNG}" src="../static/img/eksamen1/raspberryPI7.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <p>Regulært brug som computer  Til Ethernet/WI-FI kobling.</p>
+            <br>
+            <p>Suited for light Work.  </p>
+            <br>
+            <p><u>Hverdags aktiviteter:</u></p>
+            <p>Check Email / Facebook / enkle youtube videoer / Gaming / Coding-Programming. / Steaming</p>
+            <br>
+            <p>DreamCast Emulation = ReDream. </p>
+            <br>
+            <p>Man kan anvende Raspberry PI til enhver form for <b>tænkelige projekt:</b></p>
+            <br>
+            <p>* <i>Web-FIL-Mail - Server ( Plex - Kodi Medie ) opsætninger</i></p>
+            <p>* <i>Network – Monitoring Tool / Remote Management.</i></p>
+            <br><br>
+            <h5><b><i><u>You can use them as:</u></i></b></h5>
+            <h5>* wifi-access point   * router    * tor    * web server ( small loads )    * file server    * alarm clock</h5>
+            <h5>* data logger    * camera    * portable pc     * IR camera, 'night scope'</h5>
+
+            <br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <h3><u>GUI:</u></h3>
+            <img th:src="@{img/eksamen1/raspberryPI8.PNG}" src="../static/img/eksamen1/raspberryPI8.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h4><u>Internet:</u></h4>
+            <img th:src="@{img/eksamen1/raspberryPI9.PNG}" src="../static/img/eksamen1/raspberryPI9.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h4><u>Gaming:</u></h4>
+            <img th:src="@{img/eksamen1/raspberryPI10.PNG}" src="../static/img/eksamen1/raspberryPI10.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h4><u>Overclocking:</u></h4>
+            <p>*In computing, overclocking is the practice of increasing the clock rate of a computer to exceed that certified by the manufacturer.<br> Commonly, operating voltage is also increased to maintain a component's operational stability
+                at accelerated speeds.
+            </p>
+            <br>
+
+            <img th:src="@{img/eksamen1/raspberryPI11.PNG}" src="../static/img/eksamen1/raspberryPI11.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h4><u>Cooling:</u></h4>
+            <img th:src="@{img/eksamen1/raspberryPI12.PNG}" src="../static/img/eksamen1/raspberryPI12.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p>Cooling fungere også ret godt, på enheden. </p>
+
+            <br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br><br>
+
+            <h3><u>Tear Down:</u></h3>
+
+            <br>
+            <img th:src="@{img/eksamen1/raspberryPI13.PNG}" src="../static/img/eksamen1/raspberryPI13.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p>Der er ingen skruer. Enheden bruger en form for klip system. </p>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/raspberryPI14.PNG}" src="../static/img/eksamen1/raspberryPI14.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p>Der er et massiv heat-shield/sink. Den er så, skruet fast med skruer. </p>
+            <br>
+            <p>Metal shieldet er en solid ned cooler for enheden.</p>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/raspberryPI15.PNG}" src="../static/img/eksamen1/raspberryPI15.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p>Hvis man vil tag motherboardet af. </p>
+            <p>Behøver man ikke skruer.&nbsp;&nbsp; Bare husk at fjerne MicroSD kortet inden.&nbsp;&nbsp; Ellers beskader man kortet. </p>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/raspberryPI16.PNG}" src="../static/img/eksamen1/raspberryPI16.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p>Selve CPU'en.</p>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/raspberryPI17.PNG}" src="../static/img/eksamen1/raspberryPI17.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p>Delene er adskildt, hver for sig.</p>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/raspberryPI18.PNG}" src="../static/img/eksamen1/raspberryPI18.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p>Sammenlingen af en Raspberry PI 4.</p>
+            <br>
+            <p>400 versionen - Er mere brugervenlig, på et teknisk niveau.</p>
+            <br>
+            <p><b><u>Note:</u></b><br>Disse enheder / OS'er ( = Linux ) <br>Administrere man hovedsageligt med kommandoer igennem...<br> <b><i>Terminalen / Promten.</i></b> <br><br> Windows udgave - Command Promten ( CMD )</p>
+
+            <br><br>
+
+            <hr>
+
+            <br><br>
+
+            <a th:href="@{/eksamen1}" href="eksamen1.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+
+        </div> <!-- End line - Spørgsmål 3 -->
+
+
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+
+
+        <!-- Spørgsmål 4 -->
+
+        <div id="menu1_4" class="tab-pane fade">
+            <br>
+            <h3><b><i>4.&nbsp; Hvilke typer:&nbsp; Harddiske findes i en computer?<br><br>&nbsp;&nbsp;&nbsp;&nbsp; Og hvad er forskellen på dem?</i></b></h3>
+            <br>
+            <hr>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+            <br>
+            <hr>
+            <br>
+            <p><a th:href="@{https://www.youtube.com/watch?v=HB4I2CgkcCo}" href="https://www.youtube.com/watch?v=HB4I2CgkcCo/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - Video</a></p>
+            <h4><b>Computer Basics: Inside a Computer</b></h4>
+            <h5>Channel:&nbsp;&nbsp; <i>GCFLearnFree.org - 2020</i></h5>
+            <!-- </div> -->
+            <br>
+            <br>
+            <!-- <div class="kildeBorder" style="border-bottom: dotted black 2px" > -->
+            <p><a th:href="@{https://www.youtube.com/watch?v=SSnNY8GfZig}" href="https://www.youtube.com/watch?v=SSnNY8GfZig/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - Video</a></p>
+            <h4><b>TYPES OF HARDWARE || INTERNAL HARDWARE || EXTERNAL HARDWARE || COMPUTER FUNDAMENTALS</b></h4>
+            <h5>Channel:&nbsp;&nbsp; <i>Make It Easy Education - 2020</i></h5>
+            <!-- </div> -->
+            <br>
+            <hr>
+
+            <img th:src="@{img/eksamen1/HardDrives1.PNG}" src="../static/img/eksamen1/HardDrives1.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+
+            <h5><i><u><b>Optical Disk Drive:</b></u></i></h5>
+            <p>Scanner ved <b><i>lyse / farve-stråler / sekvenser,</i></b> som <b>"brænder"</b> via en <i><u>mosekode af bits.</u></i> </p>
+            <br>
+
+            <h5><i><u><b>Hardiske Disk Drive:</b></u></i></h5>
+            <p><b>SSD</b> = <i>flashdrive</i> (<i>Chips</i>) </p>
+            <p><b>HDD</b> = <i>skriver til en <u>skive,</u> <u>roterende disk</u> med en <u>læsearm,</u> som opfanger <u>magnetisme.</u></i></p>
+            <br>
+
+            <h5><i><u><b>Floppy Disk Drive:</b></u></i></h5>
+            <p>Data er oplagret igennem <b><i>Floppy Diske.</i></b></p>
+            <br>
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br><br>
+
+            <img th:src="@{img/eksamen1/HardDrives2.PNG}" src="../static/img/eksamen1/HardDrives2.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p>Holder på alle computerens data...&nbsp;&nbsp; <i>Selv når computeren er slukket.</i> </p>
+
+            <br>
+            <br>
+
+            <img th:src="@{img/eksamen1/HardDrives3.PNG}" src="../static/img/eksamen1/HardDrives3.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p>En del computere bruger en... &nbsp;&nbsp; <i>Magnetisk plade</i> til at <i>opbevare data.</i> </p>
+            <br>
+            <br>
+
+            <img th:src="@{img/eksamen1/SSD.PNG}" src="../static/img/eksamen1/SSD.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p>En del nyere computere har en <b><i>SSD.</i></b> = <i>Data chips.</i> </p>
+
+            <br><br>
+
+            <hr>
+
+            <br><br>
+
+            <a th:href="@{/eksamen1}" href="eksamen1.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+        </div> <!-- End line - Spørgsmål 4 -->
+
+
+
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+
+
+
+        <!-- Spørgsmål 5 -->
+
+        <div id="menu1_5" class="tab-pane fade">
+            <br>
+            <h3><b><i>5.&nbsp; Hvilke typer:&nbsp; Busser findes der i en computer?</i></b></h3>
+            <br>
+            <hr>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+            <br>
+            <hr>
+            <br>
+
+            <img th:src="@{img/eksamen1/BussesTheComputerBus.PNG}" src="../static/img/eksamen1/BussesTheComputerBus.PNG" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <h5><u>Ens computer-struktur:</u><br><br> <b><i>Von Neuman Architecture.</i></b></h5>
+            <br>
+            <p>Designet af the Computer Bus har ændret sig igennem årene. </p>
+            <br>
+            <p>Startet som en samling af ledninger.  </p>
+            <p>Der nu er integrated forbindelser, i micro processer i computere og motherboards.</p>
+            <br>
+            <h4><b>Før 1990’es.</b></h4>
+            <p>Var major komponenter forbundet sammen af en <i>enkelt bus.</i> </p> <br>
+            <p>Kaldet:&nbsp;&nbsp;<b><i><u>The System Bus.</u></i></b></p>
+            <br>
+            <br>
+            <p>Starter fra ens <b>Control bus,</b> og kører videre til <b>Memory</b> &nbsp;&nbsp;--> &nbsp;&nbsp;I/O sammen med en <b>Address bus.</b> </p>
+            <br>
+            <br>
+            <p>For at reducere bekostninger og tid.&nbsp;&nbsp; Havde <i>The System Bus</i> 3 funktioner.</p>
+            <br>
+            <h4><i><u>Processen fremgangen:</u></i></h4>
+            <br>
+            <ol>
+                <b><li style="font-size: 20px"><i>&nbsp;&nbsp;Control bus &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- &nbsp;&nbsp;&nbsp;( Ordner operationer <i>"Read & Write</i> )</i></li></b>
+                <br>
+                    <b><li style="font-size: 20px"><i>&nbsp;&nbsp;Address bus &nbsp;&nbsp;&nbsp;&nbsp;- &nbsp;&nbsp;&nbsp;( Specificere & finde lokationer "Memory" )</i></li></b>
+                <br>
+                        <b><li style="font-size: 20px"><i>&nbsp;&nbsp;Data bus &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- &nbsp;&nbsp;&nbsp;( Overfører Data )</i></li></b>
+            </ol>
+
+            <br>
+            <br>
+
+            <img th:src="@{img/eksamen1/Busses1.PNG}" src="../static/img/eksamen1/Busses1.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img th:src="@{img/eksamen1/Busses2.PNG}" src="../static/img/eksamen1/Busses2.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+
+            <br><br>
+
+            <br><br>
+
+            <hr>
+
+            <br><br>
+
+            <p><a th:href="@{https://www.youtube.com/watch?v=VvEikwvyN8k}" href="https://www.youtube.com/watch?v=VvEikwvyN8k/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - Youtube video:</a></p>
+            <h4><b>The Bus | How the computer works?</b></h4>
+            <h5>Channel:&nbsp;&nbsp; <i>notez on tek - 2017</i></h5>
+            <br>
+            <h3><i><u>Dybere forklaring:</u></i></h3>
+            <br>
+
+            <p>I de tidligere stadier af en computer,<br> var hjernen af computeren, ikke inde i en CPU. </p>
+            <br>
+            <img th:src="@{img/eksamen1/BussesCPU.PNG}" src="../static/img/eksamen1/BussesCPU.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p>De var hovedsageligt adskilt i separate kabinetter.</p>
+            <p>Informationer der rejste fra et kabinet --> til en anden kabinet. <br> <i>I en bunke af ledninger.</i></p>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/BussesBusBar.PNG}" src="../static/img/eksamen1/BussesBusBar.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p>Som senere blev kendt som - <b><i>The Bus.</i></b></p>
+
+            <br><br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br><br><br>
+
+            <img th:src="@{img/eksamen1/BusDesign.PNG}" src="../static/img/eksamen1/BusDesign.PNG" width="450" height="350" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p>Der er 2 hoved design af en computer bus.</p>
+            <br>
+            <br>
+            <p>De kan indeholde:</p>
+            <ul>
+                <li><b><i>.One lane</i></b></li>
+                <br>
+                <li><b><i>.Multiple lanes</i></b></li>
+            </ul>
+            <br>
+            <p>Hver <b><i>lane</i></b> er en <b><i>single wired connection.</i></b></p>
+            <br>
+            <p>Og hvordan data er transporteret, vil forekomme af antal af <b><i>lanes.</i></b></p>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/BusDesign3.PNG}" src="../static/img/eksamen1/BusDesign3.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+
+            <br><br><br><br>
+
+           <hr>
+
+            <br>
+
+           <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>'Arkitektureren'</i></h2>
+
+            <br>
+
+           <hr>
+
+            <!-- Parallel Bus -->
+
+            <br>
+            <br>
+            <h3><i><u>Parallel Bus:</u></i></h3>
+            <br>
+            <p>Den paralle bus, bruger <b><i>flere lanes</i></b> til at overfører informationer. </p>
+            <br>
+            <p>Data er først <i>nedskalere i mindre dele.</i> <br>Som så, derefter er sendt igennem hver sin lane. </p>
+            <br>
+            <img th:src="@{img/eksamen1/BussesLaneFile1.PNG}" src="../static/img/eksamen1/BussesLaneFile1.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/BussesLaneFile2.PNG}" src="../static/img/eksamen1/BussesLaneFile2.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p>Det fungerer fint, for mange situationer.  <br>Bestemt når man overfører. Såsom en <b><i>Memory Address.</i></b> </p>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/BussesAddressBus.PNG}" src="../static/img/eksamen1/BussesAddressBus.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p><b><i>Man kan overveje?</i></b><br> Vil et antal af lanes, inde i en Bus udvide dens størrelse? </p>
+            <br>
+            <p>Selvom man kan sige at: <b>1 lane = 1 bit.</b></p>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/Busses1Lane1Bit.PNG}" src="../static/img/eksamen1/Busses1Lane1Bit.PNG" width="300" height="150" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p>Fordi, så snart en del antal af lanes stiger.<br>  Så vil dens område, der har behov for det, også gøre.</p>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/BussesSizes.PNG}" src="../static/img/eksamen1/BussesSizes.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Lanes</b></i></p>
+            <br>
+            <p>For eksempel, vil en bus, der kræver <b>64 lanes,</b> også kræve <b>64 bits.</b></p>
+            <br>
+            <p>For at bevare <b>circuits mindre.</b>&nbsp;&nbsp;  Var <i>multiplexer</i> implementeret. </p>
+            <img th:src="@{img/eksamen1/BussesGreenThumbUP.PNG}" src="../static/img/eksamen1/BussesGreenThumbUP.PNG" width="50" height="50" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <p>Den her proces... Der er adskilt, siger at <b>32-bits,</b> bliver overført til <b>16-bits.</b></p>
+            <p>Og overfører dem over <b><i>2 * 16-bits</i></b> værdier. Igennem en <i>16 lanes bus.</i></p>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/BussesMultiplexer.PNG}" src="../static/img/eksamen1/BussesMultiplexer.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p>Den her metode forøger, selve processen kraft.  </p>
+            <p>Men på den samme tid, holder ens enhed relativ mindre.<br> ( <i>Såsom tynde laptops</i> ).</p>
+            <br>
+            <br>
+            <p>Den parallel bus, er den <b><i>dominerende bus metode.</i></b><br> For at overføre informationer inde i en computer.</p>
+            <br>
+            <p>Komponenter, såsom <i>RAM og PCI’e</i> forbundet enheder.&nbsp;&nbsp; --> &nbsp;&nbsp;Bruger også <b>Parallel buses.</b></p>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/BussesRamPCI.PNG}" src="../static/img/eksamen1/BussesRamPCI.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p>Men i fremtiden, vil den her <b><i>'dominerende',</i></b> måske <i>nedstige</i> pågrund af anden slags af Bus. </p>
+            <br>
+            <br>
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <!-- Serial Bus -->
+
+            <br>
+            <br>
+            <h3><i><u>Serial Bus:</u></i></h3>
+            <br>
+            <p>Ikke alle enheder. Bruger <i>multiple lanes,</i> når de skal overfører informationer. </p>
+            <br>
+            <p>Nogen overfører enkelte <b><i>'små bidder'</i></b> af informationer, <b><i>1 af gangen,</i></b> igennem <i>1 enkelt lane.</i> </p>
+            <br>
+            <p>Hvis en Bus. Kun bruger en <b><i>enkelt lane,</i></b> til at overfører data = <b>Serial bus.</b> </p>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/BusSerialFile.PNG}" src="../static/img/eksamen1/BusSerialFile.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/BusSerialFile2.PNG}" src="../static/img/eksamen1/BusSerialFile2.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <p><i>En serial bus:</i>&nbsp;&nbsp; Er <b><i>langsommere,</i></b>  ( <i>.Slower</i> ) end parallelle busses.</p>
+            <p>Og bruges til <b><i>lang-distance</i></b> ( <i>.long-range</i> ) kommunikationer. </p>
+            <br>
+            <p><i>Første gang.</i><br> Var det pågrund af, at det <b><i>kostet mindre.</i></b> ( <i>.Cost less</i> )</p>
+            <br>
+            <p><i>'Parallelt set.'</i><br> Er det <i>mindre dyrt,</i> at kører en enkelt ledning.<br> End at kører flere ledninger.</p>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/BussesCost2.PNG}" src="../static/img/eksamen1/BussesCost2.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <p>Forbedringer, bliver bedre med tiden, indenfor overførelser af data. </p>
+            <br>
+            <p>Parallele Busses, er <i><u>'modstands-dygtige'</u></i>&nbsp; for <i><u>'magnetiske forstyrrelser.'</u></i></p>
+            <br>
+            <p>Serial busses, er også begyndt at vise sig frem,<br> med <i><u>korte-afstande</u></i> kommunikationer.</p>
+            <br>
+            <p>Hvilket var engang <i><u>reseveret</u></i> til parallelle busses. </p>
+            <br>
+            <p><i>Indtil videre kan serial busses findes i:</i></p>
+            <br>
+
+            <ul>
+                <li><b><i>.PCi express</i></b></li>
+                <br>
+                <li><b><i>.SATA</i></b></li>
+                <br>
+                <li><b><i>.USB</i></b></li>
+            </ul>
+            <br>
+            <p><i>Listen vil vokse, ind i fremtiden.</i></p>
+
+            <br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- Always improvement -->
+
+            <h3><i><u>Always Improving:</u></i></h3>
+            <br>
+            <p>Siden <b><i>integrated circuits</i></b>&nbsp; bliver mindre og mindre. </p>
+            <p>Hurtigere, og mere <i>effektive busses strukturer,</i> bliver implementeret.</p>
+            <br>
+            <p>Men siden de fleste er <i>faced out</i></p>
+            <p>Kan man godt finde strukturen i visse <i>embedded systemer.</i></p>
+            <br>
+            <br>
+            <br>
+            <h4>Ved midten af <b>1980’es.</b></h4>
+            <br>
+            <p>Begyndte CPU’er... At bruge en <b><i>Northbridge</i></b> &nbsp;og en <b><i>Southbridge</i></b>&nbsp; også kaldet <i>the chipset.</i> </p>
+            <p>For at kunne kommunikere med komponenterne.  </p>
+            <br>
+            <p>Den her tildeling, gav visse komponenter, prioriteter over andre.  </p>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/BussesTheLocalBus.PNG}" src="../static/img/eksamen1/BussesTheLocalBus.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p><b>The Northbridge</b> var forbundet direkte til CPU’en.&nbsp;&nbsp;  Kaldet: <b><i>the FSB</i></b></p>
+            <p><i>High speed komponenter,</i> der krævet den <i><u>højeste prioritet.</u></i> </p>
+            <br>
+            <p>Såsom, <i>the RAM</i> og <i>ventilation,</i> var forbundet med individuelle busses, til <b>the Northbridge.</b>
+            </p>
+            <br>
+            <img th:src="@{img/eksamen1/BussesTheLocalBus2.PNG}" src="../static/img/eksamen1/BussesTheLocalBus2.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p><b>The Southbridge</b> forholdte sig til <i>langsommere,</i> og <i><u>lavere prioriteter</u></i> af forbindelser.</p>
+            <p>Såsom: <b><i>USB / SATA / Og ethernet.</i></b>&nbsp;&nbsp;&nbsp; Siden den heller ikke, er direkte forbundet til <i>the CPU.</i> </p>
+            <br>
+            <p>Fremfor er forbundet med <b><i>the Internal bus</i></b> til <b>the Northbridge.</b></p>
+            <br>
+            <img th:src="@{img/eksamen1/BussesTheLocalBus3.PNG}" src="../static/img/eksamen1/BussesTheLocalBus3.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p>Tildelingen af de mindst <i><u>'vigtige prioriteter.'</u></i> <br><br> Gøre systemet mere <i>effektiv og hurtigere.</i> </p>
+
+
+            <br><br>
+
+            <hr>
+
+            <br><br>
+
+            <a th:href="@{/eksamen1}" href="eksamen1.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+        </div> <!-- End line - Spørgsmål 5 -->
+
+
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+
+
+        <!-- Spørgsmål 6 -->
+
+        <div id="menu1_6" class="tab-pane fade">
+            <br>
+            <h3><b><i>6.&nbsp; <u>Computernetværk:</u><br><br>&nbsp;&nbsp;&nbsp;&nbsp; Hvad er forskellen på:&nbsp;&nbsp; IP og MAC?</i></b></h3>
+            <br>
+            <hr>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+            <br>
+            <hr>
+            <br>
+
+            <p><b><u>Hvad er en bit:</u></b></p>
+            <p>Formattet af en <b>1</b> eller <b>0.</b><br><br> <i>Lav</i> eller <i>høj</i> spændning. / <b>Tænd</b> eller <b>sluk.</b> </p>
+            <br>
+            <p><b>1 bit</b> = en ledning.</p>
+            <br>
+            <p><b><u>Hvad er en byte:</u></b></p>
+            <p>Det er <b>8</b> ledninger.&nbsp;&nbsp; Fra 0 --> 255.</p>
+
+            <br>
+
+            <hr>
+
+            <br>
+            <br>
+            <p><a th:href="@{https://en.wikipedia.org/wiki/IP_address}" href="https://en.wikipedia.org/wiki/IP_address/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - Wikipedia:</a></p>
+            <h4><b>The Bus | How the computer works?</b></h4>
+            <h5>Channel:&nbsp;&nbsp; <i>notez on tek - 2017</i></h5>
+            <br>
+            <br>
+            <p><a th:href="@{https://www.guru99.com/difference-ipv4-vs-ipv6.html}" href="https://www.guru99.com/difference-ipv4-vs-ipv6.html/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - guru99.com:</a></p>
+            <h4><b>IPv4 vs IPv6 – Difference Between Them</b></h4>
+            <h5><i>September 23, 2022</i></h5>
+            <br>
+
+            <hr>
+
+            <br>
+
+            <h3><u>IP ( <i>Internet Protocol Address</i> ):</u></h3>
+            <p>Er en <i><u>numerisk label,</u></i> &nbsp;&nbsp;såsom:&nbsp; <b>192.0.2.1,</b>&nbsp;&nbsp; Som er forbundet til et <i>computer netværk.</i> </p>
+            <h6><i>For data kommunikation.</i></h6>
+            <br>
+            <p>( <i>*TCP / IP Protokollen / Encapsulation</i> ).&nbsp;&nbsp; Anvendes til <i><b>2</b> hoved funktioner.</i> </p>
+            <br>
+            <p><i><u>Netværk interface identifikation</u></i>&nbsp;&nbsp; og &nbsp; <i><u>lokation adressering.</u></i></p>
+            <br>
+            <p>En IP adresse opfører sig som en <b><i>identifier,</i></b> for en bestemt enhed, på et udvalgt netværk.</p>
+            <p>IP adressen, bliver også kaldt: - <b><i>IP nummer,&nbsp;</i></b> eller en&nbsp; <b><i>Internet adresse.</i></b></p>
+            <p>IP adressen specificere, den <i><u>tekniske format af adressering,</u></i>&nbsp; og&nbsp; ( <i>"packets scheme"</i> ) pakke struktur.</p>
+            <br>
+            <p>De fleste netværk, <i><u>kombinere IP</u></i>&nbsp; med&nbsp; <b>*TCP.</b>  </p>
+            <p>Det tillader også, at udvikle en <i><u>virtual forbindelse.</u></i></p>
+            <p>Imellem en <i>destination</i> og en <i>kilde.</i> ( <i>source</i> )</p>
+
+            <br>
+            <br>
+            <h4>Version 4 = ( IPv4 ):</h4>
+            <p>Defineres som en <u><i>32-bit</i></u> nummer.&nbsp;&nbsp; ( Med <i>4 octer</i> <b>0:0:0:0</b> ). </p>
+            <p>Størrelsen af internettet, og nedsættelse af mulige <b>IPv4</b> adresser. </p>
+            <br>
+            <p>En <i><u>nyere version</u></i> af IP’er = <b><i>( IPv6 )</i></b>&nbsp;&nbsp; som bruger <i><u>128 bits</u></i> for IP adresserne. </p>
+            <h6><i>Som var <i>standardiseret</i> i <b>1998.</b></i></h6>
+            <br>
+            <p>Er stadig aktivt... Nu til dags, <i><u>midt i 2000’erne.</u></i> </p>
+            <br>
+            <p>De er skabt via et <i>menneskeligt læseligt</i> format.</p>
+            <p>Som er udregnet via et <i>binært talsystem.</i> </p>
+            <br>
+            <br>
+            <p><u>IPv4 eksempel:</u>&nbsp;&nbsp; <b><i>192.0.2.1</i></b></p>
+            <br>
+            <p><u>IPv6 eksempel:</u>&nbsp;&nbsp; <b><i>2001:db8:0:1234:0:567:8:1</i></b></p>
+            <br>
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+            <br>
+            <h4><u>Yderligere forklaring:</u></h4>
+            <br>
+            <p>Størrelsen af <b>routing prefix</b> af addresserne er udpeget af  <b><i>*CIDR notation</i></b></p>
+            <p><b>( <i>Classless Inter-Domain Routing</i> )</b> ved flerdele adresserne med numre af, <i>væsentlige bits.</i></p>
+            <p>Som er relevant, sammen med en <b>subnet mask</b> <b>= <i>255.255.255.0</i></b>&nbsp;&nbsp;  <i>( IP = Huset / Subnet = Boligkvarter )</i></p>
+            <br>
+            <br>
+            <p><i>IP’er</i> er globalt spredt ud via <b>IANA</b> <b>( <i>Internet Assigned Numbers Authority</i> )</b> </p>
+            <p>ved <b>5</b> regionale internet registrere <b>( <i>RIRs</i> ),</b> som er <i><u>ansvarlige</u></i> for at udpege territorier. </p>
+            <p>Såsom <b>ISP</b> <b>= <i>Internet Service Providers.</i></b> Ud til andre <i>End-users / clients</i> </p>
+            <br>
+            <p>Visse <b>IPv4</b> adresser er <i><u>reseveret</u></i> for <b><i>private netværks,</i></b> og som ikke er <i>globale unikke.</i></p>
+            <br>
+            <p><i><u>Netværk admins:</u></i> Tildeler en <i>IP adresse,</i> for hver <i>enhed,</i> der er forbundet til et <i>netværk.</i></p>
+            <p>Enten <b><i>static, fixed / permanent,</i></b> eller <b><i>dynamic,</i></b> angående <i>features og software.</i></p>
+            <br>
+            <br>
+            <p><b><i>*CIDR</i></b> = Er en metode for <i><u>allokere</u></i> IP adresser, og for <b>IP routing</b> - <i><u>Introduceret i 1993.</u></i></p>
+            <br>
+            <p><b><i>*TCP</i></b> = <i><u>Transport Control Protocol</u></i> - <b>( <i>Emails, Tekst, osv...</i> )</b> - ( <i>Kræver <u>høj</u> data-overførsel</i> )</p>
+            <br>
+            <p><b><i>*UDP</i></b> = <i><u>User Datagram Protocol</u></i> - <b>( <i>Video, Opkald osv...</i> )</b> - ( <i>Kræver <u>lav</u> data-overførsel - <i>'hurtigere at loade'</i></i> )</p>
+
+
+            <br><br>
+
+            <hr>
+
+            <br><br>
+
+            <p><a th:href="@{https://en.wikipedia.org/wiki/MAC_address}" href="https://en.wikipedia.org/wiki/MAC_address/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - Wikipedia:</a></p>
+            <br>
+
+            <h3><u>MAC ( <i>Media Access Control Address</i> ):</u></h3>
+            <p>Er en <b><i>unique identifier</i></b> ( <i>unik identifier</i> ) tildelt til en <b>Network Interface Controller</b></p>
+            <p><b>( NIC = <i>Ethernetkabel port</i> )</b> for brugen af en netværk adresse, i kommunikation inde i et netværk </p>
+            <p><b>område/zone</b> ( <i>LAN / WAN</i> ). Brugen er almen i de fleste <b>*IEEE 802</b> netværk teknologier,</p>
+            <p>som inkludere <b>Ethernet, Wi-Fi,</b> og <b>Bluetooth.</b></p>
+            <br>
+            <p>Under <b><i>*Open Systems Interconnection</i> ( <i>OSI</i> )</b> netværk modellen.</p>
+            <p>MAC adresser er brugt i <i><u>protokoller sub-layer,&nbsp;</u></i> af selve &nbsp;<i><u>Data link layer.</u></i></p>
+            <br>
+            <p>Som typisk genkendt som <b>6 grupper</b> af <b><i>2 *hexa-decimal cifre.</i></b></p>
+            <p>Opdelt af <i>bindestreger, kolonner</i> ( <i>colons :</i> ), eller <i>uden en separator.</i></p>
+            <br>
+            <p>MAC adresser er <i>primært tildelt af enheds fabrikanterne,</i> og er derfor <b><i>”burned-in adresse”</i></b></p>
+            <p>eller er en <b><i>Ethernet Hardware Adresse</i></b> ( <i>Den fysiske adresse</i> ) = <b>00 : 14 : a5 : 41 : 61 : 6b</b></p>
+            <br>
+            <p>Hver adresse kan være <b><i>oplagret i hardware,</i></b> såsom korter af <b><i>Read-Only Memory</i></b></p>
+            <p>eller med en <b>Firmware</b> mekanisme. En MAC adresse kan godt ændres via varieret Softwares. </p>
+            <br>
+            <p>Udformer sig typisk af ( <b><i>*OUI</i></b> ) eller ( <b><i>*EUI</i></b> ) håndteret af  <b><i>IEEE.</i></b></p>
+            <br>
+            <p><b><i>*Network nodes</i></b> med flere <b><i>netværk interfaces,</i></b> såsom <b><i>router</i></b> og <b><i>multi-layer switches,</i></b></p>
+            <p>skal har en <i><u>unik MAC adresse,</u></i> for hver <b><i>NIC</i></b> i samme netværk.</p>
+            <p>Men <b><i>2 NIC</i></b> forbundet til <i>2 forskellige netværk</i> kan <b><i>dele</i></b> den samme MAC adresse. </p>
+
+            <br><br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br><br>
+
+            <h4><u>Yderligere betegenelser:</u></h4>
+            <br>
+            <p><b><i>*IEEE 802</i></b> = Institute of Electrical and Electronics Engineers, standarder for Local Area Network</p>
+            <p>( LAN ), personal area network ( PAN ), Wide Area Network ( WAN ), og Metropolitan area ( MAN ).</p>
+            <br>
+            <p><b><i>*OSI model</i></b> = Open System Interconnection model. Er en konceptual model.</p>
+            <p>Som tildeler en basis for coordination af [ ISO ] standarder udvikling, af formålet af system interconnection. </p>
+            <p>Reference modellen, er kommunikation imellem et computer system.</p>
+            <p>Som er splittet ind i 7 forskellige abstraktion layer. </p>
+            <br>
+            <img th:src="@{img/eksamen1/OSI.PNG}" src="../static/img/eksamen1/OSI.PNG" width="200" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <p><b><i>*Hexa-decimal</i></b> = Numerisk system, som er en positional numreret system.</p>
+            <p>Som repræsenteres ved brugen af, en radix - ( base ) af 16.</p>
+            <br>
+            <p><b><i>*OUI</i></b> = En organizationally unique identifier, er en 24-bit nummer. </p>
+            <p>Som unikt identificeres en sælger / fabrikant eller andre organisationer. </p>
+            <br>
+            <p><b><i>*EUI</i></b> = Extended Unique Identifiers. </p>
+            <br>
+            <p><b><i>Network nodes</i></b> = En node, er enten en re-distribution point, eller en communication endpoint. </p>
+            <p>Definitionen af en node, afhænger af netværket og protokollen layer referet til. </p>
+
+
+            <br><br>
+
+            <hr>
+
+            <br><br>
+
+            <a th:href="@{/eksamen1}" href="eksamen1.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+        </div> <!-- End line - Spørgsmål 7 -->
+
+
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+
+
+        <!-- Spørgsmål 7 -->
+
+        <div id="menu1_7" class="tab-pane fade">
+            <br>
+            <h3><b><i>7.&nbsp; Hvilke typer:&nbsp; Kategorier findes der for en PSU?<br><br>&nbsp;&nbsp;&nbsp;&nbsp; Og hvad betyder de?</i></b></h3>
+            <br>
+            <hr>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+            <br>
+            <hr>
+            <br>
+            <p><a th:href="@{https://www.cdw.com/content/cdw/en/articles/hardware/how-choose-power-supply.html}" href="https://www.cdw.com/content/cdw/en/articles/hardware/how-choose-power-supply.html/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - cdw.com</a></p>
+            <h4><b>How to Choose a PC - Power Supply</b></h4>
+            <h6>September 01, 2020</i></h6>
+            <hr>
+            <br>
+
+            <p>Udover strømmen fra væg outlet'en, der skal strømme.<br> Den rette mængde strøm igennem enhederne. </p>
+            <br>
+            <p>Kan en PSU også tildele <b>fail-safes,</b> for fejl placeret vilkår,<br> eller beskytte komponenter, under et PC crash.</p>
+            <br>
+            <p>Forbedre ikke ens PC ydeevne, men vælg en rigtigt PSU.<br> For at <i><u>"undgå at brænde"</u></i> ens komponenter.</p>
+
+
+            <br>
+            <hr>
+            <br>
+
+            <!-- Typer af PSU'er ( Form Factors ): -->
+
+            <h3><i><u>Typer af PSU’er ( Form Factors ):</u></i></h3>
+            <p>Form factors vil fortælle omkring <b><i>key features.</i></b></p>
+            <p>Omkring units der inkludere størrelser og features som støtter. </p>
+            <br>
+            <p>Ved at vide... De her almen form factors, kan hjælpe en med.</p>
+            <p>At vælge den Power Supply Unit, man har brug for. </p>
+            <br>
+            <p>De her tips kan hjælpe enhver PSU.</p>
+            <p>Til at fitte ind i ens case, og operere så effektiv som muligt.</p>
+
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- ATX -->
+
+            <h4><b><u>ATX:</u></b></h4>
+            <p>Forhen... ATX power tildeler fremhævede en enkelt <b>20-pin stik,</b> som en main power til motherboard.</p>
+            <p>Men nu... Feature en <b>24-pin</b> strøm stik ( <i>som er stadig kompatible med ældre 20-pin motherboards</i> )</p>
+            <p><i>ATX strøm</i> udbyder også, husering en <b><i>extra rail,</i></b> som er <b><i>3.3V.</i></b></p>
+            <br>
+            <p>Et eksempel af en feature støttet af ATX. <b>Er soft-off.</b></p>
+            <p>Hvilket specificerer software, som tænder strømmen fra.</p>
+
+            <br>
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+            <br>
+
+            <!-- ATX12V -->
+
+            <h4><b><u>ATX12V:</u></b></h4>
+            <p>Specifikationer: Som er overgået standarden af ATX, rent teknisk.</p>
+            <p>Men begge strøm forsyninger, deler den <i>samme fysiske</i> form og størrelse.</p>
+            <p><i>Nuværende... Er den mest almen form factor.</i></p>
+            <br>
+            <p><b><i>ATX12V</i></b> strøm forsyninger, kommer i <i><u>flere versioner,</u></i> som er <i>opgradet over tid.</i></p>
+            <br>
+            <p><b><i>ATX12V.1</i></b> og <b><i>ATX12V.2</i></b>&nbsp;&nbsp; Er de seneste versioner.</p>
+            <p>De her versioner feature en <b>24-pin main</b> strøm stik, og er sat til maksimum effektivitet.  </p>
+
+            <br>
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+            <br>
+
+            <!-- SFF ( Small Form Factor ): -->
+
+            <h4><b><u>SFF ( Small Form Factor ):</u></b></h4>
+            <p>Over årene... Har der været en del af mindre strøm forsyninger,&nbsp; designet for kompakte sager. </p>
+            <p>De her strøm forsyninger er <i><u>mindre.</u></i>&nbsp; End standarden af ATX.&nbsp; Men for stadig jobbet gjort. </p>
+            <p>Og kan være perfekt, for mere <i><u>økonomiske udbygninger,</u></i> overvejet med <i><u>desk space.</u></i> </p>
+            <br>
+            <p><i><u>Eksempler:&nbsp; Af SFF strøm forsyninger:</u></i></p>
+            <ul>
+                <li><b><i></i>CFX12V</i></b>&nbsp; -&nbsp; ( <i>Compact Form Factor</i> )</li>
+                <br>
+                <li><b><i>LFX12V</i></b>&nbsp; -&nbsp; ( <i>Low Profile Form Factor</i> )</li>
+                <br>
+                <li><b><i>TFX12V</i></b>&nbsp; -&nbsp; ( <i>Thin Form Factor</i> )</li>
+
+            </ul>
+
+            <br>
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+            <br>
+
+            <!-- EPS12V: -->
+
+            <h4><b><u>EPS12V:</u></b></h4>
+            <p>Designet er til at skabe en mere <i><u>stabil miljø for servers.</u></i></p>
+            <p><b>EPS12V</b> strøm forsyninger feature en <b><i>8-pin CPU strøm forbindelse.</i></b> </p>
+            <p>I tilføjelse til <b><i>4-pin,</i></b> som er <i>standard</i> i <b><i>ATX12V units.</i></b> </p>
+
+            <br>
+
+            <p>Vær forsigtigt... Når man vælger ens strøm forsyning, hvorledes... </p>
+            <p>Som de fleste almen hjemme PC komponenter...&nbsp;&nbsp; <b><i>Er IKKE!</i></b>&nbsp;&nbsp; <i>kompatible</i> med <b><i>EPS12V</i></b> for factor strøm forsyninger. </p>
+
+            <br>
+            <br>
+
+            <hr>
+
+            <br>
+
+            <!-- Power Supply Connector Types: -->
+
+            <h3><b><u>Power Supply Connector Types:</u></b></h3>
+            <p>I udvidelse af Form Factor,&nbsp; er det vigtigt at <i><u>forstå forskellene,</u></i></p>
+            <p>imellem varieret <b><i>stik (connector) typer,</i></b>&nbsp; fremhævet på strøm forsyninger.</p>
+            <br>
+            <p>De her, er slutningerne på kablerne, som kommer fra ens strøm forsyning. </p>
+            <p>Og plugget ind til alle ens forskellige komponenter.</p>
+            <br>
+            <p>Hver af ens PC komponenter bruger specifikke kabler. </p>
+            <p>Vidende... Hvilken forbindelse ens PSU støtter, og hvilke kabler. </p>
+            <br>
+            <p>Man bruger til at forbinde ens komponenter til ens PSU, som kan <i><u>speed up</u></i> strukturen </p>
+            <p>Processen og hjælpe til, for at undgå enhver <i><u>uheldigt skade.</u></i></p>
+            <br>
+            <p>Når man vælger ens strøm forsyning.</p>
+            <p>Tjek for <i><u>kompatibilitet</u></i> med ens andre komponenter. </p>
+            <br>
+            <p><i><u>Her er hvad man har brug for at vide:</u></i></p>
+
+            <br>
+            <br>
+
+            <hr>
+
+            <br>
+
+            <!-- SATA Power: -->
+
+            <h4><b><u>SATA Power:</u></b></h4>
+            <p>De her kabler leverer strøm til <b>SATA</b> lager-enheder,&nbsp;&nbsp; f.eks <b>3.5</b> hardiske. </p>
+            <p>Flere <i>SATA forbindelser</i> findes ofte på et kabel. </p>
+            <p> For at eliminere behovet, for at køre overdrevet ledninger. </p>
+            <br>
+            <p>For nylig er <i>SATA strøm,</i> blevet overtaget af andre enheder. </p>
+            <p>Såsom <b><i>RGB hubs</i></b>, eller <b><i>fan kontrollere</i></b> </p>
+
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- 4/8 PIN CPU: -->
+
+            <h4><b><u>4/8 PIN CPU:</u></b></h4>
+            <p>Mens CPU’en... Er direkte installeret på motherboardet, leverer <b>24-pin</b> forbindelsen. </p>
+            <p>Ikke strøm nok til <i><u>moderne processorer,</u></i> og andre <i>motherboard features.</i> </p>
+            <p>For den her grund... Bruges <b><i>4/8 pin forbindelser,</i></b> nu til at drive CPU’er. </p>
+
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- 6/8 PIN GPU: -->
+
+            <h4><b><u>6/8 PIN GPU: ( GPU = Graphics Processing Unit )</u></b></h4>
+            <p><b><i>6/8-pin GPU</i></b> kabler forbindes til en <b><i>grafik-kort,</i></b> eller <b><i>GPU.</i></b> </p>
+            <p><b>GPU'er</b> med forskellige <i>styrker,</i>&nbsp; kræver specifikke konfigurationer. </p>
+            <br>
+            <p>For den her grund...&nbsp;&nbsp; Kommer <b><i>6/8-pin</i></b> forbindelser. </p>
+            <p>Ofte med flere konfigurationer på en enkelt kabel.</p>
+            <p>Såsom: <b><i>6,&nbsp; 8,&nbsp; 6+8,&nbsp; 8+6&nbsp;</i></b> og&nbsp; <b><i>8+8.</i></b></p>
+
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- 24 Pin Motherboards: -->
+
+            <h4><b><u>24 Pin Motherboards:</u></b></h4>
+            <p>Hvert motherboard anvender strøm forskelligt. </p>
+            <br>
+            <p><b><i>24-pin</i></b> motherboard kabler forsyninger, typisk motherboard features.</p>
+            <p>Såsom <b>*PCIe</b> og andre komponenter, der direkte forbundet til motherboardet. </p>
+            <br>
+            <p><b>*PCI Express</b> <b><i>(Peripheral Component Interconnect Express).</i></b> </p>
+            <p>Officielt forkortet som: <b>PCIe</b>&nbsp; eller&nbsp; <b>PCI-e.</b> </p>
+            <br>
+            <p>Er en <i><u>høj-hastigheds-seriel</u></i>&nbsp;&nbsp;&nbsp; <i><u>computer-udvidelses-bus-standard.</u></i></p>
+            <p>Designet til at <i><u>erstatte</u></i> de ældre <b>PCI-,</b>&nbsp; <b>PCI-X-</b></p>
+            <p>og <b><i>AGP-Bus-standarder.</i></b></p>
+            <br>
+            <p>Det er den fælles <i><u>bundkort-grænseflade.</u></i>&nbsp;&nbsp; Til personlige computeres grafikkort.</p>
+
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- 4 Pin Molex: -->
+
+            <h4><b><u>4 Pin Molex:</u></b></h4>
+            <p>Sjældent set i moderne systemer. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><i>4-pin Molex stik</i></b> betrages som <i><u>legacy hardware.</u></i> </p>
+            <p>Typisk erstattet af <i>SATA forbindelser.</i>&nbsp;&nbsp; Kan <b><i>Molex 4-pin</i></b> kabler stadig, findes på nogle <i><u>køle væske pumper.</u></i> </p>
+
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- A Note About Rails: -->
+
+            <h4><b><u>A Note About Rails: ( Rails = Skinner / Ledninger )</u></b></h4>
+            <p><b>Rails...</b> Er hvad PSU’en bruger.</p>
+            <p>Til at levere strøm igennem kablerne, til PC’ens komponenter.</p>
+            <br>
+            <p>Strøm forsyninger kan have <b><i>1</i></b> eller <b><i>flere Rails,</i></b></p>
+            <p>Og <b><i>individuelle Rails</i></b> kan have forskellige <i>strømstyrke outputs.</i> </p>
+            <br>
+            <p><b><i>The Rails</i></b> på en <i><u>modular</u></i> og <i><u>semi-modular.</u></i></p>
+            <p>PSU’er vil ligne rækker af <i>porte,</i> eller <i>kabler.</i></p>
+            <p>Som er tilsluttet de forskellige PC komponenter. </p>
+            <br>
+            <p>Selvom det kan blive utrolig <i>teknisk,</i> og <i>detaljeret.</i></p>
+            <br>
+            <h5><i>Er der <b>1</b> <i><u>vigtig kendsgerning</u></i> at huske:</i></h5>
+            <br>
+            <p>1 enkelt <b><i>+12V rail</i></b> kan levere strøm. </p>
+            <p>Til alle ens pc komponenter, uden problemer.</p>
+            <br>
+            <p><u>Den største forskel er:</u></p>
+            <p>Når en enkelt <b><i>Rail system fejler!</i></b> </p>
+            <p>Vil <u>enhver</u> komponent være i <b>'risiko.'</b></p>
+            <br>
+            <p>Når et <b><i>Multi-Rail system fejler!</i></b></p>
+            <p>Er det <u>kun enhederne,</u> som er <i><u>koblet</u></i> til den <i><u><b>fejlende Rail,</b></u></i> som er i <b>'risiko.'</b></p>
+            <br>
+            <h6><i>"Potential redder andre kostelige komponenter."</i></h6>
+            <br>
+            <h6><b>Simpel sagt: </b></h6>
+            <p><b><i>Multi-Rail strøm systemer</i></b> - Kan give bedre beskyttelse for komponenter.</p>
+            <h6><i>Fra vildfarne strøm - Tilfælde af fejl.</i> </h6>
+
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- Efficiency Rating: -->
+
+            <h4><b><u>Efficiency Rating:</u></b></h4>
+            <p>At vide effektivitet... Specifikationerne for ens strøm forsyning.</p>
+            <p><i>'Kan redde ens penge'</i>&nbsp; på ens elektriske regning. </p>
+            <br>
+            <p>Effektiviteten er så vigtigt... </p>
+            <p>Når man vælger en strømforsyning, <i>'at hele ens industri.'</i></p>
+            <p>Følger den <i><u>samme standard</u></i> - Kaldet: <b><i>80 plus.</i></b></p>
+            <br>
+            <br>
+            <p><i><u><b>80 plus rating:</b></u></i></p>
+            <p>Fortæller en værdifulde informationer - Om enheden - Og dens muligheder.</p>
+            <br>
+            <p>Den <i><u>laveste niveau</u></i> af <b><i>80 plus certificering.</i></b></p>
+            <p><u>Verificerer:</u> At strømforsyningen leverer <b>80%</b> </p>
+            <p>Af sin samlede <b><i>watt</i></b> til dit system. </p>
+            <p>Mens den <i><b>mister 20% til varme.</b></i></p>
+            <br>
+            <p>Efterhånden... </p>
+            <p>Som <u>'ratingen stiger,'</u> &nbsp;-->&nbsp;<u>'stiger prisen'</u> &nbsp;-->&nbsp; og den <u>'samlede effektivitet.'</u></p>
+            <br>
+            <br>
+            <p><b><i><u>80 plus bronze:</u></i></b> </p>
+            <p>Er tilstrækkelig til de fleste tilbygninger.</p>
+            <br>
+            <p>Kun når en <i><b>High-end GPU</b></i> og <b>CPU</b> bruges, </p>
+            <p>Er der virkelig brug for - <i>En højere effektivitet rating.</i></p>
+
+            <br>
+            <br>
+
+            <hr>
+
+            <br>
+
+            <!-- Other Factors to Consider: -->
+
+            <h3><b><u>Other Factors to Consider:</u></b></h3>
+            <p>Garantere... At ens strøm forsyning, passer inde i ens etui.</p>
+            <p>Og har de rette kabler til at forsyne, ens komponenter er vigtigt.</p>
+            <br>
+            <p>Hvorledes... <i><u>Den sekundære faktor.</u></i></p>
+            <p>Der ikke er kritisk - Kan dog også i høj grad - Påvirke ens tilfredshed med ens PSU.</p>
+
+            <br>
+
+            <hr>
+
+            <br>
+
+            <!-- Noise: -->
+
+            <h4><b><u>Noise: ( Larm )</u></b></h4>
+            <p><b><i>Fan støj...</i></b>&nbsp;&nbsp; Er et problem for mange brugere. </p>
+            <p>Når en strømforsyning begynder at udsende <i><b>betydelig watt,</b></i> &nbsp;&nbsp;<i><u>'varmes den op.'</u></i></p>
+            <br>
+            <p>Overdreven varme vil udløse en <i><u>betydelig stigning.</u></i></p>
+            <p>I fan'en hastighed på PSU’en, og den kan blive <i><u>utrolig høj.</u></i></p>
+            <br>
+            <p><u><i>Vær opmærksom på faktorer:</i></u></p>
+            <p>Som <i>effektivitet</i> og <i>wattage effektgrænser.</i></p>
+            <br>
+            <p>Kan man finde en PSU, der vil <i>forsyning</i> ens system</p>
+            <br>
+            <h6>Uden at lyde - Som en <i>'blad blæser.'</i></h6>
+
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- Cabling -->
+
+            <h4><b><u>Cabling: ( Kabler )</u></b></h4>
+            <p>Stik på en PSU... &nbsp;&nbsp; Er afgørende for dens funktion. </p>
+            <p>Ligeledes kablerne der forbinder ens PSU, til ens computer.</p>
+            <br>
+            <p>Andre komponenter har egenskaber, der kan hjælpe med at <i>forenkle kabel management.</i> </p>
+            <p>Og personliggøre ens PC. Alle strøm forsyninger kommer i <b><i>3 versioner:</i></b></p>
+
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- Modular - ( Modulære ) -->
+
+            <h4><b><u>Modular - ( Modulære )</u></b></h4>
+            <p><i>'Strømforsyninger sparer plads'</i> </p>
+            <br>
+            <p>Ved at tillade brugerne muligheden.</p>
+            <p>For at tilslutte et minimum af kabler, til hver enhed. </p>
+            <br>
+            <p><i><u>Det modulærer design</u></i> </p>
+            <p>Hjælper med <i>kabel håndtering,</i> og tilføjer en mulighed for.</p>
+            <p><i><u>Personalisering,</u></i> med <i><u>bruger-defineret</u></i> kabler. </p>
+
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- Pre-installed: ( Før-installeret ) -->
+
+            <h4><b><u>Pre-installed - ( Før-installeret )</u></b></h4>
+            <p>PSU’er har alle de nødvendige kabler.&nbsp;&nbsp; <i>'Pre-installed'</i></p>
+            <br>
+            <p><i>Eller...</i></p>
+            <br>
+            <p><i><u><b>Non-modular</b></u> ( Ikke-modulærer ):</i>  </p>
+            <p>Strømforsyningen.&nbsp;&nbsp; De kan <b><i>IKKE fjernes.</i></b> </p>
+            <br>
+            <p>Disse enheder kan være mere <i><u>bekvemme at viderebygge med.</u></i> </p>
+            <p>Men kan ofte føre til <i><u>dinglende kabler.</u></i> </p>
+            <p>Eller <i><u>unødvendige stik,</u></i> der forårsager <i>rod</i> i kabinettet.</p>
+
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <!-- Semi-modular: ( Semi-modulærer ) -->
+
+            <h4><b><u>Semi-modular: ( Semi-modulærer )</u></b></h4>
+            <p>Strømforsyninger er en <i><u>kombination</u></i> af de <b><i>2 ovenover versioner.</i></b> </p>
+            <p>Med nogle af deres kabler <i>'pre-installed,</i> men der plads til.</p>
+            <p>At brugerene kan <i>tilføje</i> flere efter ønske. </p>
+
+            <br>
+
+            <hr>
+
+            <br>
+            <br>
+
+            <!-- Power Supply Types Explained - Is Gold Rated Good Enough? -->
+
+            <p><a th:href="@{https://www.youtube.com/watch?v=6lyCx39zFN8}" href="https://www.youtube.com/watch?v=6lyCx39zFN8/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Ext. Kilde - Youtube - Video</a></p>
+            <h4><b>Power Supply Types Explained - Is Gold Rated Good Enough?</b></h4>
+            <h6>Channel:&nbsp;&nbsp; <i>Max's Tech - 2021</i></h6>
+            <br>
+            <hr>
+            <br>
+
+            <p>Gå efter et <i><b>NameBrand.</b></i> &nbsp;&nbsp; Aldrig en <i><b>billig knock-off.</b></i> </p>
+            <p>Man aldrig har hørt om - Fordi,&nbsp; hvis de har <i><u>faldende komponenter</u></i> i sig. </p>
+            <p>Kan det skabe <u><i>større skade</i></u> til ens komponenter. Og <i>'blive dyrere'</i> i længden.</p>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/PSUoverview.PNG}" src="../static/img/eksamen1/PSUoverview.PNG" width="400" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+
+            <hr>
+
+
+            <!-- Modularity: -->
+
+            <h3><b><u>Modularity:</u></b></h3>
+            <p>Hvilket kabel som er <i><u>permanent forbundet</u></i> til strømforsyningen. </p>
+            <p>Det er lige meget hvilken en, man vælger. &nbsp;&nbsp; <i><u>'De er alle praktiske.</u></i> </p>
+            <br>
+            <h4><b><u>Non-modular:</u></b></h4>
+            <p>Bare have alle kabler tilsluttet, til enheden af sig selv.</p>
+            <p>Man kan <b><i>ikke frakoble</i></b> den af sig selv.&nbsp;&nbsp; <i><u>'Den er fastsat til PSU’en.</u></i></p>
+            <br>
+            <img th:src="@{img/eksamen1/PSUmodular.PNG}" src="../static/img/eksamen1/PSUmodular.PNG" width="400" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <h4><b><u>Semi-modular:</u></b></h4>
+            <p>De er meget <i>populære,</i> siden de inkludere, <i>hoved forbindelserne</i> af <b>24-pin</b> til ens Motherboard. </p>
+            <p>Som man har brug for, uanset hvad for et scenario.&nbsp;&nbsp; <i><u>'De er permanente forbundet.</u></i>  </p>
+            <br>
+            <img th:src="@{img/eksamen1/PSUmodular2.PNG}" src="../static/img/eksamen1/PSUmodular2.PNG" width="400" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+
+            <p><u>Andre forbindelser:</u>&nbsp;&nbsp; Såsom - <b><i>Molex</i></b> og <b><i>SATA forbindelser.</i></b>&nbsp;&nbsp; <i><u>'De er valgfrie.</u></i></p>
+            <br>
+            <br>
+
+            <h4><b><u>Fully modular:</u></b></h4>
+            <p>Man kan <i><u>'unplug enhver kabel'</u></i> &nbsp;for PSU’en. </p>
+            <p><i>Tilføje kabel, og fjerne kabel som behager.</i></p>
+
+            <br><br>
+
+            <hr>
+
+            <br>
+
+            <!-- WATTAGE (watt): -->
+
+            <h3><b><u>WATTAGE (watt):</u></b></h3>
+            <p>Det er sjældent, at en computer kan trække <b><i>100 % watt.</i></b> </p>
+            <p><i>- Som en komponent er rated til.</i></p>
+            <br>
+            <p>Det vil sige... </p>
+            <p><i>- At ens CPU er <b>100%&nbsp; kapacitet.</b></i> </p>
+            <p><i>- At ens grafikkort er <b>100%&nbsp; kapacitet.</b></i> </p>
+            <p><i>- Ens hard-drev spinder rundt.&nbsp; Så hurtigt som de kan.</i> </p>
+            <br>
+            <p>Alt sammen sker på sammentid. </p>
+            <p>Det vil mene den <b><i>fulde watt kapacitet.</i></b></p>
+            <br>
+            <p>Åbenlyst... Hvis man får sit tal, et andet sted. </p>
+            <p>Vil det være nogenlunde det <u>antal watt,</u></i>&nbsp; eller <i><u>lidt højere</u></i> end det&nbsp; <i><u>antal watt.</u></i></p>
+            <p>Men at få et lille glimt af... Hvor <b><i>meget watt</i></b> ens enhed faktisk <i>trækker.</i> </p>
+            <br>
+            <p>Kan man anvende en <i><b>wattage meter maskine,</b></i> </p>
+            <p>Som er <i><u>hooket op</u></i> en computer enhed. = <i><b>120 watt.</b></i></p>
+            <p>Som trækkes ud af en <i>computer / klient,</i> bare i en <i>idle / standard</i> stadie. </p>
+            <br>
+            <p>I videoens gennemgang - Har han en <b><i>650 watt</i></b> strømforsyning. </p>
+            <h6><i>'Han når slet ikke, den rækkevidde.'</i> </h6>
+            <br>
+            <br>
+            <p>Ved at kører... Et <b>4K videospil</b> på hans enhed = <b>252 watt:</b> </p>
+            <h6><i>Uanset hans aktivitet i spillet.</i></h6>
+            <br>
+            <img th:src="@{img/eksamen1/PSUwattage.PNG}" src="../static/img/eksamen1/PSUwattage.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <br>
+            <p><u><i>Et website der anbefaler hans watt måling:</i></u></p>
+            <br>
+            <img th:src="@{img/eksamen1/PSUwattage2.PNG}" src="../static/img/eksamen1/PSUwattage2.PNG" width="300" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <p><u><i>Den maksimum rated wattage</i></u> - For ens komponent. </p>
+            <h6><i>'Er en lille smule overvurderet.'</i></h6>
+            <br>
+            <p>Det er altid godt at gå efter en PSU. </p>
+            <p>Ved at runde op til det antal, omkring det&nbsp; <i><u>'anviste tal.</u></i></p>
+
+            <br><br>
+
+            <hr>
+
+            <br>
+
+            <!-- Form Factor: -->
+
+            <h3><b><u>Form Factor:</u></b></h3>
+            <p>Man kan <i>organisere</i> PSU’er via: </p>
+            <p><b>ATX1</b> – <b>ATX12V</b> – <b>EPS12V</b> – <b>MicroATX</b></p>
+            <br>
+            <p><u><i>Den nemmeste anbefalet metode:</i></u></p>
+            <p>At finde ens andre komponenter, som man har til sin PC.</p>
+            <p>Man burde ikke finde sin Power Supply, før sine komponenter. </p>
+            <br>
+            <p>Saml alle ens komponenter, til ens PC først.&nbsp;&nbsp; <i>Derefter vælg en PSU.</i> </p>
+            <p>Så man kan se, hvad for nogen forbindelser, man faktisk har brug for. </p>
+            <br>
+            <p>Hvis man går med <b>ATX’er.</b>&nbsp;&nbsp; <i>De er ældre PSU’er.</i> </p>
+            <p><i>'De bliver arbejdet ud af systemet.'</i>&nbsp; Fordi de kun levere <b>20 pin</b> forbindelse til ens motherboard. </p>
+            <br>
+            <p><i>Den primære <b>20-pin.</b></i>&nbsp; -&nbsp; Fungerer <i><b>ikke yderligere</b></i> på <i>moderne motherboards.</i> </p>
+            <p>Siden det kræver <b>24-pins</b> nu. &nbsp; Der er enkelte tilfælde, hvor det <b><i>20 + 4. Pins.</i></b> </p>
+            <br>
+            <p>Men primært, og moderne...&nbsp; Er det de <i><b>direkte 24 pins forbindelser.</b></i></p>
+            <p><b>ATX’er</b> er <i><b>No go</b></i> = <i><u>The older versions.</u></i> </p>
+            <br>
+            <p><u>Go to options:</u>&nbsp; <b>ATX12V</b> eller <b>EPS12V</b></p>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/PSUformfactor.PNG}" src="../static/img/eksamen1/PSUformfactor.PNG" width="300" height="150" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <br>
+            <img th:src="@{img/eksamen1/PSUformfactor2.PNG}" src="../static/img/eksamen1/PSUformfactor2.PNG" width="400" height="250" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p><i>Det er muligt... At finde websites, der går i dybden med den slags.</i></p>
+            <h6>"Narrow down to the core" </h6>
+
+            <br><br>
+
+            <hr>
+
+            <br>
+
+            <!-- Efficiency (effektivitet): -->
+
+            <h3><b><u>Efficiency (effektivitet):</u></b></h3>
+            <p><i>PSU’er er tagget med de her mærkninger:</i></p>
+            <br>
+            <img th:src="@{img/eksamen1/PSUeffect.PNG}" src="../static/img/eksamen1/PSUeffect.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <p><b><i><u>Hvad betyder det ?</u></i></b></p>
+            <p>Det er en <i><u>standard</u></i> der er sat på. </p>
+            <p><i>For at garantere, at ens PSU man har.</i> &nbsp;&nbsp;Får <i><b>”effektivt”</b></i> nok.</p>
+            <p>Transporteret strømmen igennem <i>wallsocket</i>&nbsp; fra ens hus --> komponenten.</p>
+            <br>
+            <p>Der kan altid være en <i><u>'mindre risiko.'</u></i> </p>
+            <p>Så det er... <b><i>Ikke 100 % garanti mærkning.</i></b></p>
+            <br>
+            <p>At det <i>'måske'</i> vil <i><u>trække mere</u></i> strøm fra ens hus. </p>
+            <p>End det leverer den&nbsp; <i><u>'rette mængde'</u></i>&nbsp; til PSU komponenten.</p>
+            <br>
+            <p>Derefter vil den <i><u>oplagre en varme,</u></i>&nbsp; der <b>beskader</b> komponenten.</p>
+            <h6><i>”Fordi man ikke lever i en perfekt verden.”</i></h6>
+            <br>
+            <img th:src="@{img/eksamen1/PSUeffect2.PNG}" src="../static/img/eksamen1/PSUeffect2.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p><i><u><b>Bronze eksempel:</b></u></i></p>
+            <img th:src="@{img/eksamen1/PSUeffect3.PNG}" src="../static/img/eksamen1/PSUeffect3.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p><u><b>80 Plus Bronze:</b></u></p>
+            <p><i>På <b>85%</b> effektivitet - Får man <b>50%</b> loading.</i></p>
+            <br>
+            <br>
+            <br>
+            <p><i><u><b>Titanium eksempel:</b></u></i></p>
+            <img th:src="@{img/eksamen1/PSUeffect4.PNG}" src="../static/img/eksamen1/PSUeffect4.PNG" width="400" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <p><u><b>80 Plus Titatinium på 20%</b></u></p>
+            <br>
+            <p>Med en <b>100 watt</b> til ens computer. </p>
+            <p>Skal ens strøm forsyning, tag <b>125 watt</b> fra væggen.</p>
+            <p>Derefter kun <b><i>levere 100 watt</i></b>&nbsp; til computeren. </p>
+            <br>
+            <br>
+            <p><u><b>Note:</b></u></p>
+            <p>Desto <i>'højere'</i>&nbsp; en &nbsp;<i><u>effektiv power supply</u></i>&nbsp; man har.</p>
+            <h6><i>Desto billigere - er el-regningen. &nbsp;+&nbsp; ”At drive ens computer” </i></h6>
+            <br>
+            <img th:src="@{img/eksamen1/PSUeffect5.PNG}" src="../static/img/eksamen1/PSUeffect5.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+            <br>
+            <br>
+            <br>
+            <p><b>PSU:</b>&nbsp;&nbsp; ( Levere <i><b>1000 watt</b></i> ) = <i><b>50%</b></i> &nbsp;&nbsp; Nyttig-virking = <i><b>500 watt.</b></i></p>
+            <p>På at bare <i><u>stå og køle.</u></i> = Tab på <i><b>50%</b></i></p>
+
+
+
+
+            <br><br>
+
+            <hr>
+
+            <br><br>
+
+            <a th:href="@{/eksamen1}" href="eksamen1.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+        </div> <!-- End line - Spørgsmål 7 -->
+
+
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+
+
+        <!-- Spørgsmål 8 -->
+
+        <div id="menu1_8" class="tab-pane fade">
+            <br>
+            <h3><b><i>8.&nbsp; Hvad er forskellen på:&nbsp;&nbsp; RAM og Harddisk?</i></b></h3>
+            <br>
+            <hr>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+            <br>
+            <hr>
+            <br>
+
+            <p><b>RAM</b> = Computerens <i><u>hukommelse.</u></i>&nbsp;&nbsp;  Rammen husker midlertig.</p>
+            <br>
+            <p><b>Harddisk</b> = Computerens <i><u>oplagring.</u></i>&nbsp;&nbsp;  Harddisk husker altid. </p>
+            <br>
+            <p><b>MTF = Mean time to fail.</b>&nbsp;&nbsp; ( Hvornår bliver disken forringet )</p>
+            <br>
+            <p>Lavstående = Langstidvarende.</p>
+
+            <br><br>
+
+            <hr>
+
+            <br><br>
+
+            <a th:href="@{/eksamen1}" href="eksamen1.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+        </div> <!-- End line - Spørgsmål 8 -->
+
+
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------- -->
+
+
+        <!-- Spørgsmål 9 -->
+
+        <div id="menu1_9" class="tab-pane fade">
+            <br>
+            <h3><b><i>9.&nbsp; Hvad er et:&nbsp; DBMS MySQL?<br><br>&nbsp;&nbsp;&nbsp;&nbsp; Og hvad kan det bruges til?</i></b></h3>
+            <br>
+            <hr>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" disabled="disabled">Kilder & Svar:</button>
+            <br>
+            <hr>
+            <br>
+            <p><a th:href="@{https://www.youtube.com/watch?v=FR4QIeZaPeM}" href="https://www.youtube.com/watch?v=FR4QIeZaPeM/" target="_blank" class="btn btn-info btn-xs active" style="font-weight: bold" role="button" >Int. Kilde - KEA - Video</a></p>
+            <h4><b>What is Database & SQL?</b></h4>
+            <h6>Channel: <i>Guru99 - 2013</i></h6>
+
+            <br>
+            <hr>
+            <br>
+
+            <h4><b><u><i>Hvad er - Data?</i></u></b></h4>
+            <br>
+            <p><u>Simpelt sagt:</u></p>
+            <p>Data kan i betragtning være relateret, til et enhver form for objekt.</p>
+            <br>
+            <p>Data - Der er relateret til ID:</p>
+            <p>F.eks - <i>Navn, alder, højde, vægt.</i>&nbsp; osv.</p>
+            <br>
+            <p>Ligeledes betragtes - <i>1 billede - 1 fil - 1 PDF....</i>&nbsp; osv</p>
+
+            <br>
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <h4><b><u><i>Hvad er en - Database?</i></u></b></h4>
+            <br>
+            <p>Data kan være <i>random</i> ( <i>tilfældig</i> ).</p>
+            <br>
+            <p>En database er en <i><u><b>systematisk samling</b></u></i>&nbsp; af Data.</p>
+            <h6><i>'Server = Global Catalog.'</i></h6>
+            <br>
+            <p>Siden data'en - I en database er <i><u><b>organiseret.</b></u></i></p>
+            <p>Gør det <i>Data håndtering</i> ( <i>Management</i> ), lidt nemmere</p>
+
+            <br>
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <h4><b><u><i>Hvad er en - Database Management System ( DBMS )?</i></u></b></h4>
+            <br>
+            <p><b><u>DBMS</u></b> - Er et udvalg af programmer.</p>
+            <p>Hvilket <i>tillader brugerne,</i> at have <i>adgang</i> til databasen.</p>
+            <p>For at kunne <i><u>administrere Data</u></i> & <i><u>justere repræsentationer</u></i> af Data.</p>
+            <br>
+            <br>
+
+            <h5><u><i>Eksempler på Data be-arbejdninger:</i></u></h5>
+            <ul>
+                <li><p><i><b>Online Telefonbøger</b></i> - ( <i>Krak - De Gule Sider...osv</i> ) </p></li>
+                <h6><i>"For at oplagre data der indeholder personer, tlf numre + detajler."</i></h6>
+                <br>
+                <li><p><i><b>Internet & Elektrisitet - Service Provider</b></i></p></li>
+                <h6><i>"Anvender DBMS til at håndtere regninger - Klient sager - Fejldata... osv"</i></h6>
+                <br>
+                <li><p><i><b>Sociale platforme - "Facebook"</b></i></p></li>
+                <h6><i>For at opbevarer, manipulere, og præsentere data - Relateret til medlem's aktiviteter.</i></h6>
+                <i>"osv... Af talrige selskaber."</i>
+            </ul>
+
+            <br>
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+            <br>
+
+            <h5><b><i><u>A bit of history:</u></i></b></h5>
+            <p><i>DBMS er ikke et nyt koncept.</i></p>
+            <p>Har været <i><u>implementeret</u></i> siden <b><i>1960'erne</i></b></p>
+            <br>
+            <p><i><b>Charles Bachmen's</b></i> - <b>INTEGRATED DATA STORE ( <i>IDS</i> )</b></p>
+            <p>Siges at... Være den <i>første DBMS</i> i historien.</p>
+            <br>
+            <p>Med tiden... Database teknologi blev <i>udviklet, udvidet og forøget</i> en del.</p>
+            <p>Ved anvendelse og forholdte funktionaliteter af Database systemerne.</p>
+
+            <br>
+            <br>
+
+            <hr>
+
+            <br>
+
+            <h3><b>&nbsp;&nbsp;&nbsp;&nbsp;<u><i>Typer af DBMS:</i></u></b></h3>
+
+            <br>
+            <br>
+
+            <h4><b><u><i>Hierarchical DBMS - ( Hierarkisk ):</i></u></b></h4>
+            <p><i>Den her type af DBMS...</i></p>
+            <p><b><i>Deployed typer</i></b>&nbsp; af &nbsp;<b>Parent-Child</b> <i>relationeller</i> af opbevaring af Data.</p>
+            <br>
+            <p>Den her type af DBMS...&nbsp;&nbsp; <i>Er sjældent brugt i dag.</i> </p>
+            <br>
+            <p>Den struktur er som et <b><i>træ.</i></b> </p>
+            <p><i><u>Rødder/notes</u></i> der repræsentere <b>”Records.”</b></p>
+            <p>Og <i><u>grene</u></i>der repræsentere <b>”Fields.”</b></p>
+            <br>
+            <p><i>Windows registry</i> der var brugt i Windows XP.  </p>
+            <p>Er et eksempel på <i><u>Hierarchical database system.</u></i></p>
+            <br>
+            <p>Konfiguration er opbevaret som <b>træ struktur.</b>&nbsp;&nbsp; <u><i>Med ”rødder / notes”</i></u></p>
+
+            <br>
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <h4><b><u><i>Network DBMS - ( Netværk ):</i></u></b></h4>
+            <p><i>Den her type af DBMS...</i></p>
+            <p>Support med <i><b>”many-to-many relationalships”</b></i> ( <i>Mange-til-mange forhold</i> )</p>
+            <br>
+            <p>Det resultere typisk i <i><u>komplekse database strukturer.</u></i> </p>
+            <br>
+            <p><b><i>RDM Server,</i></b> er et eksempel på <i>database management system.</i> </p>
+            <p>Som implementere - <b>The Network model.</b> </p>
+
+            <br>
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <h4><b><u><i>Relational DBMS - ( Relationelle ):</i></u></b></h4>
+            <p><i>Den her type af DBMS...</i></p>
+            <p>Defineret Database Relationalship - <i>Form af table</i> ( <i>Tabeller</i> )</p>
+            <br>
+            <p>Det samme som = <i>Relation.</i> I modsætning til <b>The Network DBMS.</b></p>
+            <br>
+            <p><b>RDBMS</b> støtter <b><i>ikke</i></b> <i>”many-to-many relationalships”</i> </p>
+            <p><i><u>Relational DBMS,</u></i> har typisk <i><u>pre-difeneret typer,</u></i> som de kan support.</p>
+            <br>
+            <p><i>Det er den mest populærer DBMS type i markedet.</i> </p>
+            <br>
+            <p><i><u>Eksempler:</u></i> på <i><b>RDBMS</b></i> inkluderer:</p>
+            <p><i><b>MySQL,</b> <b>Oracle</b> og <b>Microsoft SQL Server.</b></i> </p>
+
+            <br>
+            <br>
+
+            <div class="sectionLine"><p style="color: lightgrey">&nbsp;&nbsp;|----------------------------------------------------------|</p></div>
+
+            <br>
+
+            <h4><b><u><i>Object Oriented Relation DBMS:</i></u></b></h4>
+            <p><i>Den her type af DBMS...</i></p>
+            <p>Support - <i>Opbevaring af Nye datatyper.</i> </p>
+            <br>
+            <p>Data’en, som bliver <i><u>opbevaret.</u></i>&nbsp;&nbsp; <i>Er i form af <b>objekter.</b></i> </p>
+            <br>
+            <p><b>Objekterne</b> der er opbevaret har <b>attributter.</b> </p>
+            <p>F.eks - <b>Gender,</b> eller <b>Age.</b> Og <b>metoder</b> der definere...&nbsp; Hvad man skal gøre med data’en.</p>
+            <br>
+            <p><b>Post-gre SQL,</b> er et <u>eksempel</u> på <i><u>Object Oriented Relation DBMS.</u></i></p>
+
+            <br>
+            <br>
+
+            <hr>
+
+            <br>
+            <br>
+
+            <h4><b><u><i>Hvad er SQL?</i></u></b></h4>
+            <br>
+            <p><b><i>Structured Query Language</i></b> ( <i>SQL</i> )</p>
+            <br>
+            <p>Er <i><u>standard query sproget</u></i> for bearbejdning med RDBMS.</p>
+            <br>
+            <p><i>SQL kan effektivt blive brugt til...</i></p>
+            <p><u>DATABASE RECORDS:</u>&nbsp;&nbsp; <i><b>'INSERT -  SEARCH - UPDATE - DELETE'</b></i></p>
+            <br>
+            <p><i>Det betyder ikke...</i></p>
+            <p>At SQL kan anvendes, til andet end det ovenover nævnte.</p>
+            <br>
+            <p><i>Faktisk...</i> Hjælper det i at <i><u>optimere og vedligeholde</u></i> af Databaser&nbsp; + Mere. </p>
+            <br>
+            <p><u>Relationalle Database</u> - Såsom: <i><b>MySQL - Oracle - MS SQL Server - SYBASE...</b></i> osv </p>
+            <h6><i>Bruger SQL!</i></h6>
+            <br>
+            <p>SQL syntaks'en - Der bruges i de her databaser, er <i><u>næsten ens</u></i> med andre <b>Query</b> sprog.</p>
+            <p><i>Bortset fra...</i> At nogen databaser, anvender <i><u>anderledes syntakser,</u></i> der har mere <i><u>company ejerskabs</u></i> over sig. </p>
+            <br>
+            <p><u><i>Eksempel på SQL statement:</i></u></p>
+            <p><i><b>SELECT * FROM</b> Members <b>WHERE</b> Age <b>></b> 30</i></p>
+
+            <br>
+            <br>
+
+            <hr>
+
+            <br>
+            <br>
+
+            <h4><b><u><i>Kort sagt:</i></u></b></h4>
+            <ul>
+                <li><b>DBMS</b> står for:&nbsp;&nbsp; <b><u>"DataBase Management System"</u></b> </li>
+                <br>
+                <li>Der er <b><i>4 major typer</i></b> af DBMS systemer:</li>
+                <br>
+                <p><u>Navnkaldt:</u></p>
+                <p><i><b>Hierarchical - Network - Relational - Object Oriented</b></i></p>
+                <br>
+                <li>Den <i><u>mest udbredte</u></i> brugte DBMS er - <b>The Relational DBMS.</b></li>
+                <p>Som gemmer data i <i><u>tabel formatter.</u></i></p>
+                <br>
+                <p>Det anvender <b>SQL,</b> som standard <b>Query Language.</b></p>
+                <br>
+                <li>SQL er standard language, brugt til at <b><i>'Query' en Database.'</i></b></li>
+                <br>
+                <p>Databasen fremgang har en del <i>fordele,</i> når det kommer til at <i><u>opbevare Data.</u></i></p>
+                <p>Sammenlignet til andre traditionelle <b><i>'Flat File'&nbsp; Baseret Systemer.</i></b></p>
+            </ul>
+                <br>
+                <br>
+
+                <hr>
+
+                <br>
+                <br>
+
+                <h4><b><u><i>Hvorfor Databaser?</i></u></b></h4>
+                <br>
+                <ul>
+                    <li>Databaser bruges til at <b><i>opbevare data</i></b> på en <i><b>'brugbare'</b> måde.</i></li>
+                    <br>
+                    <li><b>Store mængder</b> af data kan opbevares på <b>samme lokation</b></li>
+                    <br>
+                    <li>Lettere at <b>Hente</b> - <b>Ændre</b> data, anvendes af <b>flere brugere dynamisk.</b></li>
+                    <br>
+                    <li><b>Organisere data</b> på varieret måder - <b>Søgning og Sortering.</b></li>
+                    <br>
+                    <li><i><b>Data-sikkerhed - ( Sikre adgangen )</b></i></li>
+                    <br>
+                    <li><b><i>Data-Integritet - ( Sikre den korrekte data )</i></b></li>
+                    <br>
+                    <li>Nemmere at <b>flytte</b> database fra en <i>enhed --> til en anden enhed.</i></li>
+
+                </ul>
+
+                <br>
+                <br>
+
+                <hr>
+
+                <br>
+                <br>
+
+                <h4><b><u><i>Yderligere om Relationalle DBMS:</i></u></b></h4>
+                <br>
+                <ul>
+                    <li><i>Der eksistere andre typer af DBMS - End Relational:</i></li>
+                    <ul>
+                        <li><b>Flad-fil</b>&nbsp; -&nbsp; ( <i>JSON / Excel</i> ) </li>
+                        <li><b>NoSQL</b> &nbsp;-&nbsp; ( <i>Graf-databaser = "Facebook"</i> )</li>
+                    </ul>
+                    <br><br>
+                    <li><i><b>MySQL</b> er <b>1 type</b> af RDMBS - Findes en del andre RDBMS:</i></li>
+                </ul>
+                <br>
+                <p><i><u>Visuelle eksempler:</u></i></p>
+                <br>
+                <img th:src="@{img/eksamen1/RDBMS.PNG}" src="../static/img/eksamen1/RDBMS.PNG" width="500" height="300" style="box-shadow: 10px 10px 5px lightgrey">
+                <br>
+                <br>
+                <br>
+
+                <hr>
+
+                <br>
+
+                <h4><b><u><i>RDMBS Struktur:</i></u></b></h4>
+                <br>
+                <p>Et <b style="color: blue">RDBMS</b> består af - <b style="color: orange">Databaser.</b></p>
+                <p>( <i>Seperat database for hvert seperat projekt.</i> )</p>
+                <ul>
+                    <li><h6>Som består af <b><i>tabeller</i></b> ( <i>også kaldet relationer</i> )</h6></li>
+                    <li><h6>Som består af <b><i>atrributter</i></b> og ( <i>colonner</i> ) og <i>tupler</i> ( <i>rækker</i> )</h6></li>
+                </ul>
+                <br>
+                <br>
+                <img th:src="@{img/eksamen1/RDBMS2.PNG}" src="../static/img/eksamen1/RDBMS2.PNG" width="600" height="400" style="box-shadow: 10px 10px 5px lightgrey">
+                <br>
+
+
+            <br><br><br>
+
+            <hr>
+
+            <br><br>
+
+            <a th:href="@{/eksamen1}" href="eksamen1.html" class="btn btn-warning active" style="font-weight: bold" role="button" >Gå til Top...</a>
+
+
+        </div> <!-- End line - Spørgsmål 9 -->
+
+
+
+
+    </div>
+    <br>
+    <hr>
+    <!--  <p class="act"><b>Active Tab</b>: <span></span></p>
+     <p class="prev"><b>Previous Tab</b>: <span></span></p> -->
+</div>
+
+<script>
+    $(document).ready(function(){
+        $(".nav-tabs a").click(function(){
+            $(this).tab('show');
+        });
+        $('.nav-tabs a').on('shown.bs.tab', function(event){
+            var x = $(event.target).text();         // active tab
+            var y = $(event.relatedTarget).text();  // previous tab
+            $(".act span").text(x);
+            $(".prev span").text(y);
+        });
+    });
+</script>
+
+</body>
+</html>
